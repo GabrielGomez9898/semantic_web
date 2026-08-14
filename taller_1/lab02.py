@@ -42,14 +42,12 @@ def construir_grafo() -> Graph:
     g = enlazar(Graph())
 
     g.add((DBR.Pluto, RDFS.label, Literal("Plutón", lang="es")))
+    g.add((DBR.Pluto, RDFS.label, Literal("Plutón", lang="en")))
     g.add((DBR.Pluto, DBO.meanRadius, Literal(1161.0, datatype=XSD.double)))
     g.add((DBR.Pluto, DBO.discovered, Literal("1930-02-18", datatype=XSD.date)))
     g.add((DBR.Pluto, DBO.hasSatellite, DBR.Charon))
     g.add((DBR.Pluto, DBO.hasSatellite, DBR.Nix))
     g.add((DBR.Pluto, DBO.hasSatellite, DBR.Hydra))
-    g.add((DBR.Charon, RDFS.label, Literal("Charon", lang="en")))
-    g.add((DBR.Nix, RDFS.label, Literal("Nix", lang="en")))
-    g.add((DBR.Hydra, RDFS.label, Literal("Hydra", lang="en")))
 
     # TODO 1: agregar la etiqueta en inglés y los tres satélites
     #         (dbr:Charon, dbr:Nix, dbr:Hydra) con dbo:hasSatellite.
@@ -131,17 +129,17 @@ def nodos_en_blanco() -> None:
     union = g1 + g2
     print(f"tripletas de la unión con diferente IRI: {len(union)}")
     
-    g1 = enlazar(Graph())
-    g1.add((DBR.Pluto, DBO.spaceMission, EX.mission))
-    g1.add((EX.mission, DBO.spaceShip, DBR.New_Horizons))
-    g1.add((EX.mission, DBO.visited, Literal("2015-07-14", datatype=XSD.date)))
+    g3 = enlazar(Graph())
+    g3.add((DBR.Pluto, DBO.spaceMission, EX.mission))
+    g3.add((EX.mission, DBO.spaceShip, DBR.New_Horizons))
+    g3.add((EX.mission, DBO.visited, Literal("2015-07-14", datatype=XSD.date)))
     
-    g2 = enlazar(Graph())
-    g2.add((DBR.Pluto, DBO.spaceMission, EX.mission))
-    g2.add((EX.mission, DBO.spaceShip, DBR.USS_Enterprise))
-    g2.add((EX.mission, DBO.visited, Literal("2245-07-14", datatype=XSD.date)))
+    g4 = enlazar(Graph())
+    g4.add((DBR.Pluto, DBO.spaceMission, EX.mission))
+    g4.add((EX.mission, DBO.spaceShip, DBR.USS_Enterprise))
+    g4.add((EX.mission, DBO.visited, Literal("2245-07-14", datatype=XSD.date)))
     
-    union = g1 + g2
+    union = g3 + g4
     print(f"tripletas de la unión con misma IRI: {len(union)}")
 
     # TODO 5: construir g2 con la segunda misión, también con nodo en blanco.
