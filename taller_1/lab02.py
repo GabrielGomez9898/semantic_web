@@ -133,13 +133,11 @@ def nodos_en_blanco() -> None:
     print(f"tripletas de la unión con diferente IRI: {len(union)}")
     
     g1 = enlazar(Graph())
-    mission = BNode()
     g1.add((DBR.Pluto, DBO.spaceMission, EX.mission))
     g1.add((EX.mission, DBO.spaceShip, DBR.New_Horizons))
     g1.add((EX.mission, DBO.visited, Literal("2015-07-14", datatype=XSD.date)))
     
     g2 = enlazar(Graph())
-    mission = BNode()
     g2.add((DBR.Pluto, DBO.spaceMission, EX.mission))
     g2.add((EX.mission, DBO.spaceShip, DBR.USS_Enterprise))
     g2.add((EX.mission, DBO.visited, Literal("2245-07-14", datatype=XSD.date)))
@@ -163,6 +161,15 @@ def colecciones() -> None:
 
     print(f"tripletas de la colección: {len(g)}")
     print(g.serialize(format="turtle"))
+    
+    # Mismo grafo pero con tres tripletas del mismo predicado
+    g2 = enlazar(Graph())
+    g2.add((EX.Limonada, EX.ingredientes, EX.Azucar))
+    g2.add((EX.Limonada, EX.ingredientes, EX.Agua))
+    g2.add((EX.Limonada, EX.ingredientes, EX.Limon))
+    
+    print(f"tripletas del grafo: {len(g2)}")
+    print(g2.serialize(format="turtle"))
 
     # TODO 6: escribir la misma información con tres tripletas del mismo
     #         predicado y comparar el conteo.
@@ -175,6 +182,11 @@ def dato_real(fuente: str = "http://dbpedia.org/data/Pluto.ttl") -> None:
     externo = Graph()
     try:
         externo.parse(fuente, format="turtle")
+        
+        for p, o in externo.predicate_objects(DBR.Pluto):
+            if str(p).startswith(str(DBO)):
+                print(p.n3(externo.namespace_manager), o.n3(externo.namespace_manager))
+
     except Exception as error:  # el endpoint público se cae con frecuencia
         print(f"no se pudo descargar ({error}); use la copia local pluto.ttl")
         return
