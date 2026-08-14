@@ -94,6 +94,12 @@ def literales() -> None:
     g = enlazar(Graph())
     g.add((EX.a, EX.valor, Literal("134340")))
     g.add((EX.b, EX.valor, Literal(134340)))
+    g.add((EX.pages, EX.valor, Literal(50, datatype=XSD.integer)))
+    g.add((EX.publicationDate, EX.valor, Literal("2026-06-01", datatype=XSD.date)))
+    g.add((EX.isbn, EX.valor, Literal("4400-2154")))
+    g.add((EX.title, EX.valor, Literal("Cien años de soledad")))
+    # TODO El label de titulo debe ser otra tripleta ? 
+    
 
     for sujeto, _, objeto in g:
         print(f"{sujeto.n3():<40} {objeto.n3():<28} {type(objeto.toPython())}")
@@ -116,13 +122,37 @@ def nodos_en_blanco() -> None:
     g1.add((DBR.Pluto, DBO.spaceMission, m1))
     g1.add((m1, DBO.spaceShip, DBR.New_Horizons))
     g1.add((m1, DBO.visited, Literal("2015-07-14", datatype=XSD.date)))
+    
+    g2 = enlazar(Graph())
+    m2 = BNode()
+    g2.add((DBR.Pluto, DBO.spaceMission, m2))
+    g2.add((m2, DBO.spaceShip, DBR.USS_Enterprise))
+    g2.add((m2, DBO.visited, Literal("2245-07-14", datatype=XSD.date)))
+    
+    union = g1 + g2
+    print(f"tripletas de la unión con diferente IRI: {len(union)}")
+    
+    g1 = enlazar(Graph())
+    mission = BNode()
+    g1.add((DBR.Pluto, DBO.spaceMission, EX.mission))
+    g1.add((EX.mission, DBO.spaceShip, DBR.New_Horizons))
+    g1.add((EX.mission, DBO.visited, Literal("2015-07-14", datatype=XSD.date)))
+    
+    g2 = enlazar(Graph())
+    mission = BNode()
+    g2.add((DBR.Pluto, DBO.spaceMission, EX.mission))
+    g2.add((EX.mission, DBO.spaceShip, DBR.USS_Enterprise))
+    g2.add((EX.mission, DBO.visited, Literal("2245-07-14", datatype=XSD.date)))
+    
+    union = g1 + g2
+    print(f"tripletas de la unión con misma IRI: {len(union)}")
 
     # TODO 5: construir g2 con la segunda misión, también con nodo en blanco.
     #         Unir con  union = g1 + g2  y contar las tripletas.
     #         Repetir usando un mismo IRI (EX["mision/NH"]) en ambos grafos.
     #         Comparar los dos conteos y explicar la diferencia.
 
-    print(g1.serialize(format="turtle"))
+    print(union.serialize(format="turtle"))
 
 
 def colecciones() -> None:
@@ -157,15 +187,16 @@ def dato_real(fuente: str = "http://dbpedia.org/data/Pluto.ttl") -> None:
     #         literales con etiqueta de idioma.
 
 # -------------------------METODOS AUXULIARES -------------------
-def construir_grafo_1000() -> Graph:
-    g = enlazar(Graph())
+def construir_grafo_grande() -> Graph:
+    
+    grande = Graph()
+    grande.bind("ex", EX)
     for i in range(20):
-        sujeto = EX[f"sujeto{i}"]
-        for j in range(50):
-            predicado = EX[f"predicado{j}"]
-            objeto = Literal(f"objeto{i}_{j}")
-            g.add((sujeto, predicado, objeto))
-    return g
+        sujeto = EX[f"recurso{i}"]
+    for j in range(50):
+        grande.add((sujeto, EX[f"prop{j}"], Literal(j)))
+    
+    return grande
 
 def grafo_inverso() -> Graph:
     
@@ -193,7 +224,7 @@ if __name__ == "__main__":
     comparar_formatos(grafo)
     
     print("-- comparacion del grafo 2 --")
-    grafo_1000 = construir_grafo_1000()
+    grafo_1000 = construir_grafo_grande()
     comparar_formatos(grafo_1000)
     
 
