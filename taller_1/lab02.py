@@ -97,8 +97,7 @@ def literales() -> None:
     g.add((EX.pages, EX.valor, Literal(50, datatype=XSD.integer)))
     g.add((EX.publicationDate, EX.valor, Literal("2026-06-01", datatype=XSD.date)))
     g.add((EX.isbn, EX.valor, Literal("4400-2154")))
-    g.add((EX.title, EX.valor, Literal("Cien años de soledad")))
-    # TODO El label de titulo debe ser otra tripleta ? 
+    g.add((EX.title, EX.valor, Literal("Cien años de soledad", lang="es")))
     
 
     for sujeto, _, objeto in g:
