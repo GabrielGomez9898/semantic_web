@@ -1,0 +1,3206 @@
+@prefix bib: <http://uniandes.edu.co/ws2026/vocab/lit#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+bib:Autor a rdfs:Class ;
+    rdfs:label "autor"@es ;
+    rdfs:comment "Persona que escribió al menos una obra literaria."@es .
+
+bib:Genero a rdfs:Class ;
+    rdfs:label "género"@es ;
+    rdfs:comment "Género literario."@es .
+
+bib:Lugar a rdfs:Class ;
+    rdfs:label "lugar"@es ;
+    rdfs:comment "Municipio, departamento o país."@es .
+
+bib:Obra a rdfs:Class ;
+    rdfs:label "obra"@es ;
+    rdfs:comment "Obra literaria, entendida como creación y no como ejemplar ni edición."@es .
+
+bib:Premio a rdfs:Class ;
+    rdfs:label "premio"@es ;
+    rdfs:comment "Distinción otorgada a una persona."@es .
+
+bib:Reconocimiento a rdfs:Class ;
+    rdfs:label "reconocimiento"@es ;
+    rdfs:comment "Hecho de que una persona recibió un premio, con su año cuando se conoce."@es .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q10296217-La-puta-de-Babilonia> a bib:Obra ;
+    rdfs:label "La puta de Babilonia"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q706272-Fernando-Vallejo> ;
+    bib:publicadaEn "2007"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q10296217> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q10340612-Ojos-de-perro-azul> a bib:Obra ;
+    rdfs:label "Ojos de perro azul"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q5878-Gabriel-Garcia-Marquez> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "1972"^^xsd:gYear,
+        "1974"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q10340612> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q105084760-En-este-pueblo-no-hay-ladrones> a bib:Obra ;
+    rdfs:label "En este pueblo no hay ladrones"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q5878-Gabriel-Garcia-Marquez> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "1962"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q105084760> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q107232540-De-viaje-por-los-paises-socialistas> a bib:Obra ;
+    rdfs:label "De viaje por los países socialistas"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q5878-Gabriel-Garcia-Marquez> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q107232540> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q109310931-Leopardo-al-sol> a bib:Obra ;
+    rdfs:label "Leopardo al sol"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q272163-Laura-Restrepo> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "1993"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q109310931> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q109353007-Fiebre-Tropical> a bib:Obra ;
+    rdfs:label "Fiebre Tropical"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q30068176-Julian-Delgado-Lopera> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q109353007> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q1132408-El-coronel-no-tiene-quien-le-escriba> a bib:Obra ;
+    rdfs:label "El coronel no tiene quien le escriba"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q5878-Gabriel-Garcia-Marquez> ;
+    bib:idioma "español latinoamericano"@es ;
+    bib:publicadaEn "1961"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1132408> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q114762018-The-Shape-of-the-Ruins> a bib:Obra ;
+    rdfs:label "The Shape of the Ruins"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q970649-Juan-Gabriel-Vasquez> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "2018"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q114762018> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q1167130-La-aventura-de-Miguel-Littin-clandestino-en-Chile> a bib:Obra ;
+    rdfs:label "La aventura de Miguel Littín clandestino en Chile"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q5878-Gabriel-Garcia-Marquez> ;
+    bib:genero <http://uniandes.edu.co/ws2026/recurso/genero/Q35760-ensayo> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "1985"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1167130> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q117733247-Un-beso-de-Dick> a bib:Obra ;
+    rdfs:label "Un beso de Dick"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q5859932-Fernando-Molano-Vargas> ;
+    bib:genero <http://uniandes.edu.co/ws2026/recurso/genero/Q223945-novela-de-aprendizaje>,
+        <http://uniandes.edu.co/ws2026/recurso/genero/Q3139891-literatura-de-tematica-LGBT> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "1992"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q117733247> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q117840916-Toa-narraciones-de-caucherias> a bib:Obra ;
+    rdfs:label "Toá: narraciones de caucherías"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q5796433-Cesar-Uribe> ;
+    bib:publicadaEn "1933"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q117840916> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q118213646-Grandeza-novela> a bib:Obra ;
+    rdfs:label "Grandeza (novela)"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q3071317-Tomas-Carrasquilla> ;
+    bib:publicadaEn "1910"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q118213646> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q1193847-El-general-en-su-laberinto> a bib:Obra ;
+    rdfs:label "El general en su laberinto"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q5878-Gabriel-Garcia-Marquez> ;
+    bib:genero <http://uniandes.edu.co/ws2026/recurso/genero/Q102439494-realismo-magico>,
+        <http://uniandes.edu.co/ws2026/recurso/genero/Q1196408-ficcion-historica>,
+        <http://uniandes.edu.co/ws2026/recurso/genero/Q1225344-novela-del-dictador> ;
+    bib:idioma "español"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1193847> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q121766100-La-siesta-del-martes> a bib:Obra ;
+    rdfs:label "La siesta del martes"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q5878-Gabriel-Garcia-Marquez> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q121766100> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q123133089-En-agosto-nos-vemos> a bib:Obra ;
+    rdfs:label "En agosto nos vemos"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q5878-Gabriel-Garcia-Marquez> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "2024"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q123133089> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q123414145-Memoria-sobre-la-historia-del-estudio-de-la-botanica-en-la-N> a bib:Obra ;
+    rdfs:label "Memoria sobre la historia del estudio de la botánica en la Nueva Granada"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q94505500-Florentino-Vezga> ;
+    bib:genero <http://uniandes.edu.co/ws2026/recurso/genero/Q185363-cronica> ;
+    bib:publicadaEn "1938"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q123414145> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q123414936-Marmol> a bib:Obra ;
+    rdfs:label "Mármol"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q16489216-Aurelio-Martinez-Mutis> ;
+    bib:genero <http://uniandes.edu.co/ws2026/recurso/genero/Q102316242-poesia-colombiana>,
+        <http://uniandes.edu.co/ws2026/recurso/genero/Q482-poesia> ;
+    bib:publicadaEn "1932"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q123414936> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q123415081-Versos-y-prosas-liricas> a bib:Obra ;
+    rdfs:label "Versos y prosas líricas"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q123410046-Luis-Enrique-Antolinez> ;
+    bib:genero <http://uniandes.edu.co/ws2026/recurso/genero/Q102316242-poesia-colombiana>,
+        <http://uniandes.edu.co/ws2026/recurso/genero/Q482-poesia> ;
+    bib:publicadaEn "1932"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q123415081> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q123415164-Ensayos-literarios-e-historicos> a bib:Obra ;
+    rdfs:label "Ensayos literarios e históricos"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q2883932-Carlos-Martinez-Silva> ;
+    bib:genero <http://uniandes.edu.co/ws2026/recurso/genero/Q35760-ensayo>,
+        <http://uniandes.edu.co/ws2026/recurso/genero/Q36279-biografia> ;
+    bib:publicadaEn "1932"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q123415164> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q123417399-Claridad> a bib:Obra ;
+    rdfs:label "Claridad"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q5486419-Blanca-Isaza-de-Jaramillo-Meza> ;
+    bib:genero <http://uniandes.edu.co/ws2026/recurso/genero/Q102316242-poesia-colombiana>,
+        <http://uniandes.edu.co/ws2026/recurso/genero/Q482-poesia> ;
+    bib:publicadaEn "1945"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q123417399> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q123417400-Las-letras-y-los-hombres> a bib:Obra ;
+    rdfs:label "Las letras y los hombres"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q104812770-Aquilino-Villegas-Hoyos> ;
+    bib:genero <http://uniandes.edu.co/ws2026/recurso/genero/Q102316242-poesia-colombiana>,
+        <http://uniandes.edu.co/ws2026/recurso/genero/Q35760-ensayo> ;
+    bib:publicadaEn "1945"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q123417400> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q123417402-Frutos-de-lucha> a bib:Obra ;
+    rdfs:label "Frutos de lucha"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q123413633-Francisco-Botero> ;
+    bib:genero <http://uniandes.edu.co/ws2026/recurso/genero/Q482-poesia> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "1938"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q123417402> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q123417404-Envejecer-y-mis-mejores-cuentos> a bib:Obra ;
+    rdfs:label "Envejecer y mis mejores cuentos"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q5818981-Eduardo-Arias-Suarez> ;
+    bib:publicadaEn "1944"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q123417404> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q123417487-Antologia-de-poetas-de-Antioquia> a bib:Obra ;
+    rdfs:label "Antología de poetas de Antioquia"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q9022153-Leon-Zafir> ;
+    bib:genero <http://uniandes.edu.co/ws2026/recurso/genero/Q102316242-poesia-colombiana>,
+        <http://uniandes.edu.co/ws2026/recurso/genero/Q482-poesia> ;
+    bib:publicadaEn "1953"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q123417487> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q123417488-Cuadros-de-la-naturaleza> a bib:Obra ;
+    rdfs:label "Cuadros de la naturaleza"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q5931710-Joaquin-Antonio-Uribe> ;
+    bib:publicadaEn "1958"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q123417488> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q123417489-El-nino-naturalista> a bib:Obra ;
+    rdfs:label "El niño naturalista"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q5931710-Joaquin-Antonio-Uribe> ;
+    bib:publicadaEn "1958"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q123417489> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q123467228-La-oracion-del-recuerdo> a bib:Obra ;
+    rdfs:label "La oración del recuerdo"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q123410046-Luis-Enrique-Antolinez> ;
+    bib:genero <http://uniandes.edu.co/ws2026/recurso/genero/Q182357-poesia-lirica> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "1901"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q123467228> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q123515109-Huellas-del-alma> a bib:Obra ;
+    rdfs:label "Huellas del alma"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q123514291-Francisco-A-Paillie-Arenas> ;
+    bib:genero <http://uniandes.edu.co/ws2026/recurso/genero/Q482-poesia> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "1986"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q123515109> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q123683560-Paginas-liricas> a bib:Obra ;
+    rdfs:label "Páginas líricas"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q123676081-Manuel-Maria-Astudillo> ;
+    bib:genero <http://uniandes.edu.co/ws2026/recurso/genero/Q482-poesia> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "1959"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q123683560> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q123696990-Valle-y-Montana-poesias> a bib:Obra ;
+    rdfs:label "Valle y Montaña : poesías"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q123694616-Camilo-Barrera-Vargas> ;
+    bib:genero <http://uniandes.edu.co/ws2026/recurso/genero/Q482-poesia> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "1920"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q123696990> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q123786081-Poesias> a bib:Obra ;
+    rdfs:label "Poesías"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q123766489-Daniel-Bayona-Posada> ;
+    bib:genero <http://uniandes.edu.co/ws2026/recurso/genero/Q482-poesia> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "1921"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q123786081> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q123943493-Siempre> a bib:Obra ;
+    rdfs:label "Siempre"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q61917151-Isabel-Bunch-de-Cortes> ;
+    bib:genero <http://uniandes.edu.co/ws2026/recurso/genero/Q182357-poesia-lirica>,
+        <http://uniandes.edu.co/ws2026/recurso/genero/Q482-poesia> ;
+    bib:idioma "español"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q123943493> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q124016798-El-arbol-que-canta> a bib:Obra ;
+    rdfs:label "El árbol que canta"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q5819087-Eduardo-Castillo> ;
+    bib:genero <http://uniandes.edu.co/ws2026/recurso/genero/Q182357-poesia-lirica> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "1928"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q124016798> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q124021906-Que-pase-el-aserrador> a bib:Obra ;
+    rdfs:label "Que pase el aserrador"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q106596335-Jesus-del-Corral-Botero> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "1937"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q124021906> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q124248875-El-hijo-de-la-otra> a bib:Obra ;
+    rdfs:label "El hijo de la otra"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q124228701-Francisco-Giraldo-Hernandez> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "1911"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q124248875> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q124312861-En-las-minas> a bib:Obra ;
+    rdfs:label "En las minas"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q5347197-Efe-Gomez> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "1897"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q124312861> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q124343812-Manolo> a bib:Obra ;
+    rdfs:label "Manolo"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q124343280-Pablo-Emilio-Gutierrez-Velez> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "1907"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q124343812> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q124352478-La-hora-de-la-ausencia> a bib:Obra ;
+    rdfs:label "La hora de la ausencia"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q124352411-Jorge-Eduardo-Guzman> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "1923"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q124352478> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q124360576-Tres-deseos> a bib:Obra ;
+    rdfs:label "Tres deseos"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q124359331-Concepcion-Jimenez-de-Araujo> ;
+    bib:genero <http://uniandes.edu.co/ws2026/recurso/genero/Q27036528-narracion> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "1901"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q124360576> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q124365746-Secretos-del-panoptico> a bib:Obra ;
+    rdfs:label "Secretos del panóptico"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q4684243-Adolfo-Leon-Gomez> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "1905"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q124365746> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q125435772-Psicologia-lirica> a bib:Obra ;
+    rdfs:label "Psicología lírica"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q125434705-Dionisio-Arango-Velez> ;
+    bib:idioma "español latinoamericano"@es ;
+    bib:publicadaEn "1924"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q125435772> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q125436080-La-nueva-cultura> a bib:Obra ;
+    rdfs:label "La nueva cultura"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q125434705-Dionisio-Arango-Velez> ;
+    bib:publicadaEn "1925"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q125436080> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q125576541-Tu-que-deliras> a bib:Obra ;
+    rdfs:label "Tú, que deliras"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q130397518-Andres-Arias> ;
+    bib:idioma "español"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q125576541> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q125657925-Sofoco> a bib:Obra ;
+    rdfs:label "Sofoco"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q130407709-Laura-Ortiz-Gomez> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "2021"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q125657925> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q125750738-Salt-Crystals> a bib:Obra ;
+    rdfs:label "Salt Crystals"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q112791077-Cristina-Bendek> ;
+    bib:idioma "español"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q125750738> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q125806345-Bon-Voyage-Mr-President-and-Other-Stories> a bib:Obra ;
+    rdfs:label "Bon Voyage Mr. President and Other Stories"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q5878-Gabriel-Garcia-Marquez> ;
+    bib:publicadaEn "1995"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q125806345> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q128776522-Dos-veces-Alicia> a bib:Obra ;
+    rdfs:label "Dos veces Alicia"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q4708986-Alba-Lucia-Angel> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q128776522> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q130544254-Los-ninos> a bib:Obra ;
+    rdfs:label "Los niños"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q5753276-Carolina-Sanin-Paz> ;
+    bib:publicadaEn "2014"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q130544254> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q130544430-Caperucita-se-come-al-lobo> a bib:Obra ;
+    rdfs:label "Caperucita se come al lobo"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q6075836-Pilar-Quintana> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "2020"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q130544430> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q130739238-Maria-de-los-Dinosaurios> a bib:Obra ;
+    rdfs:label "María de los Dinosaurios"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q29010854-Yolanda-Reyes> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q130739238> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q130740587-Todos-somos-culpables-poemas-y-cantos> a bib:Obra ;
+    rdfs:label "Todos somos culpables : poemas y cantos"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q5670267-Elcina-Valencia> ;
+    bib:genero <http://uniandes.edu.co/ws2026/recurso/genero/Q482-poesia> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "1993"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q130740587> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q130769429-Pentagrama-de-pasion> a bib:Obra ;
+    rdfs:label "Pentagrama de pasión"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q5670267-Elcina-Valencia> ;
+    bib:genero <http://uniandes.edu.co/ws2026/recurso/genero/Q482-poesia> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "2010"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q130769429> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q130813988-Almadres-negras-antologia-poetica> a bib:Obra ;
+    rdfs:label "Almadres negras : antología poética"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q5670267-Elcina-Valencia>,
+        <http://uniandes.edu.co/ws2026/recurso/autor/Q5982382-Lucrecia-Panchano>,
+        <http://uniandes.edu.co/ws2026/recurso/autor/Q6004696-Maria-Teresa-Ramirez-Nieva> ;
+    bib:genero <http://uniandes.edu.co/ws2026/recurso/genero/Q482-poesia> ;
+    bib:idioma "español"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q130813988> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q131089034-Las-ceremonias-del-verano> a bib:Obra ;
+    rdfs:label "Las ceremonias del verano"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q1902944-Marta-Traba> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q131089034> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q131106455-Siempre-es-posible-verlos-pasar> a bib:Obra ;
+    rdfs:label "Siempre es posible verlos pasar"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q55443104-Leonardo-Pena-Calderon> ;
+    bib:idioma "español"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q131106455> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q131106715-La-hoguera-lame-mi-piel-con-carino-de-perro> a bib:Obra ;
+    rdfs:label "La hoguera lame mi piel con cariño de perro"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q30929842-Adelaida-Fernandez-Ochoa> ;
+    bib:idioma "español"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q131106715> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q131287758-Impresiones-de-viaje-escritas-por-una-abuela-para-sus-nietos> a bib:Obra ;
+    rdfs:label "Impresiones de viaje escritas por una abuela para sus nietos"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q131287803-Isabel-Carrasquilla> ;
+    bib:publicadaEn "2011"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q131287758> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q132190977-Nightbane> a bib:Obra ;
+    rdfs:label "Nightbane"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q115972960-Alex-Aster> ;
+    bib:genero <http://uniandes.edu.co/ws2026/recurso/genero/Q8253-ficcion> ;
+    bib:idioma "inglés"@es ;
+    bib:publicadaEn "2023"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q132190977> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q135972987-Dubanta-Zahazar-Duranta-Navik> a bib:Obra ;
+    rdfs:label "Dubanta Zahazar Duranta Navik"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q5878-Gabriel-Garcia-Marquez> ;
+    bib:genero <http://uniandes.edu.co/ws2026/recurso/genero/Q676-prosa> ;
+    bib:idioma "idioma asamés"@es ;
+    bib:publicadaEn "2015"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q135972987> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q136653628-Sin-tetas-si-hay-paraiso> a bib:Obra ;
+    rdfs:label "Sin tetas sí hay paraíso"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q4353107-Gustavo-Bolivar> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "2015"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q136653628> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q138501575-Eva-esta-dentro-de-su-gato> a bib:Obra ;
+    rdfs:label "Eva está dentro de su gato"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q5878-Gabriel-Garcia-Marquez> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "1948"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q138501575> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q138637931-Dialogo-del-espejo> a bib:Obra ;
+    rdfs:label "Diálogo del espejo"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q5878-Gabriel-Garcia-Marquez> ;
+    bib:publicadaEn "1949"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q138637931> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q138658569-Chapinero> a bib:Obra ;
+    rdfs:label "Chapinero"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q10855532-Andres-Ospina> ;
+    bib:idioma "español"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q138658569> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q138665456-Bestias> a bib:Obra ;
+    rdfs:label "Bestias"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q34535656-Gabriela-A-Arciniegas> ;
+    bib:genero <http://uniandes.edu.co/ws2026/recurso/genero/Q1188977-Fantasia-urbana> ;
+    bib:idioma "español"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q138665456> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q138701844-Amargura-para-tres-sonambulos> a bib:Obra ;
+    rdfs:label "Amargura para tres sonámbulos"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q5878-Gabriel-Garcia-Marquez> ;
+    bib:publicadaEn "1949"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q138701844> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q138744626-Con-los-libreros-en-Cuba> a bib:Obra ;
+    rdfs:label "Con los libreros en Cuba"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q27865823-Alvaro-Castillo-Granada> ;
+    bib:genero <http://uniandes.edu.co/ws2026/recurso/genero/Q66744724-ficcion-biografica> ;
+    bib:idioma "español"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q138744626> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q138768284-Ojos-de-perro-azul> a bib:Obra ;
+    rdfs:label "Ojos de perro azul"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q5878-Gabriel-Garcia-Marquez> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "1950"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q138768284> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q138776249-Rosina-o-la-prision-del-castillo-de-Chagres> a bib:Obra ;
+    rdfs:label "Rosina o la prisión del castillo de Chagres"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q3187692-Juan-Jose-Nieto> ;
+    bib:idioma "español"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q138776249> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q138783819-Los-moriscos> a bib:Obra ;
+    rdfs:label "Los moriscos"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q3187692-Juan-Jose-Nieto> ;
+    bib:idioma "español"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q138783819> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q138791728-Muerte-en-el-anticuario> a bib:Obra ;
+    rdfs:label "Muerte en el anticuario"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q5927624-Javier-Correa-Correa> ;
+    bib:idioma "español"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q138791728> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q138821999-Blas-Gil> a bib:Obra ;
+    rdfs:label "Blas Gil"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q2838418-Jose-Manuel-Marroquin> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "1896"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q138821999> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q138833438-Suicidame> a bib:Obra ;
+    rdfs:label "Suicídame"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q130397518-Andres-Arias> ;
+    bib:idioma "español"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q138833438> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q138835273-La-mujer-que-llegaba-a-las-seis> a bib:Obra ;
+    rdfs:label "La mujer que llegaba a las seis"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q5878-Gabriel-Garcia-Marquez> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q138835273> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q138901290-El-museo-itinerante-de-la-senorita-Schaff> a bib:Obra ;
+    rdfs:label "El museo itinerante de la señorita Schaff"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q100758394-Hugo-Chaparro-Valderrama> ;
+    bib:idioma "español"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q138901290> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q138964998-La-noche-de-los-alcaravanes> a bib:Obra ;
+    rdfs:label "La noche de los alcaravanes"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q5878-Gabriel-Garcia-Marquez> ;
+    bib:idioma "español"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q138964998> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q138992805-El-camino-del-shakuhachi-Sopla-tu-mente-controla-tu-tono-Zen> a bib:Obra ;
+    rdfs:label "El camino del shakuhachi. Sopla tu mente controla tu tono. Zen a través de la flauta de bambú"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q138696591-Ricardo-Zapata-Luna> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q138992805> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q139269410-Alguien-desordena-estas-rosas> a bib:Obra ;
+    rdfs:label "Alguien desordena estas rosas"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q5878-Gabriel-Garcia-Marquez> ;
+    bib:publicadaEn "1952"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q139269410> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q139323410-Zuma-drama-en-tres-actos-y-en-prosa> a bib:Obra ;
+    rdfs:label "Zuma: drama en tres actos y en prosa"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q105754643-Waldina-Davila> ;
+    bib:publicadaEn "1892"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q139323410> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q139387397-Nabo-El-negro-que-hizo-esperar-a-los-angeles> a bib:Obra ;
+    rdfs:label "Nabo. El negro que hizo esperar a los angeles"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q5878-Gabriel-Garcia-Marquez> ;
+    bib:publicadaEn "1951"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q139387397> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q139449945-Cuentos-del-Cafe-flor> a bib:Obra ;
+    rdfs:label "Cuentos del Café flor"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q34535656-Gabriela-A-Arciniegas> ;
+    bib:genero <http://uniandes.edu.co/ws2026/recurso/genero/Q132311-fantasia> ;
+    bib:idioma "español"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q139449945> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q139483045-Ninja-corazon-sobre-la-espada> a bib:Obra ;
+    rdfs:label "Ninja corazón sobre la espada"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q138696591-Ricardo-Zapata-Luna> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q139483045> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q139502251-Monologo-de-Isabel-viendo-llover-en-Macondo> a bib:Obra ;
+    rdfs:label "Monólogo de Isabel viendo llover en Macondo"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q5878-Gabriel-Garcia-Marquez> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "1955"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q139502251> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q140181404-Dios-es-Gay> a bib:Obra ;
+    rdfs:label "Dios es Gay"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q140181372-Nicolas-Esteban> ;
+    bib:genero <http://uniandes.edu.co/ws2026/recurso/genero/Q106771443-LGBTQ-graphic-novel> ;
+    bib:idioma "español"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q140181404> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q140800392-Kunguma-Zesiwa> a bib:Obra ;
+    rdfs:label "Kunguma Zesiwa"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q140800274-Lorenzo-Gabriel-Gil> ;
+    bib:genero <http://uniandes.edu.co/ws2026/recurso/genero/Q482-poesia> ;
+    bib:idioma "Damana"@es ;
+    bib:publicadaEn "2025"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q140800392> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q141136121-A-mi-amiga-la-sensible-poetisa-Leonor-Blander> a bib:Obra ;
+    rdfs:label "A mi amiga: la sensible poetisa Leonor Blander"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q10849947-Agripina-Montes-del-Valle> ;
+    bib:genero <http://uniandes.edu.co/ws2026/recurso/genero/Q482-poesia> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "1864"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q141136121> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q141136203-Marsolaire> a bib:Obra ;
+    rdfs:label "Marsolaire"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q5672703-Amira-de-la-Rosa> ;
+    bib:genero <http://uniandes.edu.co/ws2026/recurso/genero/Q837024-realismo-social> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "1941"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q141136203> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q141136305-Los-hijos-de-ella> a bib:Obra ;
+    rdfs:label "Los hijos de ella"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q5672703-Amira-de-la-Rosa> ;
+    bib:idioma "español"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q141136305> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q141136387-Madre-borrada> a bib:Obra ;
+    rdfs:label "Madre borrada"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q5672703-Amira-de-la-Rosa> ;
+    bib:idioma "español"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q141136387> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q141136496-Las-viudas-de-Zacarias> a bib:Obra ;
+    rdfs:label "Las viudas de Zacarías"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q5672703-Amira-de-la-Rosa> ;
+    bib:genero <http://uniandes.edu.co/ws2026/recurso/genero/Q25372-drama> ;
+    bib:idioma "español"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q141136496> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q141136563-Cuentos-Reales> a bib:Obra ;
+    rdfs:label "Cuentos Reales"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q140469425-Rosario-Grillo-de-Salgado> ;
+    bib:publicadaEn "1947"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q141136563> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q1513486-La-hojarasca> a bib:Obra ;
+    rdfs:label "La hojarasca"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q5878-Gabriel-Garcia-Marquez> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "1955"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1513486> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q15961918-Flora-de-Antioquia> a bib:Obra ;
+    rdfs:label "Flora de Antioquia"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q5931710-Joaquin-Antonio-Uribe> ;
+    bib:idioma "español"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q15961918> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q16560410-El-divino> a bib:Obra ;
+    rdfs:label "El divino"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q1556811-Gustavo-Alvarez-Gardeazabal> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "1987"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q16560410> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q16578726-Ingermina-o-la-hija-de-Calamar> a bib:Obra ;
+    rdfs:label "Ingermina o la hija de Calamar"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q3187692-Juan-Jose-Nieto> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q16578726> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q17075089-La-Maestra> a bib:Obra ;
+    rdfs:label "La Maestra"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q3054665-Enrique-Buenaventura> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q17075089> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q178869-Cien-anos-de-soledad> a bib:Obra ;
+    rdfs:label "Cien años de soledad"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q5878-Gabriel-Garcia-Marquez> ;
+    bib:genero <http://uniandes.edu.co/ws2026/recurso/genero/Q147516-realismo-magico> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "1967"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q178869> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q17995280-Keres-cojer-Guan-tu-fak> a bib:Obra ;
+    rdfs:label "Keres cojer? = Guan tu fak"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q16145316-Alejandro-Lopez> ;
+    bib:genero <http://uniandes.edu.co/ws2026/recurso/genero/Q18211073-literatura-LGBT> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "2005"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q17995280> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q18595910-La-guerra-y-la-paz> a bib:Obra ;
+    rdfs:label "La guerra y la paz"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q2420039-Santiago-Gamboa> ;
+    bib:genero <http://uniandes.edu.co/ws2026/recurso/genero/Q213051-no-ficcion> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "2014"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q18595910> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q18748666-Me-alquilo-para-sonar> a bib:Obra ;
+    rdfs:label "Me alquilo para soñar"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q5878-Gabriel-Garcia-Marquez> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "1992"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q18748666> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q19213561-La-tejedora-de-coronas> a bib:Obra ;
+    rdfs:label "La tejedora de coronas"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q3039682-German-Espinosa> ;
+    bib:genero <http://uniandes.edu.co/ws2026/recurso/genero/Q1196408-ficcion-historica> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "1982"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q19213561> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q19411051-A-la-mudanza-de-la-fortuna> a bib:Obra ;
+    rdfs:label "A la mudanza de la fortuna"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q3189799-Julio-Arboleda-Pombo> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q19411051> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q19411123-A-la-plata> a bib:Obra ;
+    rdfs:label "A la plata"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q3071317-Tomas-Carrasquilla> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q19411123> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q19412681-Adios> a bib:Obra ;
+    rdfs:label "Adiós"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q10849947-Agripina-Montes-del-Valle> ;
+    bib:genero <http://uniandes.edu.co/ws2026/recurso/genero/Q482-poesia> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "1866"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q19412681> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q19425232-De-noche> a bib:Obra ;
+    rdfs:label "De noche"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q1661285-Rafael-Pombo> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q19425232> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q19436099-El-corazon-de-la-mujer> a bib:Obra ;
+    rdfs:label "El corazón de la mujer"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q7557523-Soledad-Acosta-de-Samper> ;
+    bib:idioma "español"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q19436099> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q19439102-El-renacuajo-paseador> a bib:Obra ;
+    rdfs:label "El renacuajo paseador"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q1661285-Rafael-Pombo> ;
+    bib:idioma "español"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q19439102> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q19447021-Infancia> a bib:Obra ;
+    rdfs:label "Infancia"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q2983255-Josee-Asuncion-Silva> ;
+    bib:idioma "español"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q19447021> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q19447026-Infeliz-del-que-busca> a bib:Obra ;
+    rdfs:label "Infeliz del que busca"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q3189799-Julio-Arboleda-Pombo> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q19447026> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q19449193-La-calavera> a bib:Obra ;
+    rdfs:label "La calavera"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q2983255-Josee-Asuncion-Silva> ;
+    bib:genero <http://uniandes.edu.co/ws2026/recurso/genero/Q482-poesia> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q19449193> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q19454609-Lejos-del-nido> a bib:Obra ;
+    rdfs:label "Lejos del nido"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q5950173-Juan-Jose-Botero-Ruiz> ;
+    bib:genero <http://uniandes.edu.co/ws2026/recurso/genero/Q538812-novela-de-costumbres> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "1924"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q19454609> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q19459717-Mirringa-Mirronga> a bib:Obra ;
+    rdfs:label "Mirringa Mirronga"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q1661285-Rafael-Pombo> ;
+    bib:genero <http://uniandes.edu.co/ws2026/recurso/genero/Q482-poesia> ;
+    bib:idioma "español"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q19459717> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q19466784-Nocturno-1> a bib:Obra ;
+    rdfs:label "Nocturno 1"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q2983255-Josee-Asuncion-Silva> ;
+    bib:genero <http://uniandes.edu.co/ws2026/recurso/genero/Q482-poesia> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q19466784> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q19466882-Novelas-y-cuadros-de-la-vida-sur-americana> a bib:Obra ;
+    rdfs:label "Novelas y cuadros de la vida sur-americana"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q7557523-Soledad-Acosta-de-Samper> ;
+    bib:idioma "español"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q19466882> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q19484432-Poeta-di-paso> a bib:Obra ;
+    rdfs:label "Poeta, di paso"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q2983255-Josee-Asuncion-Silva> ;
+    bib:genero <http://uniandes.edu.co/ws2026/recurso/genero/Q482-poesia> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q19484432> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q19486190-Realidad> a bib:Obra ;
+    rdfs:label "Realidad"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q2983255-Josee-Asuncion-Silva> ;
+    bib:idioma "español"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q19486190> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q19486949-Resto-del-bosque-inmemorial> a bib:Obra ;
+    rdfs:label "Resto del bosque inmemorial"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q3189799-Julio-Arboleda-Pombo> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q19486949> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q19490629-Teresa-la-Limena> a bib:Obra ;
+    rdfs:label "Teresa la Limeña"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q7557523-Soledad-Acosta-de-Samper> ;
+    bib:idioma "español"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q19490629> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q1977971-Los-funerales-de-la-Mama-Grande> a bib:Obra ;
+    rdfs:label "Los funerales de la Mamá Grande"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q5878-Gabriel-Garcia-Marquez> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "1962"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1977971> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q19859625-Scorpio-City> a bib:Obra ;
+    rdfs:label "Scorpio City"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q17460798-Mario-Mendoza> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "1998"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q19859625> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q19860348-La-ciudad-de-los-umbrales> a bib:Obra ;
+    rdfs:label "La ciudad de los umbrales"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q17460798-Mario-Mendoza> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "1994"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q19860348> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q20013641-Buen-viaje-senor-presidente> a bib:Obra ;
+    rdfs:label "Buen viaje, señor presidente"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q5878-Gabriel-Garcia-Marquez> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "1997"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q20013641> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q20014901-Espantos-de-agosto> a bib:Obra ;
+    rdfs:label "Espantos de agosto"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q5878-Gabriel-Garcia-Marquez> ;
+    bib:genero <http://uniandes.edu.co/ws2026/recurso/genero/Q16575965-terror> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "1992"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q20014901> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q20017040-La-carroza-de-Bolivar> a bib:Obra ;
+    rdfs:label "La carroza de Bolívar"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q5416270-Evelio-Rosero> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q20017040> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q20017057-La-santa> a bib:Obra ;
+    rdfs:label "La santa"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q5878-Gabriel-Garcia-Marquez> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "1982"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q20017057> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q20017190-Martirio> a bib:Obra ;
+    rdfs:label "Martirio"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q22959763-Andres-Salgado> ;
+    bib:publicadaEn "2014"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q20017190> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q20017192-Maria-dos-Prazeres> a bib:Obra ;
+    rdfs:label "María dos Prazeres"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q5878-Gabriel-Garcia-Marquez> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "1992"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q20017192> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q20019029-Solo-vine-a-hablar-por-telefono> a bib:Obra ;
+    rdfs:label "Sólo vine a hablar por teléfono"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q5878-Gabriel-Garcia-Marquez> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "1974"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q20019029> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q20921249-Diecisiete-ingleses-envenenados> a bib:Obra ;
+    rdfs:label "Diecisiete ingleses envenenados"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q5878-Gabriel-Garcia-Marquez> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "1992"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q20921249> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q20921272-El-verano-feliz-de-la-senora-Forbes> a bib:Obra ;
+    rdfs:label "El verano feliz de la señora Forbes"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q5878-Gabriel-Garcia-Marquez> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "1981"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q20921272> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q20921344-El-verano-feliz-de-la-senora-Forbes> a bib:Obra ;
+    rdfs:label "El verano feliz de la señora Forbes"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q5878-Gabriel-Garcia-Marquez> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "1992"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q20921344> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q21426748-El-triple-campeon-revela-sus-secretos> a bib:Obra ;
+    rdfs:label "El triple campeón revela sus secretos"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q5878-Gabriel-Garcia-Marquez> ;
+    bib:genero <http://uniandes.edu.co/ws2026/recurso/genero/Q124922-reportaje> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "1955"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q21426748> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q24068389-Viva-Sandino> a bib:Obra ;
+    rdfs:label "Viva Sandino!"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q5878-Gabriel-Garcia-Marquez> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "1982"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q24068389> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q24185004-Angosta> a bib:Obra ;
+    rdfs:label "Angosta"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q1642753-Hector-Abad-Faciolince> ;
+    bib:genero <http://uniandes.edu.co/ws2026/recurso/genero/Q24925-ciencia-ficcion> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "2003"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q24185004> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q24944130-Bajo-el-cielo-e-Valledupar> a bib:Obra ;
+    rdfs:label "Bajo el cielo e' Valledupar"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q24827230-Julio-Onate-Martinez> ;
+    bib:genero <http://uniandes.edu.co/ws2026/recurso/genero/Q27801-literatura-de-no-ficcion> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "2010"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q24944130> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q25408151-Cobro-de-sangre> a bib:Obra ;
+    rdfs:label "Cobro de sangre"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q17460798-Mario-Mendoza> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "2004"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q25408151> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q25409533-Juan-Gil> a bib:Obra ;
+    rdfs:label "Juan Gil"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q940428-Jose-Eustasio-Rivera> ;
+    bib:publicadaEn "1911"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q25409533> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q25410001-Chango-el-gran-putas> a bib:Obra ;
+    rdfs:label "Changó, el gran putas"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q3286947-Manuel-Zapata-Olivella> ;
+    bib:idioma "español"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q25410001> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q25410692-Triptico-de-la-infamia> a bib:Obra ;
+    rdfs:label "Tríptico de la infamia"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q6056241-Pablo-Montoya> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "2014"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q25410692> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q25415115-Cartas-Cruzadas> a bib:Obra ;
+    rdfs:label "Cartas Cruzadas"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q5799522-Dario-Jaramillo> ;
+    bib:genero <http://uniandes.edu.co/ws2026/recurso/genero/Q3305034-polifonia>,
+        <http://uniandes.edu.co/ws2026/recurso/genero/Q465821-novela-epistolar> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "1995"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q25415115> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q2626841-Noticia-de-un-secuestro> a bib:Obra ;
+    rdfs:label "Noticia de un secuestro"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q5878-Gabriel-Garcia-Marquez> ;
+    bib:genero <http://uniandes.edu.co/ws2026/recurso/genero/Q213051-no-ficcion> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "1996"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q2626841> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q267650-Del-amor-y-otros-demonios> a bib:Obra ;
+    rdfs:label "Del amor y otros demonios"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q5878-Gabriel-Garcia-Marquez> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "1994"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q267650> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q28043950-La-naturaleza> a bib:Obra ;
+    rdfs:label "La naturaleza"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q30610646-Jose-Maria-Rivas-Groot> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "1895"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q28043950> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q2892649-La-aldea-de-las-viudas> a bib:Obra ;
+    rdfs:label "La aldea de las viudas"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q5678883-James-Canon> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q2892649> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q3211073-La-nieve-del-almirante> a bib:Obra ;
+    rdfs:label "La nieve del almirante"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q251123-Alvaro-Mutis> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "1986"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q3211073> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q3395402-Doce-cuentos-peregrinos> a bib:Obra ;
+    rdfs:label "Doce cuentos peregrinos"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q5878-Gabriel-Garcia-Marquez> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "1992"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q3395402> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q3705027-Delirio> a bib:Obra ;
+    rdfs:label "Delirio"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q272163-Laura-Restrepo> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "2004"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q3705027> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q4168654-La-otra-costilla-de-la-muerte> a bib:Obra ;
+    rdfs:label "La otra costilla de la muerte"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q5878-Gabriel-Garcia-Marquez> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "1972"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q4168654> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q42184865-Frutos-de-mi-tierra> a bib:Obra ;
+    rdfs:label "Frutos de mi tierra"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q3071317-Tomas-Carrasquilla> ;
+    bib:idioma "español latinoamericano"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q42184865> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q42193628-Obras-completas> a bib:Obra ;
+    rdfs:label "Obras completas"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q2494262-Leon-de-Greiff> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "1960"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q42193628> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q428533-Entre-fantasmas> a bib:Obra ;
+    rdfs:label "Entre fantasmas"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q706272-Fernando-Vallejo> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "1993"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q428533> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q4340672-Un-senor-muy-viejo-con-unas-alas-enormes> a bib:Obra ;
+    rdfs:label "Un señor muy viejo con unas alas enormes"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q5878-Gabriel-Garcia-Marquez> ;
+    bib:genero <http://uniandes.edu.co/ws2026/recurso/genero/Q130232-drama> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "1968"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q4340672> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q47512794-De-los-medios-a-las-mediaciones-Comunicacion-cultura-y-hegem> a bib:Obra ;
+    rdfs:label "De los medios a las mediaciones. Comunicación, cultura y hegemonía"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q10306865-Jesus-Martin-Barbero> ;
+    bib:genero <http://uniandes.edu.co/ws2026/recurso/genero/Q213051-no-ficcion> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "1987"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q47512794> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q499396-El-amor-en-los-tiempos-del-colera> a bib:Obra ;
+    rdfs:label "El amor en los tiempos del cólera"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q5878-Gabriel-Garcia-Marquez> ;
+    bib:genero <http://uniandes.edu.co/ws2026/recurso/genero/Q858330-novela-romantica> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "1985"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q499396> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q50329326-La-memoria> a bib:Obra ;
+    rdfs:label "La memoria"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q1661285-Rafael-Pombo> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q50329326> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q50345404-Taller-moderno> a bib:Obra ;
+    rdfs:label "Taller moderno"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q2983255-Josee-Asuncion-Silva> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q50345404> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q50358531-A-un-pesimista> a bib:Obra ;
+    rdfs:label "A un pesimista"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q2983255-Josee-Asuncion-Silva> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q50358531> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q50358567-A-Adriana> a bib:Obra ;
+    rdfs:label "A Adriana"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q2983255-Josee-Asuncion-Silva> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q50358567> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q51503515-Memoria-sobre-la-historia-del-estudio-de-la-botanica-en-la-N> a bib:Obra ;
+    rdfs:label "Memoria sobre la historia del estudio de la botánica en la Nueva Granada"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q94505500-Florentino-Vezga> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "1861"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q51503515> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q5350944-El-Carnero> a bib:Obra ;
+    rdfs:label "El Carnero"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q5952360-Juan-Rodriguez-Freyle> ;
+    bib:genero <http://uniandes.edu.co/ws2026/recurso/genero/Q185363-cronica> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "1863"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5350944> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q55284450-Las-tres-orillas> a bib:Obra ;
+    rdfs:label "Las tres orillas"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q55255635-Fennys-Tovar> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "2015"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q55284450> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q56377429-La-tercera-resignacion> a bib:Obra ;
+    rdfs:label "La tercera resignación"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q5878-Gabriel-Garcia-Marquez> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "1947"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q56377429> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q5669688-Almas-en-pena-chapolas-negras> a bib:Obra ;
+    rdfs:label "Almas en pena, chapolas negras"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q706272-Fernando-Vallejo> ;
+    bib:publicadaEn "1995"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5669688> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q5671707-Amando-a-Pablo-odiando-a-Escobar> a bib:Obra ;
+    rdfs:label "Amando a Pablo, odiando a Escobar"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q7934646-Virginia-Vallejo-De-Escobar> ;
+    bib:genero <http://uniandes.edu.co/ws2026/recurso/genero/Q36279-biografia> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "2007"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5671707> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q5684685-La-mansion-de-Araucaima> a bib:Obra ;
+    rdfs:label "La mansión de Araucaíma"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q251123-Alvaro-Mutis> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5684685> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q5687655-Alba-roja-Paris> a bib:Obra ;
+    rdfs:label "Alba roja, París"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q622861-Jose-Maria-Vargas-Vila> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "1901"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5687655> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q5689811-Donde-esta-la-franja-amarilla> a bib:Obra ;
+    rdfs:label "¿Dónde está la franja amarilla?"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q3568859-William-Ospina> ;
+    bib:idioma "español"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5689811> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q5700858-Apaporis-viaje-a-la-ultima-selva> a bib:Obra ;
+    rdfs:label "Apaporis, viaje a la última selva"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q5667870-Alfredo-Molano-Bravo> ;
+    bib:publicadaEn "2002"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5700858> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q5715476-Anos-de-indulgencia> a bib:Obra ;
+    rdfs:label "Años de indulgencia"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q706272-Fernando-Vallejo> ;
+    bib:publicadaEn "1989"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5715476> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q5748734-Capitulos-que-se-le-olvidaron-a-Cervantes> a bib:Obra ;
+    rdfs:label "Capítulos que se le olvidaron a Cervantes"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q1394572-Juan-Montalvo> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "1895"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5748734> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q5814973-Dulce-compania> a bib:Obra ;
+    rdfs:label "Dulce compañía"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q272163-Laura-Restrepo> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "1995"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5814973> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q5824623-El-desbarrancadero> a bib:Obra ;
+    rdfs:label "El desbarrancadero"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q706272-Fernando-Vallejo> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "2001"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5824623> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q5824755-El-don-de-la-vida> a bib:Obra ;
+    rdfs:label "El don de la vida"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q706272-Fernando-Vallejo> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5824755> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q5825718-El-mensajero> a bib:Obra ;
+    rdfs:label "El mensajero"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q706272-Fernando-Vallejo> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5825718> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q5826076-El-pais-de-la-canela> a bib:Obra ;
+    rdfs:label "El país de la canela"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q3568859-William-Ospina> ;
+    bib:publicadaEn "2008"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5826076> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q5826521-El-ruido-de-las-cosas-al-caer> a bib:Obra ;
+    rdfs:label "El ruido de las cosas al caer"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q970649-Juan-Gabriel-Vasquez> ;
+    bib:genero <http://uniandes.edu.co/ws2026/recurso/genero/Q622291-thriller-politico> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "2011"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5826521> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q5826542-El-rio-del-tiempo> a bib:Obra ;
+    rdfs:label "El río del tiempo"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q706272-Fernando-Vallejo> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5826542> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q5850407-Satanas> a bib:Obra ;
+    rdfs:label "Satanás"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q17460798-Mario-Mendoza> ;
+    bib:genero <http://uniandes.edu.co/ws2026/recurso/genero/Q26221026-ficcion-noir> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "2002"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5850407> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q5907885-Ibis> a bib:Obra ;
+    rdfs:label "Ibis"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q622861-Jose-Maria-Vargas-Vila> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "1900"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5907885> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q5964260-La-marquesa-de-Yolombo> a bib:Obra ;
+    rdfs:label "La marquesa de Yolombó"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q3071317-Tomas-Carrasquilla> ;
+    bib:idioma "español latinoamericano"@es ;
+    bib:publicadaEn "1928"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5964260> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q5965013-La-Rambla-paralela> a bib:Obra ;
+    rdfs:label "La Rambla paralela"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q706272-Fernando-Vallejo> ;
+    bib:publicadaEn "2002"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5965013> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q5967601-La-novia-oscura> a bib:Obra ;
+    rdfs:label "La novia oscura"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q272163-Laura-Restrepo> ;
+    bib:publicadaEn "1999"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5967601> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q5967707-La-otra-raya-del-tigre> a bib:Obra ;
+    rdfs:label "La otra raya del tigre"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q3753480-Pedro-Gomez-Valderrama> ;
+    bib:genero <http://uniandes.edu.co/ws2026/recurso/genero/Q538812-novela-de-costumbres> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "1977"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5967707> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q5967963-La-rebelion-de-las-ratas> a bib:Obra ;
+    rdfs:label "La rebelión de las ratas"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q5860273-Fernando-Soto-Aparicio> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "1962"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5967963> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q5968195-La-tautologia-darwinista> a bib:Obra ;
+    rdfs:label "La tautología darwinista"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q706272-Fernando-Vallejo> ;
+    bib:idioma "español"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5968195> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q5970304-Las-Catilinarias> a bib:Obra ;
+    rdfs:label "Las Catilinarias"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q1394572-Juan-Montalvo> ;
+    bib:genero <http://uniandes.edu.co/ws2026/recurso/genero/Q35760-ensayo> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "1880"^^xsd:gYear,
+        "1881"^^xsd:gYear,
+        "1882"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5970304> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q5978379-Logoi-una-gramatica-del-lenguaje-literario> a bib:Obra ;
+    rdfs:label "Logoi: una gramática del lenguaje literario"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q706272-Fernando-Vallejo> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5978379> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q5980678-Los-caminos-a-Roma> a bib:Obra ;
+    rdfs:label "Los caminos a Roma"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q706272-Fernando-Vallejo> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5980678> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q5980824-Los-dias-azules> a bib:Obra ;
+    rdfs:label "Los días azules"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q706272-Fernando-Vallejo> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5980824> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q5981213-Suenos-de-Luciano-Pulgar> a bib:Obra ;
+    rdfs:label "Sueños de Luciano Pulgar"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q3045986-Marco-Fidel-Suarez> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5981213> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q5992025-Manualito-de-imposturologia-fisica> a bib:Obra ;
+    rdfs:label "Manualito de imposturología física"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q706272-Fernando-Vallejo> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "2004"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5992025> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q6012456-Mi-hermano-el-alcalde> a bib:Obra ;
+    rdfs:label "Mi hermano el alcalde"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q706272-Fernando-Vallejo> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q6012456> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q6128122-Siete-tratados> a bib:Obra ;
+    rdfs:label "Siete tratados"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q1394572-Juan-Montalvo> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q6128122> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q6129038-Sin-tetas-no-hay-paraiso> a bib:Obra ;
+    rdfs:label "Sin tetas no hay paraíso"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q4353107-Gustavo-Bolivar> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "2005"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q6129038> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q6159483-Vampyr> a bib:Obra ;
+    rdfs:label "Vampyr"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q47114497-Carolina-Andujar> ;
+    bib:genero <http://uniandes.edu.co/ws2026/recurso/genero/Q111019576-ficcion-de-vampiros>,
+        <http://uniandes.edu.co/ws2026/recurso/genero/Q19765983-ficcion-romantica>,
+        <http://uniandes.edu.co/ws2026/recurso/genero/Q20669641-ficcion-gotica>,
+        <http://uniandes.edu.co/ws2026/recurso/genero/Q5937792-genero-policiaco> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q6159483> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q6170112-Yo-no-vengo-a-decir-un-discurso> a bib:Obra ;
+    rdfs:label "Yo no vengo a decir un discurso"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q5878-Gabriel-Garcia-Marquez> ;
+    bib:publicadaEn "2010"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q6170112> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q62004506-Ursua> a bib:Obra ;
+    rdfs:label "Ursúa"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q3568859-William-Ospina> ;
+    bib:publicadaEn "2005"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q62004506> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q63226738-Cuatro-anos-a-bordo-de-mi-mismo> a bib:Obra ;
+    rdfs:label "Cuatro años a bordo de mí mismo"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q5677081-Eduardo-Zalamea-Borda> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "1934"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q63226738> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q7679301-Tales-from-the-Town-of-Widows> a bib:Obra ;
+    rdfs:label "Tales from the Town of Widows"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q5678883-James-Canon> ;
+    bib:publicadaEn "2007"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q7679301> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q7712487-Empresas-y-tribulaciones-de-Maqroll-el-Gaviero> a bib:Obra ;
+    rdfs:label "Empresas y tribulaciones de Maqroll el Gaviero"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q251123-Alvaro-Mutis> ;
+    bib:publicadaEn "1993"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q7712487> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q7738740-El-ahogado-mas-hermoso-del-mundo> a bib:Obra ;
+    rdfs:label "El ahogado más hermoso del mundo"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q5878-Gabriel-Garcia-Marquez> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "1968"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q7738740> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q7756697-The-Perfect-Matrimony> a bib:Obra ;
+    rdfs:label "The Perfect Matrimony"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q527908-Samael-Aun-Weor> ;
+    bib:publicadaEn "1961"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q7756697> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q7773101-La-voragine> a bib:Obra ;
+    rdfs:label "La vorágine"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q940428-Jose-Eustasio-Rivera> ;
+    bib:genero <http://uniandes.edu.co/ws2026/recurso/genero/Q971480-literatura-modernista> ;
+    bib:publicadaEn "1924"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q7773101> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q8076376-Que-viva-la-musica> a bib:Obra ;
+    rdfs:label "¡Que viva la música!"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q2849011-Andres-Caicedo> ;
+    bib:genero <http://uniandes.edu.co/ws2026/recurso/genero/Q8253-ficcion> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "1977"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q8076376> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q820591-Relato-de-un-naufrago> a bib:Obra ;
+    rdfs:label "Relato de un náufrago"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q5878-Gabriel-Garcia-Marquez> ;
+    bib:genero <http://uniandes.edu.co/ws2026/recurso/genero/Q182015-suspenso>,
+        <http://uniandes.edu.co/ws2026/recurso/genero/Q27801-literatura-de-no-ficcion> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "1955"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q820591> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q9027572-Manual-del-perfecto-idiota-latinoamericano> a bib:Obra ;
+    rdfs:label "Manual del perfecto idiota latinoamericano"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q3392455-Plinio-Apuleyo-Mendoza> ;
+    bib:idioma "español"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q9027572> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q9052597-Operacion-Jaque-la-verdadera-historia> a bib:Obra ;
+    rdfs:label "Operación Jaque, la verdadera historia"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q5858407-Juan-Carlos-Torres> ;
+    bib:publicadaEn "2008"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q9052597> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q926145-La-virgen-de-los-sicarios> a bib:Obra ;
+    rdfs:label "La virgen de los sicarios"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q706272-Fernando-Vallejo> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "1994"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q926145> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q935935-Cronica-de-una-muerte-anunciada> a bib:Obra ;
+    rdfs:label "Crónica de una muerte anunciada"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q5878-Gabriel-Garcia-Marquez> ;
+    bib:genero <http://uniandes.edu.co/ws2026/recurso/genero/Q182015-suspenso>,
+        <http://uniandes.edu.co/ws2026/recurso/genero/Q6585139-misterio> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "1981"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q935935> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q947073-La-increible-y-triste-historia-de-la-candida-Erendira-y-de-s> a bib:Obra ;
+    rdfs:label "La increíble y triste historia de la cándida Eréndira y de su abuela desalmada"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q5878-Gabriel-Garcia-Marquez> ;
+    bib:idioma "español"@es ;
+    bib:publicadaEn "1972"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q947073> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q96401662-Return-to-the-Dark-Valley> a bib:Obra ;
+    rdfs:label "Return to the Dark Valley"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q2420039-Santiago-Gamboa> ;
+    bib:idioma "español"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q96401662> .
+
+<http://uniandes.edu.co/ws2026/recurso/obra/Q97015797-La-casa-grande> a bib:Obra ;
+    rdfs:label "La casa grande"@es ;
+    bib:autor <http://uniandes.edu.co/ws2026/recurso/autor/Q3576974-Alvaro-Cepeda-Samudio> ;
+    bib:idioma "español"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q97015797> .
+
+bib:anio a rdf:Property ;
+    rdfs:label "año"@es ;
+    rdfs:comment "Año en que se otorgó el reconocimiento."@es ;
+    rdfs:domain bib:Reconocimiento .
+
+bib:anioFallecimiento a rdf:Property ;
+    rdfs:label "año de fallecimiento"@es ;
+    rdfs:comment "Año de fallecimiento. Su ausencia no significa que la persona esté viva."@es ;
+    rdfs:domain bib:Autor .
+
+bib:anioNacimiento a rdf:Property ;
+    rdfs:label "año de nacimiento"@es ;
+    rdfs:comment "Año de nacimiento."@es ;
+    rdfs:domain bib:Autor .
+
+bib:autor a rdf:Property ;
+    rdfs:label "autor"@es ;
+    rdfs:comment "Persona que escribió la obra."@es ;
+    rdfs:domain bib:Obra ;
+    rdfs:range bib:Autor .
+
+bib:fechaNacimiento a rdf:Property ;
+    rdfs:label "fecha de nacimiento"@es ;
+    rdfs:comment "Fecha completa de nacimiento. Solo está cuando Wikidata la registra con precisión de día."@es ;
+    rdfs:domain bib:Autor .
+
+bib:genero a rdf:Property ;
+    rdfs:label "género"@es ;
+    rdfs:comment "Género literario de la obra."@es ;
+    rdfs:domain bib:Obra ;
+    rdfs:range bib:Genero .
+
+bib:idioma a rdf:Property ;
+    rdfs:label "idioma"@es ;
+    rdfs:comment "Idioma en que se escribió la obra."@es ;
+    rdfs:domain bib:Obra .
+
+bib:lugarNacimiento a rdf:Property ;
+    rdfs:label "lugar de nacimiento"@es ;
+    rdfs:comment "Municipio de nacimiento."@es ;
+    rdfs:domain bib:Autor ;
+    rdfs:range bib:Lugar .
+
+bib:premio a rdf:Property ;
+    rdfs:label "premio"@es ;
+    rdfs:comment "Premio del reconocimiento."@es ;
+    rdfs:domain bib:Reconocimiento ;
+    rdfs:range bib:Premio .
+
+bib:publicadaEn a rdf:Property ;
+    rdfs:label "publicada en"@es ;
+    rdfs:comment "Año de primera publicación."@es ;
+    rdfs:domain bib:Obra .
+
+bib:reconocimiento a rdf:Property ;
+    rdfs:label "reconocimiento"@es ;
+    rdfs:comment "Reconocimiento recibido por la persona."@es ;
+    rdfs:domain bib:Autor ;
+    rdfs:range bib:Reconocimiento .
+
+bib:ubicadoEn a rdf:Property ;
+    rdfs:label "ubicado en"@es ;
+    rdfs:comment "Unidad territorial que contiene a esta."@es ;
+    rdfs:domain bib:Lugar ;
+    rdfs:range bib:Lugar .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q100758394-Hugo-Chaparro-Valderrama> a bib:Autor ;
+    rdfs:label "Hugo Chaparro Valderrama"@es ;
+    bib:anioNacimiento "1961"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q100758394> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q10306865-Jesus-Martin-Barbero> a bib:Autor ;
+    rdfs:label "Jesús Martín-Barbero"@es ;
+    bib:anioFallecimiento "2021"^^xsd:gYear ;
+    bib:anioNacimiento "1937"^^xsd:gYear ;
+    bib:fechaNacimiento "1937-10-03"^^xsd:date ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q285411-Cardenosa> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q10306865> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q104812770-Aquilino-Villegas-Hoyos> a bib:Autor ;
+    rdfs:label "Aquilino Villegas Hoyos"@es ;
+    bib:anioFallecimiento "1940"^^xsd:gYear ;
+    bib:anioNacimiento "1880"^^xsd:gYear ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q235190-Manizales> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q104812770> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q105754643-Waldina-Davila> a bib:Autor ;
+    rdfs:label "Waldina Dávila"@es ;
+    bib:anioFallecimiento "1900"^^xsd:gYear ;
+    bib:anioNacimiento "1831"^^xsd:gYear ;
+    bib:fechaNacimiento "1831-04-16"^^xsd:date ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q638260-Neiva> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q105754643> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q106596335-Jesus-del-Corral-Botero> a bib:Autor ;
+    rdfs:label "Jesús del Corral Botero"@es ;
+    bib:anioFallecimiento "1931"^^xsd:gYear ;
+    bib:anioNacimiento "1871"^^xsd:gYear ;
+    bib:fechaNacimiento "1871-06-03"^^xsd:date ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q927703-Santa-Fe-de-Antioquia> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q106596335> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q10855532-Andres-Ospina> a bib:Autor ;
+    rdfs:label "Andrés Ospina"@es ;
+    bib:anioNacimiento "1976"^^xsd:gYear ;
+    bib:fechaNacimiento "1976-07-14"^^xsd:date ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q2841-Bogota> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q10855532> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q112791077-Cristina-Bendek> a bib:Autor ;
+    rdfs:label "Cristina Bendek"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q112791077> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q115972960-Alex-Aster> a bib:Autor ;
+    rdfs:label "Alex Aster"@es ;
+    bib:anioNacimiento "1995"^^xsd:gYear ;
+    bib:fechaNacimiento "1995-08-04"^^xsd:date ;
+    owl:sameAs <http://www.wikidata.org/entity/Q115972960> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q123413633-Francisco-Botero> a bib:Autor ;
+    rdfs:label "Francisco Botero"@es ;
+    bib:anioFallecimiento "1938"^^xsd:gYear ;
+    bib:anioNacimiento "1885"^^xsd:gYear ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q235190-Manizales> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q123413633> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q123514291-Francisco-A-Paillie-Arenas> a bib:Autor ;
+    rdfs:label "Francisco A. Paillié Arenas"@es ;
+    bib:anioFallecimiento "1930"^^xsd:gYear ;
+    bib:anioNacimiento "1881"^^xsd:gYear ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q243766-Bucaramanga> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q123514291> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q123676081-Manuel-Maria-Astudillo> a bib:Autor ;
+    rdfs:label "Manuel María Astudillo"@es ;
+    bib:anioFallecimiento "1934"^^xsd:gYear ;
+    bib:anioNacimiento "1893"^^xsd:gYear ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q1093175-Santander-de-Quilichao> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q123676081> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q123694616-Camilo-Barrera-Vargas> a bib:Autor ;
+    rdfs:label "Camilo Barrera Vargas"@es ;
+    bib:anioFallecimiento "1933"^^xsd:gYear ;
+    bib:anioNacimiento "1902"^^xsd:gYear ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q1577177-Mogotes> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q123694616> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q123766489-Daniel-Bayona-Posada> a bib:Autor ;
+    rdfs:label "Daniel Bayona Posada"@es ;
+    bib:anioFallecimiento "1920"^^xsd:gYear ;
+    bib:anioNacimiento "1884"^^xsd:gYear ;
+    bib:fechaNacimiento "1884-04-18"^^xsd:date ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q2841-Bogota> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q123766489> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q124228701-Francisco-Giraldo-Hernandez> a bib:Autor ;
+    rdfs:label "Francisco Giraldo Hernández"@es ;
+    bib:anioFallecimiento "1926"^^xsd:gYear ;
+    bib:anioNacimiento "1884"^^xsd:gYear ;
+    bib:fechaNacimiento "1884-10-04"^^xsd:date ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q1442012-Aguadas> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q124228701> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q124343280-Pablo-Emilio-Gutierrez-Velez> a bib:Autor ;
+    rdfs:label "Pablo Emilio Gutiérrez Vélez"@es ;
+    bib:anioFallecimiento "1920"^^xsd:gYear ;
+    bib:anioNacimiento "1865"^^xsd:gYear ;
+    bib:fechaNacimiento "1865-10-16"^^xsd:date ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q610524-Salamina> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q124343280> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q124352411-Jorge-Eduardo-Guzman> a bib:Autor ;
+    rdfs:label "Jorge Eduardo Guzmán"@es ;
+    bib:anioFallecimiento "1926"^^xsd:gYear ;
+    bib:anioNacimiento "1898"^^xsd:gYear ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q335135-Popayan> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q124352411> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q124359331-Concepcion-Jimenez-de-Araujo> a bib:Autor ;
+    rdfs:label "Concepción Jiménez de Araujo"@es ;
+    bib:anioFallecimiento "1930"^^xsd:gYear ;
+    bib:anioNacimiento "1852"^^xsd:gYear ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q657461-Cartagena-de-Indias> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q124359331> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q130407709-Laura-Ortiz-Gomez> a bib:Autor ;
+    rdfs:label "Laura Ortiz Gómez"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q130407709> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q131287803-Isabel-Carrasquilla> a bib:Autor ;
+    rdfs:label "Isabel Carrasquilla"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q131287803> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q140181372-Nicolas-Esteban> a bib:Autor ;
+    rdfs:label "Nicolas Esteban"@es ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q2841-Bogota> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q140181372> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q140469425-Rosario-Grillo-de-Salgado> a bib:Autor ;
+    rdfs:label "Rosario Grillo de Salgado"@es ;
+    bib:anioFallecimiento "1947"^^xsd:gYear ;
+    bib:anioNacimiento "1855"^^xsd:gYear ;
+    bib:fechaNacimiento "1855-12-25"^^xsd:date ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q649293-Sonson> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q140469425> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q140800274-Lorenzo-Gabriel-Gil> a bib:Autor ;
+    rdfs:label "Lorenzo Gabriel Gil"@es ;
+    bib:anioNacimiento "1988"^^xsd:gYear ;
+    bib:fechaNacimiento "1988-10-07"^^xsd:date ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q23682157-Tayrona-National-Park> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q140800274> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q1556811-Gustavo-Alvarez-Gardeazabal> a bib:Autor ;
+    rdfs:label "Gustavo Álvarez Gardeazábal"@es ;
+    bib:anioNacimiento "1945"^^xsd:gYear ;
+    bib:fechaNacimiento "1945-10-31"^^xsd:date ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q1002577-Tulua> ;
+    bib:reconocimiento [ a bib:Reconocimiento ;
+            bib:premio <http://uniandes.edu.co/ws2026/recurso/premio/Q1316544-Beca-Guggenheim> ] ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1556811> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q16145316-Alejandro-Lopez> a bib:Autor ;
+    rdfs:label "Alejandro López"@es ;
+    bib:anioNacimiento "1968"^^xsd:gYear ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q2841-Bogota> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q16145316> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q1642753-Hector-Abad-Faciolince> a bib:Autor ;
+    rdfs:label "Héctor Abad Faciolince"@es ;
+    bib:anioNacimiento "1958"^^xsd:gYear ;
+    bib:fechaNacimiento "1958-10-01"^^xsd:date ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q48278-Medellin> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1642753> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q16489216-Aurelio-Martinez-Mutis> a bib:Autor ;
+    rdfs:label "Aurelio Martínez Mutis"@es ;
+    bib:anioFallecimiento "1954"^^xsd:gYear ;
+    bib:anioNacimiento "1884"^^xsd:gYear ;
+    bib:fechaNacimiento "1884-04-09"^^xsd:date ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q243766-Bucaramanga> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q16489216> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q1902944-Marta-Traba> a bib:Autor ;
+    rdfs:label "Marta Traba"@es ;
+    bib:anioFallecimiento "1983"^^xsd:gYear ;
+    bib:anioNacimiento "1923"^^xsd:gYear,
+        "1930"^^xsd:gYear ;
+    bib:fechaNacimiento "1923-01-25"^^xsd:date,
+        "1930-01-25"^^xsd:date ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q1486-Buenos-Aires> ;
+    bib:reconocimiento [ a bib:Reconocimiento ;
+            bib:premio <http://uniandes.edu.co/ws2026/recurso/premio/Q1316544-Beca-Guggenheim> ] ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1902944> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q22959763-Andres-Salgado> a bib:Autor ;
+    rdfs:label "Andrés Salgado"@es ;
+    bib:anioNacimiento "1971"^^xsd:gYear ;
+    bib:fechaNacimiento "1971-07-30"^^xsd:date ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q62823-Barranquilla> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q22959763> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q24827230-Julio-Onate-Martinez> a bib:Autor ;
+    rdfs:label "Julio Oñate Martínez"@es ;
+    bib:anioNacimiento "1942"^^xsd:gYear ;
+    bib:fechaNacimiento "1942-02-13"^^xsd:date ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q1442429-Villanueva> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q24827230> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q2494262-Leon-de-Greiff> a bib:Autor ;
+    rdfs:label "León de Greiff"@es ;
+    bib:anioFallecimiento "1976"^^xsd:gYear ;
+    bib:anioNacimiento "1895"^^xsd:gYear ;
+    bib:fechaNacimiento "1895-07-22"^^xsd:date ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q48278-Medellin> ;
+    bib:reconocimiento [ a bib:Reconocimiento ;
+            bib:premio <http://uniandes.edu.co/ws2026/recurso/premio/Q20900062-Knight-Officer-of-the-Order-of-the-Polar-Star> ] ;
+    owl:sameAs <http://www.wikidata.org/entity/Q2494262> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q27865823-Alvaro-Castillo-Granada> a bib:Autor ;
+    rdfs:label "Álvaro Castillo Granada"@es ;
+    bib:anioNacimiento "1969"^^xsd:gYear ;
+    bib:fechaNacimiento "1969-06-21"^^xsd:date ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q243766-Bucaramanga> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q27865823> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q2838418-Jose-Manuel-Marroquin> a bib:Autor ;
+    rdfs:label "José Manuel Marroquín"@es ;
+    bib:anioFallecimiento "1908"^^xsd:gYear ;
+    bib:anioNacimiento "1827"^^xsd:gYear ;
+    bib:fechaNacimiento "1827-08-06"^^xsd:date ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q2841-Bogota> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q2838418> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q2849011-Andres-Caicedo> a bib:Autor ;
+    rdfs:label "Andrés Caicedo"@es ;
+    bib:anioFallecimiento "1977"^^xsd:gYear ;
+    bib:anioNacimiento "1951"^^xsd:gYear ;
+    bib:fechaNacimiento "1951-09-29"^^xsd:date ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q51103-Cali> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q2849011> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q2883932-Carlos-Martinez-Silva> a bib:Autor ;
+    rdfs:label "Carlos Martínez Silva"@es ;
+    bib:anioFallecimiento "1903"^^xsd:gYear ;
+    bib:anioNacimiento "1847"^^xsd:gYear ;
+    bib:fechaNacimiento "1847-10-06"^^xsd:date ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q1294128-San-Gil> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q2883932> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q29010854-Yolanda-Reyes> a bib:Autor ;
+    rdfs:label "Yolanda Reyes"@es ;
+    bib:anioNacimiento "1959"^^xsd:gYear ;
+    bib:fechaNacimiento "1959-10-18"^^xsd:date ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q243766-Bucaramanga> ;
+    bib:reconocimiento [ a bib:Reconocimiento ;
+            bib:anio "2020"^^xsd:gYear ;
+            bib:premio <http://uniandes.edu.co/ws2026/recurso/premio/Q6084502-Premio-Iberoamericano-SM> ] ;
+    owl:sameAs <http://www.wikidata.org/entity/Q29010854> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q30068176-Julian-Delgado-Lopera> a bib:Autor ;
+    rdfs:label "Julián Delgado Lopera"@es ;
+    bib:anioNacimiento "1988"^^xsd:gYear ;
+    bib:fechaNacimiento "1988-06-04"^^xsd:date ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q2841-Bogota> ;
+    bib:reconocimiento [ a bib:Reconocimiento ;
+            bib:anio "2021"^^xsd:gYear ;
+            bib:premio <http://uniandes.edu.co/ws2026/recurso/premio/Q17005144-Premio-Literario-Lambda-de-Ficcion-Lesbica> ] ;
+    owl:sameAs <http://www.wikidata.org/entity/Q30068176> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q3039682-German-Espinosa> a bib:Autor ;
+    rdfs:label "Germán Espinosa"@es ;
+    bib:anioFallecimiento "2007"^^xsd:gYear ;
+    bib:anioNacimiento "1938"^^xsd:gYear ;
+    bib:fechaNacimiento "1938-04-20"^^xsd:date ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q657461-Cartagena-de-Indias> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q3039682> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q3045986-Marco-Fidel-Suarez> a bib:Autor ;
+    rdfs:label "Marco Fidel Suárez"@es ;
+    bib:anioFallecimiento "1927"^^xsd:gYear ;
+    bib:anioNacimiento "1855"^^xsd:gYear ;
+    bib:fechaNacimiento "1855-04-23"^^xsd:date ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q816024-Bello> ;
+    bib:reconocimiento [ a bib:Reconocimiento ;
+            bib:anio "1922"^^xsd:gYear ;
+            bib:premio <http://uniandes.edu.co/ws2026/recurso/premio/Q17365974-Gran-Cruz-de-la-Orden-de-Isabel-la-Catolica> ] ;
+    owl:sameAs <http://www.wikidata.org/entity/Q3045986> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q3054665-Enrique-Buenaventura> a bib:Autor ;
+    rdfs:label "Enrique Buenaventura"@es ;
+    bib:anioFallecimiento "2003"^^xsd:gYear ;
+    bib:anioNacimiento "1925"^^xsd:gYear ;
+    bib:fechaNacimiento "1925-02-19"^^xsd:date ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q51103-Cali> ;
+    bib:reconocimiento [ a bib:Reconocimiento ;
+            bib:anio "1990"^^xsd:gYear ;
+            bib:premio <http://uniandes.edu.co/ws2026/recurso/premio/Q182566-Premio-Casa-de-las-Americas> ] ;
+    owl:sameAs <http://www.wikidata.org/entity/Q3054665> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q30610646-Jose-Maria-Rivas-Groot> a bib:Autor ;
+    rdfs:label "José María Rivas Groot"@es ;
+    bib:anioFallecimiento "1923"^^xsd:gYear ;
+    bib:anioNacimiento "1863"^^xsd:gYear ;
+    bib:fechaNacimiento "1863-04-18"^^xsd:date ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q2841-Bogota> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q30610646> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q30929842-Adelaida-Fernandez-Ochoa> a bib:Autor ;
+    rdfs:label "Adelaida Fernández Ochoa"@es ;
+    bib:anioNacimiento "2000"^^xsd:gYear ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q51103-Cali> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q30929842> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q3286947-Manuel-Zapata-Olivella> a bib:Autor ;
+    rdfs:label "Manuel Zapata Olivella"@es ;
+    bib:anioFallecimiento "2004"^^xsd:gYear ;
+    bib:anioNacimiento "1920"^^xsd:gYear ;
+    bib:fechaNacimiento "1920-03-17"^^xsd:date ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q775761-El-Campano-Cordoba> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q3286947> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q3392455-Plinio-Apuleyo-Mendoza> a bib:Autor ;
+    rdfs:label "Plinio Apuleyo Mendoza"@es ;
+    bib:anioFallecimiento "2026"^^xsd:gYear ;
+    bib:anioNacimiento "1931"^^xsd:gYear ;
+    bib:fechaNacimiento "1931-03-24"^^xsd:date ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q236744-Tunja> ;
+    bib:reconocimiento [ a bib:Reconocimiento ;
+            bib:anio "2021"^^xsd:gYear ;
+            bib:premio <http://uniandes.edu.co/ws2026/recurso/premio/Q106084714-Comendador-de-la-Orden-de-Boyaca> ],
+        [ a bib:Reconocimiento ;
+            bib:premio <http://uniandes.edu.co/ws2026/recurso/premio/Q5688317-Premio-Nacional-de-Periodismo-Simon-Bolivar> ] ;
+    owl:sameAs <http://www.wikidata.org/entity/Q3392455> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q3576974-Alvaro-Cepeda-Samudio> a bib:Autor ;
+    rdfs:label "Álvaro Cepeda Samudio"@es ;
+    bib:anioFallecimiento "1972"^^xsd:gYear ;
+    bib:anioNacimiento "1923"^^xsd:gYear,
+        "1926"^^xsd:gYear ;
+    bib:fechaNacimiento "1923-03-30"^^xsd:date ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q62823-Barranquilla> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q3576974> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q3753480-Pedro-Gomez-Valderrama> a bib:Autor ;
+    rdfs:label "Pedro Gómez Valderrama"@es ;
+    bib:anioFallecimiento "1992"^^xsd:gYear ;
+    bib:anioNacimiento "1923"^^xsd:gYear ;
+    bib:fechaNacimiento "1923-02-13"^^xsd:date ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q243766-Bucaramanga> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q3753480> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q4684243-Adolfo-Leon-Gomez> a bib:Autor ;
+    rdfs:label "Adolfo León Gómez"@es ;
+    bib:anioFallecimiento "1927"^^xsd:gYear ;
+    bib:anioNacimiento "1857"^^xsd:gYear ;
+    bib:fechaNacimiento "1857-09-19"^^xsd:date ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q2241175-Pasca> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q4684243> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q4708986-Alba-Lucia-Angel> a bib:Autor ;
+    rdfs:label "Alba Lucía Ángel"@es ;
+    bib:anioNacimiento "1939"^^xsd:gYear ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q51111-Pereira> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q4708986> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q47114497-Carolina-Andujar> a bib:Autor ;
+    rdfs:label "Carolina Andújar"@es ;
+    bib:anioNacimiento "1901"^^xsd:gYear ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q51103-Cali> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q47114497> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q527908-Samael-Aun-Weor> a bib:Autor ;
+    rdfs:label "Samael Aun Weor"@es ;
+    bib:anioFallecimiento "1977"^^xsd:gYear ;
+    bib:anioNacimiento "1917"^^xsd:gYear ;
+    bib:fechaNacimiento "1917-03-06"^^xsd:date ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q2841-Bogota> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q527908> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q5347197-Efe-Gomez> a bib:Autor ;
+    rdfs:label "Efe Gómez"@es ;
+    bib:anioFallecimiento "1938"^^xsd:gYear ;
+    bib:anioNacimiento "1873"^^xsd:gYear ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q1442002-Fredonia> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5347197> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q5416270-Evelio-Rosero> a bib:Autor ;
+    rdfs:label "Evelio Rosero"@es ;
+    bib:anioNacimiento "1958"^^xsd:gYear ;
+    bib:fechaNacimiento "1958-03-20"^^xsd:date ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q2841-Bogota> ;
+    bib:reconocimiento [ a bib:Reconocimiento ;
+            bib:anio "2014"^^xsd:gYear ;
+            bib:premio <http://uniandes.edu.co/ws2026/recurso/premio/Q38909051-Premio-Nacional-de-Novela> ] ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5416270> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q5486419-Blanca-Isaza-de-Jaramillo-Meza> a bib:Autor ;
+    rdfs:label "Blanca Isaza de Jaramillo Meza"@es ;
+    bib:anioFallecimiento "1967"^^xsd:gYear ;
+    bib:anioNacimiento "1898"^^xsd:gYear ;
+    bib:fechaNacimiento "1898-01-06"^^xsd:date ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q1441947-Abejorral> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5486419> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q55255635-Fennys-Tovar> a bib:Autor ;
+    rdfs:label "Fennys Tovar"@es ;
+    bib:anioNacimiento "1967"^^xsd:gYear ;
+    bib:fechaNacimiento "1967-10-02"^^xsd:date ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q1441359-San-Martin> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q55255635> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q55443104-Leonardo-Pena-Calderon> a bib:Autor ;
+    rdfs:label "Leonardo Peña Calderón"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q55443104> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q5667870-Alfredo-Molano-Bravo> a bib:Autor ;
+    rdfs:label "Alfredo Molano Bravo"@es ;
+    bib:anioFallecimiento "2019"^^xsd:gYear ;
+    bib:anioNacimiento "1944"^^xsd:gYear ;
+    bib:fechaNacimiento "1944-05-03"^^xsd:date ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q2841-Bogota> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5667870> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q5677081-Eduardo-Zalamea-Borda> a bib:Autor ;
+    rdfs:label "Eduardo Zalamea Borda"@es ;
+    bib:anioFallecimiento "1963"^^xsd:gYear ;
+    bib:anioNacimiento "1907"^^xsd:gYear ;
+    bib:fechaNacimiento "1907-11-15"^^xsd:date,
+        "1907-12-15"^^xsd:date ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q2841-Bogota> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5677081> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q5753276-Carolina-Sanin-Paz> a bib:Autor ;
+    rdfs:label "Carolina Sanín Paz"@es ;
+    bib:anioNacimiento "1973"^^xsd:gYear ;
+    bib:fechaNacimiento "1973-04-28"^^xsd:date ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q2841-Bogota> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5753276> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q5796433-Cesar-Uribe> a bib:Autor ;
+    rdfs:label "César Uribe"@es ;
+    bib:anioFallecimiento "1951"^^xsd:gYear ;
+    bib:anioNacimiento "1897"^^xsd:gYear ;
+    bib:fechaNacimiento "1897-11-16"^^xsd:date ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q48278-Medellin> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5796433> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q5799522-Dario-Jaramillo> a bib:Autor ;
+    rdfs:label "Darío Jaramillo"@es ;
+    bib:anioNacimiento "1947"^^xsd:gYear ;
+    bib:fechaNacimiento "1947-07-28"^^xsd:date ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q2088093-Santa-Rosa-de-Osos> ;
+    bib:reconocimiento [ a bib:Reconocimiento ;
+            bib:premio <http://uniandes.edu.co/ws2026/recurso/premio/Q1316544-Beca-Guggenheim> ],
+        [ a bib:Reconocimiento ;
+            bib:anio "2018"^^xsd:gYear ;
+            bib:premio <http://uniandes.edu.co/ws2026/recurso/premio/Q21503492-Premio-Internacional-de-Poesia-Federico-Garcia-Lorca> ],
+        [ a bib:Reconocimiento ;
+            bib:anio "2017"^^xsd:gYear ;
+            bib:premio <http://uniandes.edu.co/ws2026/recurso/premio/Q56319108-Premio-Nacional-de-Poesia> ] ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5799522> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q5818981-Eduardo-Arias-Suarez> a bib:Autor ;
+    rdfs:label "Eduardo Arias Suárez"@es ;
+    bib:anioFallecimiento "1958"^^xsd:gYear ;
+    bib:anioNacimiento "1897"^^xsd:gYear ;
+    bib:fechaNacimiento "1897-02-05"^^xsd:date ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q328518-Armenia> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5818981> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q5819087-Eduardo-Castillo> a bib:Autor ;
+    rdfs:label "Eduardo Castillo"@es ;
+    bib:anioFallecimiento "1938"^^xsd:gYear ;
+    bib:anioNacimiento "1889"^^xsd:gYear ;
+    bib:fechaNacimiento "1889-02-05"^^xsd:date ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q205429-Zipaquira> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5819087> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q5858407-Juan-Carlos-Torres> a bib:Autor ;
+    rdfs:label "Juan Carlos Torres"@es ;
+    bib:anioNacimiento "1963"^^xsd:gYear ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q2841-Bogota> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5858407> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q5859932-Fernando-Molano-Vargas> a bib:Autor ;
+    rdfs:label "Fernando Molano Vargas"@es ;
+    bib:anioFallecimiento "1998"^^xsd:gYear ;
+    bib:anioNacimiento "1961"^^xsd:gYear ;
+    bib:fechaNacimiento "1961-07-09"^^xsd:date ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q2841-Bogota> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5859932> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q5860273-Fernando-Soto-Aparicio> a bib:Autor ;
+    rdfs:label "Fernando Soto Aparicio"@es ;
+    bib:anioFallecimiento "2016"^^xsd:gYear ;
+    bib:anioNacimiento "1933"^^xsd:gYear ;
+    bib:fechaNacimiento "1933-10-01"^^xsd:date ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q1574712-Socha> ;
+    bib:reconocimiento [ a bib:Reconocimiento ;
+            bib:anio "1970"^^xsd:gYear ;
+            bib:premio <http://uniandes.edu.co/ws2026/recurso/premio/Q182566-Premio-Casa-de-las-Americas> ] ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5860273> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q5927624-Javier-Correa-Correa> a bib:Autor ;
+    rdfs:label "Javier Correa Correa"@es ;
+    bib:anioNacimiento "1959"^^xsd:gYear ;
+    bib:fechaNacimiento "1959-05-19"^^xsd:date ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q62823-Barranquilla> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5927624> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q5950173-Juan-Jose-Botero-Ruiz> a bib:Autor ;
+    rdfs:label "Juan José Botero Ruíz"@es ;
+    bib:anioFallecimiento "1926"^^xsd:gYear ;
+    bib:anioNacimiento "1840"^^xsd:gYear ;
+    bib:fechaNacimiento "1840-01-13"^^xsd:date ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q1774644-Rionegro> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5950173> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q5952360-Juan-Rodriguez-Freyle> a bib:Autor ;
+    rdfs:label "Juan Rodríguez Freyle"@es ;
+    bib:anioFallecimiento "1642"^^xsd:gYear ;
+    bib:anioNacimiento "1566"^^xsd:gYear ;
+    bib:fechaNacimiento "1566-05-06"^^xsd:date ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q2841-Bogota> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5952360> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q5982382-Lucrecia-Panchano> a bib:Autor ;
+    rdfs:label "Lucrecia Panchano"@es ;
+    bib:anioNacimiento "1940"^^xsd:gYear ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q2432113-Guapi> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5982382> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q6004696-Maria-Teresa-Ramirez-Nieva> a bib:Autor ;
+    rdfs:label "María Teresa Ramírez Nieva"@es ;
+    bib:anioNacimiento "1944"^^xsd:gYear ;
+    bib:fechaNacimiento "1944-06-17"^^xsd:date ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q2236398-Corinto> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q6004696> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q6056241-Pablo-Montoya> a bib:Autor ;
+    rdfs:label "Pablo Montoya"@es ;
+    bib:anioNacimiento "1963"^^xsd:gYear ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q808830-Barrancabermeja> ;
+    bib:reconocimiento [ a bib:Reconocimiento ;
+            bib:anio "2017"^^xsd:gYear ;
+            bib:premio <http://uniandes.edu.co/ws2026/recurso/premio/Q65939075-Premio-Jose-Maria-Arguedas> ],
+        [ a bib:Reconocimiento ;
+            bib:anio "2016"^^xsd:gYear ;
+            bib:premio <http://uniandes.edu.co/ws2026/recurso/premio/Q4377100-Premio-Iberoamericano-de-Letras-Jose-Donoso> ],
+        [ a bib:Reconocimiento ;
+            bib:anio "2015"^^xsd:gYear ;
+            bib:premio <http://uniandes.edu.co/ws2026/recurso/premio/Q1088492-Premio-Romulo-Gallegos> ] ;
+    owl:sameAs <http://www.wikidata.org/entity/Q6056241> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q6075836-Pilar-Quintana> a bib:Autor ;
+    rdfs:label "Pilar Quintana"@es ;
+    bib:anioNacimiento "1972"^^xsd:gYear ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q51103-Cali> ;
+    bib:reconocimiento [ a bib:Reconocimiento ;
+            bib:anio "2021"^^xsd:gYear ;
+            bib:premio <http://uniandes.edu.co/ws2026/recurso/premio/Q1280377-Premio-Alfaguara-de-Novela> ] ;
+    owl:sameAs <http://www.wikidata.org/entity/Q6075836> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q61917151-Isabel-Bunch-de-Cortes> a bib:Autor ;
+    rdfs:label "Isabel Bunch de Cortés"@es ;
+    bib:anioFallecimiento "1921"^^xsd:gYear ;
+    bib:anioNacimiento "1845"^^xsd:gYear ;
+    bib:fechaNacimiento "1845-04-24"^^xsd:date ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q680909-Pacho> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q61917151> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q7934646-Virginia-Vallejo-De-Escobar> a bib:Autor ;
+    rdfs:label "Virginia Vallejo De Escobar"@es ;
+    bib:anioNacimiento "1949"^^xsd:gYear ;
+    bib:fechaNacimiento "1949-08-26"^^xsd:date ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q2004074-Cartago> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q7934646> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q9022153-Leon-Zafir> a bib:Autor ;
+    rdfs:label "León Zafir"@es ;
+    bib:anioFallecimiento "1964"^^xsd:gYear ;
+    bib:anioNacimiento "1904"^^xsd:gYear ;
+    bib:fechaNacimiento "1904-12-16"^^xsd:date ;
+    owl:sameAs <http://www.wikidata.org/entity/Q9022153> .
+
+<http://uniandes.edu.co/ws2026/recurso/genero/Q102439494-realismo-magico> a bib:Genero ;
+    rdfs:label "realismo mágico"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q102439494> .
+
+<http://uniandes.edu.co/ws2026/recurso/genero/Q106771443-LGBTQ-graphic-novel> a bib:Genero ;
+    rdfs:label "LGBTQ graphic novel"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q106771443> .
+
+<http://uniandes.edu.co/ws2026/recurso/genero/Q111019576-ficcion-de-vampiros> a bib:Genero ;
+    rdfs:label "ficción de vampiros"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q111019576> .
+
+<http://uniandes.edu.co/ws2026/recurso/genero/Q1188977-Fantasia-urbana> a bib:Genero ;
+    rdfs:label "Fantasía urbana"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1188977> .
+
+<http://uniandes.edu.co/ws2026/recurso/genero/Q1225344-novela-del-dictador> a bib:Genero ;
+    rdfs:label "novela del dictador"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1225344> .
+
+<http://uniandes.edu.co/ws2026/recurso/genero/Q124922-reportaje> a bib:Genero ;
+    rdfs:label "reportaje"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q124922> .
+
+<http://uniandes.edu.co/ws2026/recurso/genero/Q130232-drama> a bib:Genero ;
+    rdfs:label "drama"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q130232> .
+
+<http://uniandes.edu.co/ws2026/recurso/genero/Q132311-fantasia> a bib:Genero ;
+    rdfs:label "fantasía"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q132311> .
+
+<http://uniandes.edu.co/ws2026/recurso/genero/Q147516-realismo-magico> a bib:Genero ;
+    rdfs:label "realismo mágico"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q147516> .
+
+<http://uniandes.edu.co/ws2026/recurso/genero/Q16575965-terror> a bib:Genero ;
+    rdfs:label "terror"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q16575965> .
+
+<http://uniandes.edu.co/ws2026/recurso/genero/Q18211073-literatura-LGBT> a bib:Genero ;
+    rdfs:label "literatura LGBT"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q18211073> .
+
+<http://uniandes.edu.co/ws2026/recurso/genero/Q19765983-ficcion-romantica> a bib:Genero ;
+    rdfs:label "ficción romántica"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q19765983> .
+
+<http://uniandes.edu.co/ws2026/recurso/genero/Q20669641-ficcion-gotica> a bib:Genero ;
+    rdfs:label "ficción gótica"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q20669641> .
+
+<http://uniandes.edu.co/ws2026/recurso/genero/Q223945-novela-de-aprendizaje> a bib:Genero ;
+    rdfs:label "novela de aprendizaje"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q223945> .
+
+<http://uniandes.edu.co/ws2026/recurso/genero/Q24925-ciencia-ficcion> a bib:Genero ;
+    rdfs:label "ciencia ficción"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q24925> .
+
+<http://uniandes.edu.co/ws2026/recurso/genero/Q25372-drama> a bib:Genero ;
+    rdfs:label "drama"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q25372> .
+
+<http://uniandes.edu.co/ws2026/recurso/genero/Q26221026-ficcion-noir> a bib:Genero ;
+    rdfs:label "ficción noir"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q26221026> .
+
+<http://uniandes.edu.co/ws2026/recurso/genero/Q27036528-narracion> a bib:Genero ;
+    rdfs:label "narración"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q27036528> .
+
+<http://uniandes.edu.co/ws2026/recurso/genero/Q3139891-literatura-de-tematica-LGBT> a bib:Genero ;
+    rdfs:label "literatura de temática LGBT"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q3139891> .
+
+<http://uniandes.edu.co/ws2026/recurso/genero/Q3305034-polifonia> a bib:Genero ;
+    rdfs:label "polifonía"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q3305034> .
+
+<http://uniandes.edu.co/ws2026/recurso/genero/Q465821-novela-epistolar> a bib:Genero ;
+    rdfs:label "novela epistolar"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q465821> .
+
+<http://uniandes.edu.co/ws2026/recurso/genero/Q5937792-genero-policiaco> a bib:Genero ;
+    rdfs:label "género policíaco"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5937792> .
+
+<http://uniandes.edu.co/ws2026/recurso/genero/Q622291-thriller-politico> a bib:Genero ;
+    rdfs:label "thriller político"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q622291> .
+
+<http://uniandes.edu.co/ws2026/recurso/genero/Q6585139-misterio> a bib:Genero ;
+    rdfs:label "misterio"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q6585139> .
+
+<http://uniandes.edu.co/ws2026/recurso/genero/Q66744724-ficcion-biografica> a bib:Genero ;
+    rdfs:label "ficción biográfica"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q66744724> .
+
+<http://uniandes.edu.co/ws2026/recurso/genero/Q676-prosa> a bib:Genero ;
+    rdfs:label "prosa"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q676> .
+
+<http://uniandes.edu.co/ws2026/recurso/genero/Q837024-realismo-social> a bib:Genero ;
+    rdfs:label "realismo social"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q837024> .
+
+<http://uniandes.edu.co/ws2026/recurso/genero/Q858330-novela-romantica> a bib:Genero ;
+    rdfs:label "novela romántica"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q858330> .
+
+<http://uniandes.edu.co/ws2026/recurso/genero/Q971480-literatura-modernista> a bib:Genero ;
+    rdfs:label "literatura modernista"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q971480> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q1002577-Tulua> a bib:Lugar ;
+    rdfs:label "Tuluá"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q13990-Valle-del-Cauca> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1002577> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q1093175-Santander-de-Quilichao> a bib:Lugar ;
+    rdfs:label "Santander de Quilichao"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q230602-Cauca> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1093175> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q1294128-San-Gil> a bib:Lugar ;
+    rdfs:label "San Gil"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q235166-Santander> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1294128> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q13993-Risaralda> a bib:Lugar ;
+    rdfs:label "Risaralda"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q739-Colombia> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q13993> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q13995-Quindio> a bib:Lugar ;
+    rdfs:label "Quindío"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q739-Colombia> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q13995> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q1441359-San-Martin> a bib:Lugar ;
+    rdfs:label "San Martín"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q238629-Departamento-del-Meta> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1441359> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q1441947-Abejorral> a bib:Lugar ;
+    rdfs:label "Abejorral"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q123304-Antioquia> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1441947> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q1442002-Fredonia> a bib:Lugar ;
+    rdfs:label "Fredonia"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q123304-Antioquia>,
+        <http://uniandes.edu.co/ws2026/recurso/lugar/Q1451925-Suroeste-antioqueno> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1442002> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q1442012-Aguadas> a bib:Lugar ;
+    rdfs:label "Aguadas"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q6045119-Norte-Caldense> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1442012> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q1442429-Villanueva> a bib:Lugar ;
+    rdfs:label "Villanueva"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q272747-La-Guajira> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1442429> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q1451925-Suroeste-antioqueno> a bib:Lugar ;
+    rdfs:label "Suroeste antioqueño"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q123304-Antioquia> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1451925> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q1486-Buenos-Aires> a bib:Lugar ;
+    rdfs:label "Buenos Aires"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q414-Argentina> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1486> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q1526269-Rivera> a bib:Lugar ;
+    rdfs:label "Rivera"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q234920-Huila> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1526269> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q1574712-Socha> a bib:Lugar ;
+    rdfs:label "Socha"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q121233-Boyaca>,
+        <http://uniandes.edu.co/ws2026/recurso/lugar/Q2564632-Provincia-de-Valderrama> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1574712> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q1574792-Zapatoca> a bib:Lugar ;
+    rdfs:label "Zapatoca"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q235166-Santander> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1574792> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q1577177-Mogotes> a bib:Lugar ;
+    rdfs:label "Mogotes"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q235166-Santander> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1577177> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q1578580-Herveo> a bib:Lugar ;
+    rdfs:label "Herveo"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q234501-Tolima> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1578580> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q1578783-Santo-Domingo> a bib:Lugar ;
+    rdfs:label "Santo Domingo"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q123304-Antioquia> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1578783> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q1774644-Rionegro> a bib:Lugar ;
+    rdfs:label "Rionegro"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q2566951-Oriente-antioqueno> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1774644> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q186193-Girardot> a bib:Lugar ;
+    rdfs:label "Girardot"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q232564-Cundinamarca>,
+        <http://uniandes.edu.co/ws2026/recurso/lugar/Q2605957-Provincia-del-Alto-Magdalena> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q186193> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q1990525-Canton-Ambato> a bib:Lugar ;
+    rdfs:label "Cantón Ambato"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q504252-Provincia-de-Tungurahua> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1990525> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q2004074-Cartago> a bib:Lugar ;
+    rdfs:label "Cartago"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q13990-Valle-del-Cauca> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q2004074> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q205429-Zipaquira> a bib:Lugar ;
+    rdfs:label "Zipaquirá"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q232564-Cundinamarca> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q205429> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q2088093-Santa-Rosa-de-Osos> a bib:Lugar ;
+    rdfs:label "Santa Rosa de Osos"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q123304-Antioquia>,
+        <http://uniandes.edu.co/ws2026/recurso/lugar/Q2564493-Norte-antioqueno> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q2088093> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q210161-Ambato> a bib:Lugar ;
+    rdfs:label "Ambato"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q1990525-Canton-Ambato> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q210161> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q222755-Ibague> a bib:Lugar ;
+    rdfs:label "Ibagué"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q234501-Tolima> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q222755> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q2236398-Corinto> a bib:Lugar ;
+    rdfs:label "Corinto"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q230602-Cauca> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q2236398> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q2241175-Pasca> a bib:Lugar ;
+    rdfs:label "Pasca"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q232564-Cundinamarca>,
+        <http://uniandes.edu.co/ws2026/recurso/lugar/Q2605989-Provincia-del-Sumapaz> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q2241175> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q230597-Bolivar> a bib:Lugar ;
+    rdfs:label "Bolívar"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q739-Colombia> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q230597> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q234912-Cordoba> a bib:Lugar ;
+    rdfs:label "Córdoba"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q739-Colombia> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q234912> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q2361270-Valle-de-Aburra> a bib:Lugar ;
+    rdfs:label "Valle de Aburrá"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q123304-Antioquia> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q2361270> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q236744-Tunja> a bib:Lugar ;
+    rdfs:label "Tunja"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q2564699-Provincia-del-Centro> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q236744> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q23682157-Tayrona-National-Park> a bib:Lugar ;
+    rdfs:label "Tayrona National Park"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q199910-Magdalena> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q23682157> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q238629-Departamento-del-Meta> a bib:Lugar ;
+    rdfs:label "Departamento del Meta"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q739-Colombia> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q238629> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q2432113-Guapi> a bib:Lugar ;
+    rdfs:label "Guapí"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q230602-Cauca> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q2432113> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q2564493-Norte-antioqueno> a bib:Lugar ;
+    rdfs:label "Norte antioqueño"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q123304-Antioquia> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q2564493> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q2564632-Provincia-de-Valderrama> a bib:Lugar ;
+    rdfs:label "Provincia de Valderrama"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q121233-Boyaca> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q2564632> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q2564699-Provincia-del-Centro> a bib:Lugar ;
+    rdfs:label "Provincia del Centro"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q121233-Boyaca> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q2564699> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q2566951-Oriente-antioqueno> a bib:Lugar ;
+    rdfs:label "Oriente antioqueño"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q123304-Antioquia> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q2566951> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q2605957-Provincia-del-Alto-Magdalena> a bib:Lugar ;
+    rdfs:label "Provincia del Alto Magdalena"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q232564-Cundinamarca> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q2605957> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q2605989-Provincia-del-Sumapaz> a bib:Lugar ;
+    rdfs:label "Provincia del Sumapaz"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q232564-Cundinamarca> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q2605989> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q272747-La-Guajira> a bib:Lugar ;
+    rdfs:label "La Guajira"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q739-Colombia> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q272747> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q285411-Cardenosa> a bib:Lugar ;
+    rdfs:label "Cardeñosa"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q55288-provincia-de-Avila> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q285411> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q29-Espana> a bib:Lugar ;
+    rdfs:label "España"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q29> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q328518-Armenia> a bib:Lugar ;
+    rdfs:label "Armenia"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q13995-Quindio> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q328518> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q3290419-Provincia-de-Mares> a bib:Lugar ;
+    rdfs:label "Provincia de Mares"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q235166-Santander> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q3290419> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q414-Argentina> a bib:Lugar ;
+    rdfs:label "Argentina"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q414> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q504252-Provincia-de-Tungurahua> a bib:Lugar ;
+    rdfs:label "Provincia de Tungurahua"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q736-Ecuador> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q504252> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q51111-Pereira> a bib:Lugar ;
+    rdfs:label "Pereira"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q13993-Risaralda> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q51111> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q55288-provincia-de-Avila> a bib:Lugar ;
+    rdfs:label "provincia de Ávila"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q5739-Castilla-y-Leon> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q55288> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q5739-Castilla-y-Leon> a bib:Lugar ;
+    rdfs:label "Castilla y León"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q29-Espana> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5739> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q624492-Aracataca> a bib:Lugar ;
+    rdfs:label "Aracataca"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q199910-Magdalena> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q624492> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q638260-Neiva> a bib:Lugar ;
+    rdfs:label "Neiva"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q234920-Huila> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q638260> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q6409057-Centrosur> a bib:Lugar ;
+    rdfs:label "Centrosur"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q230607-Caldas> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q6409057> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q653059-Estado-Soberano-del-Cauca> a bib:Lugar ;
+    rdfs:label "Estado Soberano del Cauca"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q653059> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q680909-Pacho> a bib:Lugar ;
+    rdfs:label "Pacho"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q232564-Cundinamarca> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q680909> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q736-Ecuador> a bib:Lugar ;
+    rdfs:label "Ecuador"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q736> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q775761-El-Campano-Cordoba> a bib:Lugar ;
+    rdfs:label "El Campano ,Cordoba"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q234912-Cordoba> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q775761> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q808830-Barrancabermeja> a bib:Lugar ;
+    rdfs:label "Barrancabermeja"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q3290419-Provincia-de-Mares> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q808830> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q816024-Bello> a bib:Lugar ;
+    rdfs:label "Bello"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q2361270-Valle-de-Aburra> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q816024> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q927703-Santa-Fe-de-Antioquia> a bib:Lugar ;
+    rdfs:label "Santa Fe de Antioquia"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q123304-Antioquia> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q927703> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q979097-Baranoa> a bib:Lugar ;
+    rdfs:label "Baranoa"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q230882-Atlantico> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q979097> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q996581-Buenaventura> a bib:Lugar ;
+    rdfs:label "Buenaventura"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q13990-Valle-del-Cauca> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q996581> .
+
+<http://uniandes.edu.co/ws2026/recurso/premio/Q106084714-Comendador-de-la-Orden-de-Boyaca> a bib:Premio ;
+    rdfs:label "Comendador de la Orden de Boyacá"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q106084714> .
+
+<http://uniandes.edu.co/ws2026/recurso/premio/Q10855212-Comandante-de-la-Orden-Nacional-de-la-Legion-de-Honor> a bib:Premio ;
+    rdfs:label "Comandante de la Orden Nacional de la Legión de Honor"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q10855212> .
+
+<http://uniandes.edu.co/ws2026/recurso/premio/Q10855216-Gran-Oficial-de-la-Orden-Nacional-de-la-Legion-de-Honor> a bib:Premio ;
+    rdfs:label "Gran Oficial de la Orden Nacional de la Legión de Honor"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q10855216> .
+
+<http://uniandes.edu.co/ws2026/recurso/premio/Q1169044-Premio-Xavier-Villaurrutia> a bib:Premio ;
+    rdfs:label "Premio Xavier Villaurrutia"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1169044> .
+
+<http://uniandes.edu.co/ws2026/recurso/premio/Q126416281-doctor-honoris-causa-por-la-Universidad-de-Toulouse-II> a bib:Premio ;
+    rdfs:label "doctor honoris causa por la Universidad de Toulouse II"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q126416281> .
+
+<http://uniandes.edu.co/ws2026/recurso/premio/Q130852616-Premio-Rosalia-de-Castro> a bib:Premio ;
+    rdfs:label "Premio Rosalía de Castro"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q130852616> .
+
+<http://uniandes.edu.co/ws2026/recurso/premio/Q1347261-Premio-FIL-de-Literatura-en-Lenguas-Romances> a bib:Premio ;
+    rdfs:label "Premio FIL de Literatura en Lenguas Romances"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1347261> .
+
+<http://uniandes.edu.co/ws2026/recurso/premio/Q1362723-Premio-Literario-Internacional-IMPAC-de-Dublin> a bib:Premio ;
+    rdfs:label "Premio Literario Internacional IMPAC de Dublín"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1362723> .
+
+<http://uniandes.edu.co/ws2026/recurso/premio/Q136747220-prix-du-meilleur-livre-etranger-roman-ou-poesie> a bib:Premio ;
+    rdfs:label "prix du meilleur livre étranger - roman ou poésie"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q136747220> .
+
+<http://uniandes.edu.co/ws2026/recurso/premio/Q137761811-Prix-France-Culture-de-litterature-etrangere> a bib:Premio ;
+    rdfs:label "Prix France-Culture de littérature étrangère"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q137761811> .
+
+<http://uniandes.edu.co/ws2026/recurso/premio/Q163700-Orden-Nacional-de-la-Legion-de-Honor> a bib:Premio ;
+    rdfs:label "Orden Nacional de la Legión de Honor"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q163700> .
+
+<http://uniandes.edu.co/ws2026/recurso/premio/Q16621419-Premio-Bienal-de-Novela-Mario-Vargas-Llosa> a bib:Premio ;
+    rdfs:label "Premio Bienal de Novela Mario Vargas Llosa"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q16621419> .
+
+<http://uniandes.edu.co/ws2026/recurso/premio/Q17005144-Premio-Literario-Lambda-de-Ficcion-Lesbica> a bib:Premio ;
+    rdfs:label "Premio Literario Lambda de Ficción Lésbica"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q17005144> .
+
+<http://uniandes.edu.co/ws2026/recurso/premio/Q1714285-Justiz-und-NS-Verbrechen> a bib:Premio ;
+    rdfs:label "Justiz und NS-Verbrechen"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1714285> .
+
+<http://uniandes.edu.co/ws2026/recurso/premio/Q17365974-Gran-Cruz-de-la-Orden-de-Isabel-la-Catolica> a bib:Premio ;
+    rdfs:label "Gran Cruz de la Orden de Isabel la Católica"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q17365974> .
+
+<http://uniandes.edu.co/ws2026/recurso/premio/Q17366394-Oficial-de-la-Orden-de-Isabel-la-Catolica> a bib:Premio ;
+    rdfs:label "Oficial de la Orden de Isabel la Católica"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q17366394> .
+
+<http://uniandes.edu.co/ws2026/recurso/premio/Q20884576-Gran-Cruz-de-la-Orden-Civil-de-Alfonso-X-el-Sabio> a bib:Premio ;
+    rdfs:label "Gran Cruz de la Orden Civil de Alfonso X el Sabio"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q20884576> .
+
+<http://uniandes.edu.co/ws2026/recurso/premio/Q20900062-Knight-Officer-of-the-Order-of-the-Polar-Star> a bib:Premio ;
+    rdfs:label "Knight Officer of the Order of the Polar Star"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q20900062> .
+
+<http://uniandes.edu.co/ws2026/recurso/premio/Q21503492-Premio-Internacional-de-Poesia-Federico-Garcia-Lorca> a bib:Premio ;
+    rdfs:label "Premio Internacional de Poesía Federico García Lorca"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q21503492> .
+
+<http://uniandes.edu.co/ws2026/recurso/premio/Q2268261-Orden-de-Honor> a bib:Premio ;
+    rdfs:label "Orden de Honor"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q2268261> .
+
+<http://uniandes.edu.co/ws2026/recurso/premio/Q2883115-Premio-Nacional-de-Poesia> a bib:Premio ;
+    rdfs:label "Premio Nacional de Poesía"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q2883115> .
+
+<http://uniandes.edu.co/ws2026/recurso/premio/Q3332454-Premio-Princesa-de-Asturias-de-las-Letras> a bib:Premio ;
+    rdfs:label "Premio Princesa de Asturias de las Letras"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q3332454> .
+
+<http://uniandes.edu.co/ws2026/recurso/premio/Q3405076-Premio-Medicis-Extranjero> a bib:Premio ;
+    rdfs:label "Premio Médicis Extranjero"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q3405076> .
+
+<http://uniandes.edu.co/ws2026/recurso/premio/Q37922-Premio-Nobel-de-Literatura> a bib:Premio ;
+    rdfs:label "Premio Nobel de Literatura"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q37922> .
+
+<http://uniandes.edu.co/ws2026/recurso/premio/Q38909051-Premio-Nacional-de-Novela> a bib:Premio ;
+    rdfs:label "Premio Nacional de Novela"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q38909051> .
+
+<http://uniandes.edu.co/ws2026/recurso/premio/Q3910611-International-Nonino-Prize> a bib:Premio ;
+    rdfs:label "International Nonino Prize"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q3910611> .
+
+<http://uniandes.edu.co/ws2026/recurso/premio/Q4377100-Premio-Iberoamericano-de-Letras-Jose-Donoso> a bib:Premio ;
+    rdfs:label "Premio Iberoamericano de Letras José Donoso"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q4377100> .
+
+<http://uniandes.edu.co/ws2026/recurso/premio/Q4377193-Premio-Reina-Sofia-de-Poesia-Iberoamericana> a bib:Premio ;
+    rdfs:label "Premio Reina Sofía de Poesía Iberoamericana"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q4377193> .
+
+<http://uniandes.edu.co/ws2026/recurso/premio/Q5153503-Common-Wealth-Award-of-Distinguished-Service> a bib:Premio ;
+    rdfs:label "Common Wealth Award of Distinguished Service"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5153503> .
+
+<http://uniandes.edu.co/ws2026/recurso/premio/Q56319108-Premio-Nacional-de-Poesia> a bib:Premio ;
+    rdfs:label "Premio Nacional de Poesía"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q56319108> .
+
+<http://uniandes.edu.co/ws2026/recurso/premio/Q56878385-Premio-Real-Academia-Espanola> a bib:Premio ;
+    rdfs:label "Premio Real Academia Española"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q56878385> .
+
+<http://uniandes.edu.co/ws2026/recurso/premio/Q6084502-Premio-Iberoamericano-SM> a bib:Premio ;
+    rdfs:label "Premio Iberoamericano SM"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q6084502> .
+
+<http://uniandes.edu.co/ws2026/recurso/premio/Q65939075-Premio-Jose-Maria-Arguedas> a bib:Premio ;
+    rdfs:label "Premio José María Arguedas"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q65939075> .
+
+<http://uniandes.edu.co/ws2026/recurso/premio/Q81466-Premio-Miguel-de-Cervantes> a bib:Premio ;
+    rdfs:label "Premio Miguel de Cervantes"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q81466> .
+
+<http://uniandes.edu.co/ws2026/recurso/premio/Q9052807-Orden-al-Merito-Docente-y-Cultural-Gabriela-Mistral> a bib:Premio ;
+    rdfs:label "Orden al Mérito Docente y Cultural Gabriela Mistral"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q9052807> .
+
+<http://uniandes.edu.co/ws2026/recurso/premio/Q93956-Orden-Mexicana-del-Aguila-Azteca> a bib:Premio ;
+    rdfs:label "Orden Mexicana del Águila Azteca"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q93956> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q10849947-Agripina-Montes-del-Valle> a bib:Autor ;
+    rdfs:label "Agripina Montes del Valle"@es ;
+    bib:anioFallecimiento "1915"^^xsd:gYear ;
+    bib:anioNacimiento "1844"^^xsd:gYear ;
+    bib:fechaNacimiento "1844-11-05"^^xsd:date ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q610524-Salamina> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q10849947> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q123410046-Luis-Enrique-Antolinez> a bib:Autor ;
+    rdfs:label "Luis Enrique Antolínez"@es ;
+    bib:anioFallecimiento "1920"^^xsd:gYear ;
+    bib:anioNacimiento "1891"^^xsd:gYear ;
+    bib:fechaNacimiento "1891-01-19"^^xsd:date ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q243766-Bucaramanga> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q123410046> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q125434705-Dionisio-Arango-Velez> a bib:Autor ;
+    rdfs:label "Dionisio Arango Vélez"@es ;
+    bib:anioFallecimiento "1943"^^xsd:gYear ;
+    bib:anioNacimiento "1895"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q125434705> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q130397518-Andres-Arias> a bib:Autor ;
+    rdfs:label "Andrés Arias"@es ;
+    bib:anioNacimiento "1977"^^xsd:gYear ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q2841-Bogota> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q130397518> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q138696591-Ricardo-Zapata-Luna> a bib:Autor ;
+    rdfs:label "Ricardo Zapata Luna"@es ;
+    bib:anioNacimiento "1974"^^xsd:gYear ;
+    owl:sameAs <http://www.wikidata.org/entity/Q138696591> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q2420039-Santiago-Gamboa> a bib:Autor ;
+    rdfs:label "Santiago Gamboa"@es ;
+    bib:anioNacimiento "1962"^^xsd:gYear ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q2841-Bogota> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q2420039> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q34535656-Gabriela-A-Arciniegas> a bib:Autor ;
+    rdfs:label "Gabriela A. Arciniegas"@es ;
+    bib:anioNacimiento "1975"^^xsd:gYear ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q2841-Bogota> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q34535656> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q4353107-Gustavo-Bolivar> a bib:Autor ;
+    rdfs:label "Gustavo Bolívar"@es ;
+    bib:anioNacimiento "1966"^^xsd:gYear ;
+    bib:fechaNacimiento "1966-07-22"^^xsd:date ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q186193-Girardot> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q4353107> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q5678883-James-Canon> a bib:Autor ;
+    rdfs:label "James Cañón"@es ;
+    bib:anioNacimiento "1968"^^xsd:gYear ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q222755-Ibague> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5678883> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q622861-Jose-Maria-Vargas-Vila> a bib:Autor ;
+    rdfs:label "José María Vargas Vila"@es ;
+    bib:anioFallecimiento "1933"^^xsd:gYear ;
+    bib:anioNacimiento "1860"^^xsd:gYear ;
+    bib:fechaNacimiento "1860-07-23"^^xsd:date ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q2841-Bogota> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q622861> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q940428-Jose-Eustasio-Rivera> a bib:Autor ;
+    rdfs:label "José Eustasio Rivera"@es ;
+    bib:anioFallecimiento "1928"^^xsd:gYear ;
+    bib:anioNacimiento "1888"^^xsd:gYear ;
+    bib:fechaNacimiento "1888-02-19"^^xsd:date ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q1526269-Rivera> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q940428> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q94505500-Florentino-Vezga> a bib:Autor ;
+    rdfs:label "Florentino Vezga"@es ;
+    bib:anioFallecimiento "1890"^^xsd:gYear ;
+    bib:anioNacimiento "1833"^^xsd:gYear ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q1574792-Zapatoca> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q94505500> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q970649-Juan-Gabriel-Vasquez> a bib:Autor ;
+    rdfs:label "Juan Gabriel Vásquez"@es ;
+    bib:anioNacimiento "1973"^^xsd:gYear ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q2841-Bogota> ;
+    bib:reconocimiento [ a bib:Reconocimiento ;
+            bib:anio "2022"^^xsd:gYear ;
+            bib:premio <http://uniandes.edu.co/ws2026/recurso/premio/Q136747220-prix-du-meilleur-livre-etranger-roman-ou-poesie> ],
+        [ a bib:Reconocimiento ;
+            bib:anio "2014"^^xsd:gYear ;
+            bib:premio <http://uniandes.edu.co/ws2026/recurso/premio/Q56878385-Premio-Real-Academia-Espanola> ],
+        [ a bib:Reconocimiento ;
+            bib:anio "2018"^^xsd:gYear ;
+            bib:premio <http://uniandes.edu.co/ws2026/recurso/premio/Q17366394-Oficial-de-la-Orden-de-Isabel-la-Catolica> ],
+        [ a bib:Reconocimiento ;
+            bib:anio "2014"^^xsd:gYear ;
+            bib:premio <http://uniandes.edu.co/ws2026/recurso/premio/Q1362723-Premio-Literario-Internacional-IMPAC-de-Dublin> ],
+        [ a bib:Reconocimiento ;
+            bib:anio "2011"^^xsd:gYear ;
+            bib:premio <http://uniandes.edu.co/ws2026/recurso/premio/Q1280377-Premio-Alfaguara-de-Novela> ],
+        [ a bib:Reconocimiento ;
+            bib:anio "2016"^^xsd:gYear ;
+            bib:premio <http://uniandes.edu.co/ws2026/recurso/premio/Q13452528-caballero-de-la-Orden-de-las-Artes-y-las-Letras> ],
+        [ a bib:Reconocimiento ;
+            bib:anio "2015"^^xsd:gYear ;
+            bib:premio <http://uniandes.edu.co/ws2026/recurso/premio/Q130553017-Premio-San-Clemente-Rosalia-Abanca-de-novela-espanola> ],
+        [ a bib:Reconocimiento ;
+            bib:anio "2021"^^xsd:gYear ;
+            bib:premio <http://uniandes.edu.co/ws2026/recurso/premio/Q16621419-Premio-Bienal-de-Novela-Mario-Vargas-Llosa> ],
+        [ a bib:Reconocimiento ;
+            bib:anio "2012"^^xsd:gYear ;
+            bib:premio <http://uniandes.edu.co/ws2026/recurso/premio/Q5688317-Premio-Nacional-de-Periodismo-Simon-Bolivar> ],
+        [ a bib:Reconocimiento ;
+            bib:anio "2007"^^xsd:gYear ;
+            bib:premio <http://uniandes.edu.co/ws2026/recurso/premio/Q5688317-Premio-Nacional-de-Periodismo-Simon-Bolivar> ] ;
+    owl:sameAs <http://www.wikidata.org/entity/Q970649> .
+
+<http://uniandes.edu.co/ws2026/recurso/genero/Q1196408-ficcion-historica> a bib:Genero ;
+    rdfs:label "ficción histórica"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1196408> .
+
+<http://uniandes.edu.co/ws2026/recurso/genero/Q182015-suspenso> a bib:Genero ;
+    rdfs:label "suspenso"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q182015> .
+
+<http://uniandes.edu.co/ws2026/recurso/genero/Q185363-cronica> a bib:Genero ;
+    rdfs:label "crónica"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q185363> .
+
+<http://uniandes.edu.co/ws2026/recurso/genero/Q27801-literatura-de-no-ficcion> a bib:Genero ;
+    rdfs:label "literatura de no ficción"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q27801> .
+
+<http://uniandes.edu.co/ws2026/recurso/genero/Q36279-biografia> a bib:Genero ;
+    rdfs:label "biografía"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q36279> .
+
+<http://uniandes.edu.co/ws2026/recurso/genero/Q538812-novela-de-costumbres> a bib:Genero ;
+    rdfs:label "novela de costumbres"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q538812> .
+
+<http://uniandes.edu.co/ws2026/recurso/genero/Q8253-ficcion> a bib:Genero ;
+    rdfs:label "ficción"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q8253> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q199910-Magdalena> a bib:Lugar ;
+    rdfs:label "Magdalena"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q739-Colombia> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q199910> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q230882-Atlantico> a bib:Lugar ;
+    rdfs:label "Atlántico"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q739-Colombia> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q230882> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q234501-Tolima> a bib:Lugar ;
+    rdfs:label "Tolima"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q739-Colombia> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q234501> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q234920-Huila> a bib:Lugar ;
+    rdfs:label "Huila"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q739-Colombia> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q234920> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q235190-Manizales> a bib:Lugar ;
+    rdfs:label "Manizales"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q6409057-Centrosur> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q235190> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q335135-Popayan> a bib:Lugar ;
+    rdfs:label "Popayán"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q230602-Cauca> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q335135> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q6045119-Norte-Caldense> a bib:Lugar ;
+    rdfs:label "Norte Caldense"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q230607-Caldas> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q6045119> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q610524-Salamina> a bib:Lugar ;
+    rdfs:label "Salamina"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q230607-Caldas>,
+        <http://uniandes.edu.co/ws2026/recurso/lugar/Q6045119-Norte-Caldense> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q610524> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q649293-Sonson> a bib:Lugar ;
+    rdfs:label "Sonsón"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q123304-Antioquia> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q649293> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q657461-Cartagena-de-Indias> a bib:Lugar ;
+    rdfs:label "Cartagena de Indias"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q230597-Bolivar> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q657461> .
+
+<http://uniandes.edu.co/ws2026/recurso/premio/Q13452528-caballero-de-la-Orden-de-las-Artes-y-las-Letras> a bib:Premio ;
+    rdfs:label "caballero de la Orden de las Artes y las Letras"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q13452528> .
+
+<http://uniandes.edu.co/ws2026/recurso/premio/Q1625072-Premio-de-Literatura-Sor-Juana-Ines-de-la-Cruz> a bib:Premio ;
+    rdfs:label "Premio de Literatura Sor Juana Inés de la Cruz"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1625072> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q1394572-Juan-Montalvo> a bib:Autor ;
+    rdfs:label "Juan Montalvo"@es ;
+    bib:anioFallecimiento "1889"^^xsd:gYear ;
+    bib:anioNacimiento "1832"^^xsd:gYear ;
+    bib:fechaNacimiento "1832-04-13"^^xsd:date ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q210161-Ambato> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1394572> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q251123-Alvaro-Mutis> a bib:Autor ;
+    rdfs:label "Álvaro Mutis"@es ;
+    bib:anioFallecimiento "2013"^^xsd:gYear ;
+    bib:anioNacimiento "1923"^^xsd:gYear ;
+    bib:fechaNacimiento "1923-08-25"^^xsd:date ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q2841-Bogota> ;
+    bib:reconocimiento [ a bib:Reconocimiento ;
+            bib:anio "1997"^^xsd:gYear ;
+            bib:premio <http://uniandes.edu.co/ws2026/recurso/premio/Q4377193-Premio-Reina-Sofia-de-Poesia-Iberoamericana> ],
+        [ a bib:Reconocimiento ;
+            bib:anio "1997"^^xsd:gYear ;
+            bib:premio <http://uniandes.edu.co/ws2026/recurso/premio/Q126416281-doctor-honoris-causa-por-la-Universidad-de-Toulouse-II> ],
+        [ a bib:Reconocimiento ;
+            bib:anio "1997"^^xsd:gYear ;
+            bib:premio <http://uniandes.edu.co/ws2026/recurso/premio/Q1714285-Justiz-und-NS-Verbrechen> ],
+        [ a bib:Reconocimiento ;
+            bib:anio "1991"^^xsd:gYear ;
+            bib:premio <http://uniandes.edu.co/ws2026/recurso/premio/Q3910611-International-Nonino-Prize> ],
+        [ a bib:Reconocimiento ;
+            bib:premio <http://uniandes.edu.co/ws2026/recurso/premio/Q13452528-caballero-de-la-Orden-de-las-Artes-y-las-Letras> ],
+        [ a bib:Reconocimiento ;
+            bib:anio "2001"^^xsd:gYear ;
+            bib:premio <http://uniandes.edu.co/ws2026/recurso/premio/Q81466-Premio-Miguel-de-Cervantes> ],
+        [ a bib:Reconocimiento ;
+            bib:anio "1988"^^xsd:gYear ;
+            bib:premio <http://uniandes.edu.co/ws2026/recurso/premio/Q1169044-Premio-Xavier-Villaurrutia> ],
+        [ a bib:Reconocimiento ;
+            bib:anio "2002"^^xsd:gYear ;
+            bib:premio <http://uniandes.edu.co/ws2026/recurso/premio/Q580574-Premio-Internacional-Neustadt-de-Literatura> ],
+        [ a bib:Reconocimiento ;
+            bib:anio "1989"^^xsd:gYear ;
+            bib:premio <http://uniandes.edu.co/ws2026/recurso/premio/Q3405076-Premio-Medicis-Extranjero> ],
+        [ a bib:Reconocimiento ;
+            bib:anio "1997"^^xsd:gYear ;
+            bib:premio <http://uniandes.edu.co/ws2026/recurso/premio/Q3332454-Premio-Princesa-de-Asturias-de-las-Letras> ],
+        [ a bib:Reconocimiento ;
+            bib:premio <http://uniandes.edu.co/ws2026/recurso/premio/Q163700-Orden-Nacional-de-la-Legion-de-Honor> ],
+        [ a bib:Reconocimiento ;
+            bib:anio "2008"^^xsd:gYear ;
+            bib:premio <http://uniandes.edu.co/ws2026/recurso/premio/Q130852616-Premio-Rosalia-de-Castro> ],
+        [ a bib:Reconocimiento ;
+            bib:anio "1996"^^xsd:gYear ;
+            bib:premio <http://uniandes.edu.co/ws2026/recurso/premio/Q20884576-Gran-Cruz-de-la-Orden-Civil-de-Alfonso-X-el-Sabio> ] ;
+    owl:sameAs <http://www.wikidata.org/entity/Q251123> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q3187692-Juan-Jose-Nieto> a bib:Autor ;
+    rdfs:label "Juan José Nieto"@es ;
+    bib:anioFallecimiento "1866"^^xsd:gYear ;
+    bib:anioNacimiento "1805"^^xsd:gYear ;
+    bib:fechaNacimiento "1805-06-24"^^xsd:date ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q979097-Baranoa> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q3187692> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q3189799-Julio-Arboleda-Pombo> a bib:Autor ;
+    rdfs:label "Julio Arboleda Pombo"@es ;
+    bib:anioFallecimiento "1862"^^xsd:gYear ;
+    bib:anioNacimiento "1817"^^xsd:gYear ;
+    bib:fechaNacimiento "1817-06-09"^^xsd:date ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q335135-Popayan> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q3189799> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q3568859-William-Ospina> a bib:Autor ;
+    rdfs:label "William Ospina"@es ;
+    bib:anioNacimiento "1954"^^xsd:gYear ;
+    bib:fechaNacimiento "1954-03-02"^^xsd:date ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q1578580-Herveo> ;
+    bib:reconocimiento [ a bib:Reconocimiento ;
+            bib:anio "2009"^^xsd:gYear ;
+            bib:premio <http://uniandes.edu.co/ws2026/recurso/premio/Q1088492-Premio-Romulo-Gallegos> ],
+        [ a bib:Reconocimiento ;
+            bib:anio "2011"^^xsd:gYear ;
+            bib:premio <http://uniandes.edu.co/ws2026/recurso/premio/Q130553017-Premio-San-Clemente-Rosalia-Abanca-de-novela-espanola> ],
+        [ a bib:Reconocimiento ;
+            bib:anio "2003"^^xsd:gYear ;
+            bib:premio <http://uniandes.edu.co/ws2026/recurso/premio/Q182566-Premio-Casa-de-las-Americas> ],
+        [ a bib:Reconocimiento ;
+            bib:premio <http://uniandes.edu.co/ws2026/recurso/premio/Q2883115-Premio-Nacional-de-Poesia> ] ;
+    owl:sameAs <http://www.wikidata.org/entity/Q3568859> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q5670267-Elcina-Valencia> a bib:Autor ;
+    rdfs:label "Elcina Valencia"@es ;
+    bib:anioNacimiento "1963"^^xsd:gYear ;
+    bib:fechaNacimiento "1963-04-27"^^xsd:date ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q996581-Buenaventura> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5670267> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q5931710-Joaquin-Antonio-Uribe> a bib:Autor ;
+    rdfs:label "Joaquín Antonio Uribe"@es ;
+    bib:anioFallecimiento "1935"^^xsd:gYear ;
+    bib:anioNacimiento "1858"^^xsd:gYear ;
+    bib:fechaNacimiento "1858-09-28"^^xsd:date ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q649293-Sonson> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5931710> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q7557523-Soledad-Acosta-de-Samper> a bib:Autor ;
+    rdfs:label "Soledad Acosta de Samper"@es ;
+    bib:anioFallecimiento "1913"^^xsd:gYear ;
+    bib:anioNacimiento "1833"^^xsd:gYear ;
+    bib:fechaNacimiento "1833-05-05"^^xsd:date ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q2841-Bogota> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q7557523> .
+
+<http://uniandes.edu.co/ws2026/recurso/genero/Q182357-poesia-lirica> a bib:Genero ;
+    rdfs:label "poesía lírica"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q182357> .
+
+<http://uniandes.edu.co/ws2026/recurso/genero/Q213051-no-ficcion> a bib:Genero ;
+    rdfs:label "no ficción"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q213051> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q121233-Boyaca> a bib:Lugar ;
+    rdfs:label "Boyacá"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q739-Colombia> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q121233> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q230607-Caldas> a bib:Lugar ;
+    rdfs:label "Caldas"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q739-Colombia> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q230607> .
+
+<http://uniandes.edu.co/ws2026/recurso/premio/Q1280377-Premio-Alfaguara-de-Novela> a bib:Premio ;
+    rdfs:label "Premio Alfaguara de Novela"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1280377> .
+
+<http://uniandes.edu.co/ws2026/recurso/premio/Q130553017-Premio-San-Clemente-Rosalia-Abanca-de-novela-espanola> a bib:Premio ;
+    rdfs:label "Premio San Clemente Rosalía-Abanca de novela española"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q130553017> .
+
+<http://uniandes.edu.co/ws2026/recurso/premio/Q182566-Premio-Casa-de-las-Americas> a bib:Premio ;
+    rdfs:label "Premio Casa de las Américas"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q182566> .
+
+<http://uniandes.edu.co/ws2026/recurso/premio/Q580574-Premio-Internacional-Neustadt-de-Literatura> a bib:Premio ;
+    rdfs:label "Premio Internacional Neustadt de Literatura"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q580574> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q1661285-Rafael-Pombo> a bib:Autor ;
+    rdfs:label "Rafael Pombo"@es ;
+    bib:anioFallecimiento "1912"^^xsd:gYear ;
+    bib:anioNacimiento "1833"^^xsd:gYear ;
+    bib:fechaNacimiento "1833-11-07"^^xsd:date ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q2841-Bogota> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1661285> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q17460798-Mario-Mendoza> a bib:Autor ;
+    rdfs:label "Mario Mendoza"@es ;
+    bib:anioNacimiento "1965"^^xsd:gYear ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q2841-Bogota> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q17460798> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q272163-Laura-Restrepo> a bib:Autor ;
+    rdfs:label "Laura Restrepo"@es ;
+    bib:anioNacimiento "1950"^^xsd:gYear ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q739-Colombia> ;
+    bib:reconocimiento [ a bib:Reconocimiento ;
+            bib:anio "1998"^^xsd:gYear ;
+            bib:premio <http://uniandes.edu.co/ws2026/recurso/premio/Q137761811-Prix-France-Culture-de-litterature-etrangere> ],
+        [ a bib:Reconocimiento ;
+            bib:anio "1997"^^xsd:gYear ;
+            bib:premio <http://uniandes.edu.co/ws2026/recurso/premio/Q1625072-Premio-de-Literatura-Sor-Juana-Ines-de-la-Cruz> ],
+        [ a bib:Reconocimiento ;
+            bib:premio <http://uniandes.edu.co/ws2026/recurso/premio/Q1625072-Premio-de-Literatura-Sor-Juana-Ines-de-la-Cruz> ],
+        [ a bib:Reconocimiento ;
+            bib:anio "2004"^^xsd:gYear ;
+            bib:premio <http://uniandes.edu.co/ws2026/recurso/premio/Q1280377-Premio-Alfaguara-de-Novela> ],
+        [ a bib:Reconocimiento ;
+            bib:anio "2003"^^xsd:gYear ;
+            bib:premio <http://uniandes.edu.co/ws2026/recurso/premio/Q130553017-Premio-San-Clemente-Rosalia-Abanca-de-novela-espanola> ],
+        [ a bib:Reconocimiento ;
+            bib:anio "2006"^^xsd:gYear ;
+            bib:premio <http://uniandes.edu.co/ws2026/recurso/premio/Q1316544-Beca-Guggenheim> ] ;
+    owl:sameAs <http://www.wikidata.org/entity/Q272163> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q3071317-Tomas-Carrasquilla> a bib:Autor ;
+    rdfs:label "Tomás Carrasquilla"@es ;
+    bib:anioFallecimiento "1936"^^xsd:gYear ;
+    bib:anioNacimiento "1871"^^xsd:gYear ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q1578783-Santo-Domingo> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q3071317> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q5672703-Amira-de-la-Rosa> a bib:Autor ;
+    rdfs:label "Amira de la Rosa"@es ;
+    bib:anioFallecimiento "1974"^^xsd:gYear ;
+    bib:anioNacimiento "1895"^^xsd:gYear ;
+    bib:fechaNacimiento "1895-01-07"^^xsd:date ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q62823-Barranquilla> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5672703> .
+
+<http://uniandes.edu.co/ws2026/recurso/genero/Q35760-ensayo> a bib:Genero ;
+    rdfs:label "ensayo"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q35760> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q13990-Valle-del-Cauca> a bib:Lugar ;
+    rdfs:label "Valle del Cauca"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q739-Colombia> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q13990> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q230602-Cauca> a bib:Lugar ;
+    rdfs:label "Cauca"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q739-Colombia> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q230602> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q48278-Medellin> a bib:Lugar ;
+    rdfs:label "Medellín"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q123304-Antioquia> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q48278> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q62823-Barranquilla> a bib:Lugar ;
+    rdfs:label "Barranquilla"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q230882-Atlantico> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q62823> .
+
+<http://uniandes.edu.co/ws2026/recurso/premio/Q1088492-Premio-Romulo-Gallegos> a bib:Premio ;
+    rdfs:label "Premio Rómulo Gallegos"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1088492> .
+
+<http://uniandes.edu.co/ws2026/recurso/premio/Q1316544-Beca-Guggenheim> a bib:Premio ;
+    rdfs:label "Beca Guggenheim"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1316544> .
+
+<http://uniandes.edu.co/ws2026/recurso/premio/Q5688317-Premio-Nacional-de-Periodismo-Simon-Bolivar> a bib:Premio ;
+    rdfs:label "Premio Nacional de Periodismo Simón Bolívar"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5688317> .
+
+<http://uniandes.edu.co/ws2026/recurso/genero/Q102316242-poesia-colombiana> a bib:Genero ;
+    rdfs:label "poesía colombiana"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q102316242> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q235166-Santander> a bib:Lugar ;
+    rdfs:label "Santander"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q739-Colombia> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q235166> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q51103-Cali> a bib:Lugar ;
+    rdfs:label "Cali"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q13990-Valle-del-Cauca>,
+        <http://uniandes.edu.co/ws2026/recurso/lugar/Q653059-Estado-Soberano-del-Cauca> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q51103> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q243766-Bucaramanga> a bib:Lugar ;
+    rdfs:label "Bucaramanga"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q235166-Santander> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q243766> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q232564-Cundinamarca> a bib:Lugar ;
+    rdfs:label "Cundinamarca"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q739-Colombia> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q232564> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q2983255-Josee-Asuncion-Silva> a bib:Autor ;
+    rdfs:label "Josée Asunción Silvà"@es ;
+    bib:anioFallecimiento "1896"^^xsd:gYear ;
+    bib:anioNacimiento "1865"^^xsd:gYear ;
+    bib:fechaNacimiento "1865-11-27"^^xsd:date ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q2841-Bogota> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q2983255> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q123304-Antioquia> a bib:Lugar ;
+    rdfs:label "Antioquia"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q739-Colombia> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q123304> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q706272-Fernando-Vallejo> a bib:Autor ;
+    rdfs:label "Fernando Vallejo"@es ;
+    bib:anioNacimiento "1942"^^xsd:gYear ;
+    bib:fechaNacimiento "1942-10-24"^^xsd:date ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q48278-Medellin> ;
+    bib:reconocimiento [ a bib:Reconocimiento ;
+            bib:anio "2003"^^xsd:gYear ;
+            bib:premio <http://uniandes.edu.co/ws2026/recurso/premio/Q1088492-Premio-Romulo-Gallegos> ],
+        [ a bib:Reconocimiento ;
+            bib:anio "2011"^^xsd:gYear ;
+            bib:premio <http://uniandes.edu.co/ws2026/recurso/premio/Q1347261-Premio-FIL-de-Literatura-en-Lenguas-Romances> ] ;
+    owl:sameAs <http://www.wikidata.org/entity/Q706272> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q739-Colombia> a bib:Lugar ;
+    rdfs:label "Colombia"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q739> .
+
+<http://uniandes.edu.co/ws2026/recurso/genero/Q482-poesia> a bib:Genero ;
+    rdfs:label "poesía"@es ;
+    owl:sameAs <http://www.wikidata.org/entity/Q482> .
+
+<http://uniandes.edu.co/ws2026/recurso/lugar/Q2841-Bogota> a bib:Lugar ;
+    rdfs:label "Bogotá"@es ;
+    bib:ubicadoEn <http://uniandes.edu.co/ws2026/recurso/lugar/Q232564-Cundinamarca> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q2841> .
+
+<http://uniandes.edu.co/ws2026/recurso/autor/Q5878-Gabriel-Garcia-Marquez> a bib:Autor ;
+    rdfs:label "Gabriel García Márquez"@es ;
+    bib:anioFallecimiento "2014"^^xsd:gYear ;
+    bib:anioNacimiento "1927"^^xsd:gYear ;
+    bib:fechaNacimiento "1927-03-06"^^xsd:date ;
+    bib:lugarNacimiento <http://uniandes.edu.co/ws2026/recurso/lugar/Q624492-Aracataca> ;
+    bib:reconocimiento [ a bib:Reconocimiento ;
+            bib:anio "1980"^^xsd:gYear ;
+            bib:premio <http://uniandes.edu.co/ws2026/recurso/premio/Q10855212-Comandante-de-la-Orden-Nacional-de-la-Legion-de-Honor> ],
+        [ a bib:Reconocimiento ;
+            bib:anio "1981"^^xsd:gYear ;
+            bib:premio <http://uniandes.edu.co/ws2026/recurso/premio/Q10855216-Gran-Oficial-de-la-Orden-Nacional-de-la-Legion-de-Honor> ],
+        [ a bib:Reconocimiento ;
+            bib:anio "2012"^^xsd:gYear ;
+            bib:premio <http://uniandes.edu.co/ws2026/recurso/premio/Q2268261-Orden-de-Honor> ],
+        [ a bib:Reconocimiento ;
+            bib:premio <http://uniandes.edu.co/ws2026/recurso/premio/Q5688317-Premio-Nacional-de-Periodismo-Simon-Bolivar> ],
+        [ a bib:Reconocimiento ;
+            bib:anio "1982"^^xsd:gYear ;
+            bib:premio <http://uniandes.edu.co/ws2026/recurso/premio/Q93956-Orden-Mexicana-del-Aguila-Azteca> ],
+        [ a bib:Reconocimiento ;
+            bib:anio "1971"^^xsd:gYear ;
+            bib:premio <http://uniandes.edu.co/ws2026/recurso/premio/Q580574-Premio-Internacional-Neustadt-de-Literatura> ],
+        [ a bib:Reconocimiento ;
+            bib:anio "1993"^^xsd:gYear ;
+            bib:premio <http://uniandes.edu.co/ws2026/recurso/premio/Q9052807-Orden-al-Merito-Docente-y-Cultural-Gabriela-Mistral> ],
+        [ a bib:Reconocimiento ;
+            bib:anio "1980"^^xsd:gYear ;
+            bib:premio <http://uniandes.edu.co/ws2026/recurso/premio/Q5153503-Common-Wealth-Award-of-Distinguished-Service> ],
+        [ a bib:Reconocimiento ;
+            bib:anio "1982"^^xsd:gYear ;
+            bib:premio <http://uniandes.edu.co/ws2026/recurso/premio/Q37922-Premio-Nobel-de-Literatura> ],
+        [ a bib:Reconocimiento ;
+            bib:anio "1972"^^xsd:gYear ;
+            bib:premio <http://uniandes.edu.co/ws2026/recurso/premio/Q1088492-Premio-Romulo-Gallegos> ],
+        [ a bib:Reconocimiento ;
+            bib:anio "1972"^^xsd:gYear ;
+            bib:premio <http://uniandes.edu.co/ws2026/recurso/premio/Q580574-Premio-Internacional-Neustadt-de-Literatura> ] ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5878> .
+
