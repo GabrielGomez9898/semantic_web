@@ -195,11 +195,36 @@ titulo(3, "Contar bien")
 
 # TODO 3.1 — Cuántas obras hay de cada género, con COUNT(?o) y GROUP BY.
 
+tabla(consultar(g, """
+SELECT (COUNT(?obra) AS ?cantidad_obras) ?genero
+WHERE {
+    ?obra bib:genero ?genero .
+}
+GROUP BY ?genero
+"""))
+
 # TODO 3.2 — Encuentre las obras que declaran más de un género. Use HAVING.
+tabla(consultar(g, """
+SELECT ?obra (COUNT(?genero) AS ?cantidad_generos)
+WHERE {
+    ?obra bib:genero ?genero .
+}
+GROUP BY ?obra
+HAVING (COUNT(?genero) > 1)
+"""))
 
 # TODO 3.3 — En una sola consulta, devuelva COUNT(?o) y COUNT(DISTINCT ?o)
 # sobre las obras con género. Explique la diferencia usando el resultado
 # de 3.2.
+
+tabla(consultar(g, """
+SELECT ?obra (COUNT(?genero) AS ?cantidad_generos) (COUNT(DISTINCT ?genero) AS ?cantidad_generos_distintos)
+WHERE {
+    ?obra bib:genero ?genero .
+}
+GROUP BY ?obra
+HAVING (COUNT(?genero) > 1)
+"""))
 
 
 # ===========================================================================
@@ -208,10 +233,26 @@ titulo(4, "Caminos de propiedad")
 
 # TODO 4.1 — Los municipios y la unidad territorial que los contiene, con un
 # solo paso de bib:ubicadoEn.
+tabla(consultar(g, """
+SELECT ?recurso ?lugar
+WHERE {
+    ?recurso bib:ubicadoEn ?lugar .
+}
+
+"""))
 
 # TODO 4.2 — Cuántos autores nacieron en cada unidad territorial, siguiendo
 # bib:ubicadoEn con cierre transitivo. Use COUNT(DISTINCT ?a).
 # Mire la primera fila y explique por qué está ahí.
+tabla(consultar(g, """
+SELECT  ?unidad_territorial (COUNT(distinct ?autor) AS ?cantidad_autores)
+WHERE {
+    ?obra bib:autor ?autor .
+    ?autor bib:lugarNacimiento ?lugar .
+    ?lugar bib:ubicadoEn+ ?unidad_territorial .
+}
+GROUP BY ?unidad_territorial
+"""))
 
 # TODO 4.3 — Repita 4.2 excluyendo a Colombia. El IRI es
 # <http://uniandes.edu.co/ws2026/recurso/lugar/Q739-Colombia>.
@@ -233,12 +274,63 @@ titulo(5, "Negación")
 #   (b) FILTER NOT EXISTS
 #   (c) MINUS
 
+print("--------- Ejercicio 5.1 --------")
+print("--- (a) OPTIONAL con FILTER(!BOUND(?y)) ---")
+tabla(consultar(g, """
+SELECT DISTINCT ?autor ?anio
+WHERE {
+    ?obra bib:autor ?autor .
+    OPTIONAL {?autor bib:fechaNacimiento ?anio}
+    FILTER (!BOUND(?anio))
+}
+"""))
+
+print("--- (b) FILTER NOT EXISTS ---")
+tabla(consultar(g, """
+SELECT DISTINCT ?autor ?anio
+WHERE {
+    ?obra bib:autor ?autor .
+    FILTER NOT EXISTS { ?autor bib:fechaNacimiento ?anio}
+    
+}
+"""))
+
+print("--- (c) MINUS ---")
+tabla(consultar(g, """
+SELECT DISTINCT ?autor ?anio
+WHERE {
+    ?obra bib:autor ?autor .
+    MINUS { ?autor bib:fechaNacimiento ?anio}
+    
+}
+"""))
+
+
 # TODO 5.2 — Repita el MINUS cambiando la variable del bloque interno por una
 # que no aparezca afuera. Cuente las filas y explique el resultado en términos
 # de asignaciones compatibles.
+print("--- Ejercicio 5.2 — MINUS con variable interna distinta ---")
+tabla(consultar(g, """
+SELECT DISTINCT ?autor ?anio
+WHERE {
+    ?obra bib:autor ?autor .
+    MINUS { ?autor bib:fechaNacimiento ?fecha}
+    
+}
+"""))
 
 # --- Segunda pregunta: autores que no escribieron poesía ------------------
 # TODO 5.3 — Cuántos autores tienen al menos una obra con género POESIA.
+print("--- Ejercicio 5.3 — autores con al menos una obra de poesía ---")
+tabla(consultar(g, """
+SELECT (COUNT(?autor) AS ?cantidad_autores)
+WHERE {
+    ?obra bib:autor ?autor .
+    ?recurso_genero rdfs:label "poesía"@es .
+    ?obra bib:genero ?recurso_genero .
+    
+}
+"""))
 
 # TODO 5.4 — Escriba la versión con FILTER ( ?gx != POESIA ) y la versión con
 # FILTER NOT EXISTS. Dan números muy distintos.
