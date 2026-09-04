@@ -9,10 +9,11 @@ WHERE {
 
   ?a rdfs:label ?autor .
   ?a bib:anioNacimiento ?nacimiento .
+  FILTER ( xsd:integer(STR(?nacimiento)) >= 1800 &&
+           xsd:integer(STR(?nacimiento)) <  1900 )
   ?o bib:autor ?a .
   ?o rdfs:label ?obra .
   ?o a bib:Obra .
   ?a a bib:Autor .
-  FILTER ( xsd:integer(STR(?nacimiento)) >= 1800 &&
-           xsd:integer(STR(?nacimiento)) <  1900 )
+  
 }
