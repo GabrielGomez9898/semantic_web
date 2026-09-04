@@ -1,0 +1,18 @@
+# m1-rapida — Las obras de los autores nacidos en el siglo XIX.
+
+PREFIX bib:  <http://uniandes.edu.co/ws2026/vocab/lit#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd:  <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?autor ?obra ?nacimiento
+WHERE {
+
+  ?a rdfs:label ?autor .
+  ?a bib:anioNacimiento ?nacimiento .
+  ?o bib:autor ?a .
+  ?o rdfs:label ?obra .
+  ?o a bib:Obra .
+  ?a a bib:Autor .
+  FILTER ( xsd:integer(STR(?nacimiento)) >= 1800 &&
+           xsd:integer(STR(?nacimiento)) <  1900 )
+}
