@@ -1,0 +1,25 @@
+# c06 — Autores por unidad territorial.
+#
+# Cuente cuántos autores nacieron en cada unidad territorial, contando también
+# los que nacieron en un municipio contenido en ella. La propiedad de
+# contención es bib:ubicadoEn.
+#
+# Pista: usar * luego de una propiedad dentro del WHERE significa 
+# "cero o más pasos por <propiedad>".
+
+PREFIX bib:  <http://uniandes.edu.co/ws2026/vocab/lit#>
+PREFIX lit:  <http://uniandes.edu.co/ws2026/recurso/>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX dct:  <http://purl.org/dc/terms/>
+PREFIX xsd:  <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?territorio (COUNT(?autor) as ?num_autores ) 
+WHERE {
+  ?autor bib:lugarNacimiento ?lugarNacimiento .
+  ?lugarNacimiento bib:ubicadoEn* ?territorio .
+}
+GROUP BY ?territorio
+ORDER BY DESC(?num_autores)
+LIMIT 15

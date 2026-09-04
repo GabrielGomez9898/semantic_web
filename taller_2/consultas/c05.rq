@@ -1,0 +1,17 @@
+# c05 — Los diez autores con más obras.
+
+PREFIX bib:  <http://uniandes.edu.co/ws2026/vocab/lit#>
+PREFIX lit:  <http://uniandes.edu.co/ws2026/recurso/>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX dct:  <http://purl.org/dc/terms/>
+PREFIX xsd:  <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?autor (COUNT(?obras ) AS ?num_obras)
+WHERE {
+  ?obras bib:autor ?autor .
+}
+GROUP BY ?autor
+ORDER BY DESC(?num_obras)
+LIMIT 10

@@ -1,0 +1,28 @@
+# Fuseki para el Taller 2.
+#
+#   docker compose up -d          levanta el servidor
+#   docker compose logs -f        mira el arranque
+#   docker compose down           lo apaga y conserva los datos
+#   docker compose down -v        lo apaga y borra los datos
+#
+# La interfaz queda en http://localhost:3030 con usuario admin y la contraseña
+
+services:
+  fuseki:
+    image: stain/jena-fuseki:4.8.0
+    container_name: ws2026-fuseki
+    ports:
+      - "3030:3030"
+    environment:
+      ADMIN_PASSWORD: taller2      
+      JVM_ARGS: -Xmx2g
+    volumes:
+      - fuseki-datos:/fuseki
+      - ./datos:/staging:ro
+      - ./configuracion:/fuseki/configuration
+
+      - ./datos:/staging:ro
+    restart: unless-stopped
+
+volumes:
+  fuseki-datos:

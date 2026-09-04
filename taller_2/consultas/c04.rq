@@ -1,0 +1,29 @@
+# c04 — Todas las obras, con año opcional.
+#
+# Devuelva todas las obras de Gabriel García Márquez. Muestre el título de
+# cada obra y, si existe, su año de publicación (es decir, puede haber obras
+# sin año de publicación en la respuesta).
+#
+# Compare el número de filas con el de c02 y explique la diferencia
+# en el informe.
+
+PREFIX bib:  <http://uniandes.edu.co/ws2026/vocab/lit#>
+PREFIX lit:  <http://uniandes.edu.co/ws2026/recurso/>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX dct:  <http://purl.org/dc/terms/>
+PREFIX xsd:  <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?titulo ?anio
+WHERE {
+  ?recurso_autor rdfs:label "Gabriel García Márquez"@es .
+  ?obra bib:autor ?recurso_autor .
+  ?obra rdfs:label ?titulo .
+  OPTIONAL{
+    ?obra bib:publicadaEn ?anio }
+}
+ORDER BY ?anio ?titulo
+
+#Informe: la consulta c02 arroja 41 filas y c04 arroja 46, y es por que la c02 obliga a las tripletas a tener anio y la c04 no la obliga,
+# si no la tiene no pasa nada, igual la incluye.

@@ -1,0 +1,20 @@
+# m1-lenta — Las obras de los autores nacidos en el siglo XIX.
+#
+# Escriba m1-rapida.rq, equivalente, reordenando los patrones. No cambie qué
+# devuelve. Mida las dos con -n 20 y compare.
+
+PREFIX bib:  <http://uniandes.edu.co/ws2026/vocab/lit#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd:  <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?autor ?obra ?nacimiento
+WHERE {
+  ?o a bib:Obra .
+  ?a a bib:Autor .
+  ?o bib:autor ?a .
+  ?o rdfs:label ?obra .
+  ?a rdfs:label ?autor .
+  ?a bib:anioNacimiento ?nacimiento .
+  FILTER ( xsd:integer(STR(?nacimiento)) >= 1800 &&
+           xsd:integer(STR(?nacimiento)) <  1900 )
+}

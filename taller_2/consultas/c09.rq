@@ -1,0 +1,65 @@
+# c09 — Actualización: el país de nacimiento, derivado.
+#
+# El dataset tiene bib:lugarNacimiento hacia un municipio y bib:ubicadoEn
+# entre unidades territoriales, y no tiene el país de nacimiento de forma
+# directa. Insértelo con una sola operación, en la propiedad
+# bib:paisNacimiento.
+#
+# El país es la unidad territorial que no está contenida en ninguna otra.
+# En una consulta anterior hubo una pista sobre las cadenas de propiedades,
+# esta vez es la misma idea pero con otro símbolo...
+#
+# Ejecutar:  python correr.py consultas/c09.rq --update
+#
+# Antes de ejecutarla, escriba el SELECT equivalente y mire cuántas filas
+# devuelve. Es decir, ejecute un SELECT con el WHERE que va a definir
+# para la inserción ANTES de hacer el insert.
+
+PREFIX bib:  <http://uniandes.edu.co/ws2026/vocab/lit#>
+PREFIX lit:  <http://uniandes.edu.co/ws2026/recurso/>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX dct:  <http://purl.org/dc/terms/>
+PREFIX xsd:  <http://www.w3.org/2001/XMLSchema#>
+
+
+
+# PRIMERO EL SELECT
+#SELECT ?recurso_autor ?lugar ?territorio
+#WHERE {
+#  ?autor bib:lugarNacimiento ?lugar .
+#  ?lugar bib:ubicadoEn+ ?territorio .
+
+#  FILTER NOT EXISTS {
+#    ?territorio bib:ubicadoEn ?otroTerritorio .
+#  }
+# }
+#LIMIT 1500
+
+
+#INSERT {
+#  ?autor bib:paisNacimiento ?territorio .
+#}
+#WHERE {
+#  ?autor bib:lugarNacimiento ?lugar .
+#  ?lugar bib:ubicadoEn+ ?territorio .
+
+#  FILTER NOT EXISTS {
+#    ?territorio bib:ubicadoEn ?otroTerritorio .
+#  }
+#}
+
+# VERIFICAR EL INSERT
+SELECT ?autor ?pais
+WHERE {
+  ?autor bib:paisNacimiento ?pais .
+}
+
+
+#DELETE {
+#  ?autor bib:paisNacimiento ?pais .
+#}
+#WHERE {
+#  ?autor bib:paisNacimiento ?pais .
+#}

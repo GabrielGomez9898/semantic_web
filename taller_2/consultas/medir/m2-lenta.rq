@@ -1,0 +1,19 @@
+# m2-lenta — Los premios de los autores nacidos en un municipio de Antioquia.
+#
+# Escriba m2-rapida.rq. Piense en qué extremo del camino conviene fijar y en
+# qué patrón deja menos soluciones parciales vivas.
+
+PREFIX bib:  <http://uniandes.edu.co/ws2026/vocab/lit#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd:  <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?autor ?premio
+WHERE {
+  ?m bib:ubicadoEn+ ?dep .
+  ?a bib:lugarNacimiento ?m .
+  ?a bib:reconocimiento ?r .
+  ?r bib:premio ?p .
+  ?p rdfs:label ?premio .
+  ?a rdfs:label ?autor .
+  ?dep rdfs:label "Antioquia"@es .
+}

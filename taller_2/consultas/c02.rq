@@ -1,0 +1,27 @@
+# c02 — Obras con año de publicación.
+#
+# Devuelva el título y el año de publicación de las obras de Gabriel García
+# Márquez que tengan un año registrado, ordenadas por año.
+#
+# Busque al autor por su rdfs:label y no por su IRI.
+#
+# Anote cuántas filas devuelve.
+
+PREFIX bib:  <http://uniandes.edu.co/ws2026/vocab/lit#>
+PREFIX lit:  <http://uniandes.edu.co/ws2026/recurso/>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX dct:  <http://purl.org/dc/terms/>
+PREFIX xsd:  <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?titulo ?anio
+WHERE {
+  ?recurso_autor rdfs:label "Gabriel García Márquez"@es .
+  ?obra bib:autor ?recurso_autor .
+  ?obra rdfs:label ?titulo .
+  ?obra bib:publicadaEn ?anio .
+}
+ORDER BY ?anio
+
+#Respuesta: Devuelve 41 filas

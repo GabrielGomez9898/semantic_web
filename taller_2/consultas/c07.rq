@@ -1,0 +1,42 @@
+# c07 — Autores sin ningún premio registrado.
+#
+# Escríbala de dos maneras, con FILTER NOT EXISTS y con MINUS, y compruebe que
+# coinciden. Después, repita la versión con MINUS cambiando la variable del
+# bloque interno (dentro del MINUS) por una que no aparezca afuera (ni en SELECT
+# ni en WHERE) y explique el resultado en el informe.
+
+PREFIX bib:  <http://uniandes.edu.co/ws2026/vocab/lit#>
+PREFIX lit:  <http://uniandes.edu.co/ws2026/recurso/>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX dct:  <http://purl.org/dc/terms/>
+PREFIX xsd:  <http://www.w3.org/2001/XMLSchema#>
+
+# ESTA CONSULTA ME DEVUELVE 406 FILAS
+#SELECT ?autor
+#WHERE {
+#  ?autor a bib:Autor .
+#  FILTER NOT EXISTS { ?autor bib:reconocimiento ?reconocimiento }
+#}
+#ORDER BY ?autor
+
+# ESTA CONSULTA ME DEVUELVE 406 FILAS
+#SELECT ?autor
+#WHERE {
+#  ?autor a bib:Autor .
+#  MINUS { ?autor bib:reconocimiento ?reconocimiento }
+#}
+#ORDER BY ?autor
+
+# ESTA CONSULTA ME DEVUELVE 660 FILAS
+SELECT ?autor
+WHERE {
+  ?autor a bib:Autor .
+  MINUS { ?autores bib:reconocimiento ?reconocimiento }
+}
+ORDER BY ?autor
+
+#Informe: El minus con el cambio de nombre de la variable devuelve 660 filas, no puede eliminar ninguna tripleta 
+# porque la variable ?autores no tiene match con las variables de afuera y por eso no puede resolver ese patron, 
+# como termina esto es que el MINUS no encuentra ese patron y por lo tanto no elimina niguna tripleta

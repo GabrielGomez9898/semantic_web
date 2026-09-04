@@ -1,0 +1,18 @@
+# c01 — Inventario del dataset.
+#
+# Devuelva, en una sola consulta, cada clase con el número de instancias que
+# tiene, de mayor a menor.
+#
+# Ejecutar:  python correr.py consultas/c01.rq
+
+PREFIX bib:  <http://uniandes.edu.co/ws2026/vocab/lit#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?clase (COUNT(?x) AS ?n)
+WHERE {
+  ?clase a rdfs:Class .
+  ?x a ?clase .
+}
+GROUP BY ?clase
+ORDER BY DESC(?n)

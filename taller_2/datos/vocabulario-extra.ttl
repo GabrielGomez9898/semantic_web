@@ -1,0 +1,45 @@
+# ---------------------------------------------------------------------------
+# Vocabulario adicional del Taller 2.
+#
+# Estas declaraciones no se extrajeron de Wikidata. Se agregaron a mano para
+# que haya algo sobre lo cual razonar en el punto 5, y son deliberadamente
+# pocas. Todas pasan la prueba de inclusión de conjuntos de la Lectura 3.
+#
+# Se cargan en un grafo con nombre aparte, para poder consultar el volcado con
+# y sin ellas:
+#
+#   python cargar.py --grafo urn:ws2026:vocabulario datos/vocabulario-extra.ttl
+# ---------------------------------------------------------------------------
+@prefix bib:  <http://uniandes.edu.co/ws2026/vocab/lit#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# --- Tres superclases ------------------------------------------------------
+bib:Persona a rdfs:Class ;
+    rdfs:label   "persona"@es ;
+    rdfs:comment "Ser humano, haya escrito algo o no."@es .
+
+bib:Creacion a rdfs:Class ;
+    rdfs:label   "creación"@es ;
+    rdfs:comment "Obra del intelecto humano, literaria o no."@es .
+
+bib:EntidadGeografica a rdfs:Class ;
+    rdfs:label   "entidad geográfica"@es ;
+    rdfs:comment "Cualquier porción delimitada de territorio."@es .
+
+bib:Autor rdfs:subClassOf bib:Persona .
+bib:Obra  rdfs:subClassOf bib:Creacion .
+bib:Lugar rdfs:subClassOf bib:EntidadGeografica .
+
+# --- Una superpropiedad de las cuatro fechas -------------------------------
+# Las cuatro propiedades de año del volcado dicen cosas distintas y comparten
+# una: cada una asocia un año a una entidad. Reunirlas permite preguntar por
+# la cronología completa de algo sin enumerar las cuatro.
+bib:anioRelevante a rdf:Property ;
+    rdfs:label   "año relevante"@es ;
+    rdfs:comment "Año asociado a la entidad por cualquier motivo."@es .
+
+bib:anioNacimiento    rdfs:subPropertyOf bib:anioRelevante .
+bib:anioFallecimiento rdfs:subPropertyOf bib:anioRelevante .
+bib:publicadaEn       rdfs:subPropertyOf bib:anioRelevante .
+bib:anio              rdfs:subPropertyOf bib:anioRelevante .

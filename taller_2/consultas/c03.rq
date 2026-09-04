@@ -1,0 +1,25 @@
+# c03 — Autores nacidos antes de 1900.
+#
+# El año se guardó como xsd:gYear. Antes de darse por satisfecho, compruebe
+# cuántos autores tienen año de nacimiento registrado y compare ese número con
+# el que devuelve su consulta. Si la comparación de orden no funciona sobre
+# xsd:gYear, convierta.
+
+PREFIX bib:  <http://uniandes.edu.co/ws2026/vocab/lit#>
+PREFIX lit:  <http://uniandes.edu.co/ws2026/recurso/>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX dct:  <http://purl.org/dc/terms/>
+PREFIX xsd:  <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?autor ?anio
+WHERE {
+  ?autor bib:anioNacimiento ?anio .
+  #FILTER (?anio > "1600"^^xsd:integer) # Con esta consulta me saca 0 filas
+  FILTER (?anio > "1600"^^xsd:gYear) # Con esta consulta me saca 635 filas
+  #FILTER (DATATYPE(?anio) = xsd:gYear)
+}
+ORDER BY ?anio
+
+#Respuesta: si especifico el tipo de dato xsd:gYear la condicional funciona, pero si no, me devuelve 0 filas
