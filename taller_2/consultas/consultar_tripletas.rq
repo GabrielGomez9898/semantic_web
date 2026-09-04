@@ -1,0 +1,32 @@
+# ------- Grafo por defecto ---------
+
+SELECT (COUNT(*) AS ?tripletas)
+WHERE {
+    ?s ?p ?o
+}
+# Antes de incorporar nuevo vocabulario -> Numero de tripletas: 26801
+# Despues de incorporar nuevo vocabulario -> Numero de tripletas: 26820
+
+# ------- Grafo por nombre ---------
+#SELECT (COUNT(*) AS ?tripletas)
+#WHERE {
+#    GRAPH <urn:ws2026:vocabulario> {
+#        ?s ?p ?o
+#    }
+#}
+
+# Antes de incorporar nuevo vocabulario -> Numero de tripletas: 19
+
+# ------- DATASET Completo ---------
+#SELECT (COUNT(*) AS ?tripletas)
+#WHERE {
+#    { ?s ?p ?o }
+#    UNION
+#    {
+#        GRAPH <urn:ws2026:vocabulario> {
+#            ?s ?p ?o
+#        }
+#    }
+#}
+
+# Antes de incorporar nuevo vocabulario -> Numero de tripletas: 26820

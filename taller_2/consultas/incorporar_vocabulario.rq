@@ -1,0 +1,13 @@
+DELETE {
+    GRAPH <urn:ws2026:vocabulario> {
+        ?s ?p ?o
+    }
+}
+INSERT {
+    ?s ?p ?o
+}
+WHERE {
+    GRAPH <urn:ws2026:vocabulario> {
+        ?s ?p ?o
+    }
+}

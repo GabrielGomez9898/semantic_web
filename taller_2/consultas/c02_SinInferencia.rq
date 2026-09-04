@@ -1,0 +1,19 @@
+#Consulta usando la propiedad bib:anioRelevante
+
+PREFIX bib:  <http://uniandes.edu.co/ws2026/vocab/lit#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?propiedad
+WHERE {
+    bib:anioNacimiento rdfs:subPropertyOf ?propiedad .
+}
+
+#Esta consulta antes de activar inferencia: 0 filas recuperadas
+#Despues de activar el razonador obtengo: 2 filas recuperadas
+#Las declaraciones RDFS que permite obtener estos resultados es:
+#    bib:anioRelevante a rdf:Property ;
+#        rdfs:label   "año relevante"@es ;
+#        rdfs:comment "Año asociado a la entidad por cualquier motivo."@es .
+
+#   bib:anioNacimiento    rdfs:subPropertyOf bib:anioRelevante .

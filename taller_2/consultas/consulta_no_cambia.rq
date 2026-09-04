@@ -1,0 +1,19 @@
+PREFIX bib:  <http://uniandes.edu.co/ws2026/vocab/lit#>
+PREFIX lit:  <http://uniandes.edu.co/ws2026/recurso/>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX dct:  <http://purl.org/dc/terms/>
+PREFIX xsd:  <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?obra ?titulo
+WHERE {
+    ?obra a bib:Obra .
+    ?obra rdfs:label ?titulo .
+}
+
+# Explicación: Esta consulta no debería cambiar porque todas las condiciones
+# que utiliza (bib:Obra, rdfs:label y bib:autor) están expresadas directamente en el dataset.
+# El razonador RDFS únicamente agrega información nueva, como que una bib:Obra también es una bib:Creacion,
+# pero no modifica las tripletas originales. Por lo tanto, las mismas obras que cumplen la consulta antes de
+# activar la inferencia seguirán cumpliéndola después.

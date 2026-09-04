@@ -14,7 +14,7 @@
     fuseki:endpoint   [ fuseki:operation fuseki:gsp-rw ; fuseki:name "data"   ] ;
 
     # TODO punto 3: cambie <#base> por <#conInferencia> y reinicie.
-    fuseki:dataset    <#base> .
+    fuseki:dataset    <#conInferencia> .
 
 <#base> rdf:type tdb2:DatasetTDB2 ;
 
@@ -26,13 +26,13 @@
 
 # --- Bloque por descomentar en el punto 3 ---------------------------------
 #
-# <#conInferencia> rdf:type ja:RDFDataset ;
-#     ja:defaultGraph <#grafoInferido> .
+ <#conInferencia> rdf:type ja:RDFDataset ;
+     ja:defaultGraph <#grafoInferido> .
 
-# <#grafoInferido> rdf:type ja:InfModel ;
-#     ja:baseModel  <#grafoBase> ;
-#     ja:reasoner [ ja:reasonerURL
-#                   <http://jena.hpl.hp.com/2003/RDFSExptRuleReasoner> ] .
+ <#grafoInferido> rdf:type ja:InfModel ;
+     ja:baseModel  <#grafoBase> ;
+     ja:reasoner [ ja:reasonerURL
+                   <http://jena.hpl.hp.com/2003/RDFSExptRuleReasoner> ] .
 
-# <#grafoBase> rdf:type tdb2:GraphTDB2 ;
-#     tdb2:dataset <#base> .
+ <#grafoBase> rdf:type tdb2:GraphTDB2 ;
+     tdb2:dataset <#base> .

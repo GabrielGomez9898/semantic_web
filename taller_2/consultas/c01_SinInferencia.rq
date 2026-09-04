@@ -1,0 +1,19 @@
+#Consulta usando una de las superclases
+
+PREFIX bib:  <http://uniandes.edu.co/ws2026/vocab/lit#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?autor
+WHERE {
+    ?autor a bib:Persona .
+}
+
+#Esta consulta antes de activar inferencia: 0 filas recuperadas
+#Despues de activar el razonador obtengo: 660 filas recuperadas
+#Las declaraciones RDFS que permite obtener estos resultados es:
+#    bib:Persona a rdfs:Class ;
+#        rdfs:label   "persona"@es ;
+#        rdfs:comment "Ser humano, haya escrito algo o no."@es .
+
+#    bib:Autor rdfs:subClassOf bib:Persona .
