@@ -1,0 +1,92 @@
+@prefix ex:   <http://example.org/uni/schema#> .
+@prefix res:  <http://example.org/uni/resource/> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+#################################################################
+# Departamentos
+#################################################################
+
+res:Sistemas a ex:Departamento ;
+    ex:nombre "Ingenieria de Sistemas" .
+
+res:Matematicas a ex:Departamento ;
+    ex:nombre "Matematicas" .
+
+#################################################################
+# Cursos
+#################################################################
+
+res:Programacion a ex:CursoObligatorio ;
+    ex:nombre "Programacion" ;
+    ex:creditos 3 .
+
+res:Estructuras a ex:CursoObligatorio ;
+    ex:nombre "Estructuras de Datos" ;
+    ex:creditos 3 .
+
+res:WebSemantica a ex:CursoElectivo ;
+    ex:nombre "Web Semantica" ;
+    ex:creditos 3 .
+
+res:SeminarioIA a ex:Curso ;
+    ex:nombre "Seminario de Investigacion en IA" ;
+    ex:creditos 4 .
+
+res:Programacion ex:esPrerequisitoDe res:Estructuras .
+res:Estructuras ex:esPrerequisitoDe res:WebSemantica .
+
+#################################################################
+# Secciones
+#################################################################
+
+res:SeccionWS01 a ex:Seccion ;
+    ex:perteneceACurso res:WebSemantica .
+
+res:SeccionProgLab a ex:SeccionLaboratorio ;
+    ex:perteneceACurso res:Programacion .
+
+res:SeccionSemIA a ex:SeccionDoctoral ;
+    ex:perteneceACurso res:SeminarioIA .
+
+#################################################################
+# Personas
+#################################################################
+
+res:Ana a ex:Estudiante ;
+    ex:nombre "Ana" ;
+    ex:codigo "20261001" ;
+    ex:inscritoEn res:SeccionWS01 ;
+    ex:apoya res:SeccionProgLab ;
+    ex:esCompaneroDe res:Pedro .
+
+res:Pedro a ex:Estudiante ;
+    ex:nombre "Pedro" ;
+    ex:codigo "20261002" .
+
+res:Camila a ex:Estudiante ;
+    ex:nombre "Camila" ;
+    ex:codigo "20251020" ;
+    ex:inscritoEn res:SeccionSemIA .
+
+res:Luis a ex:Profesor ;
+    ex:nombre "Luis" ;
+    ex:dicta res:SeccionWS01 ;
+    ex:departamentoPrincipal res:Sistemas , res:Matematicas .
+
+res:Marta a ex:Profesor ;
+    ex:nombre "Marta" ;
+    ex:dicta res:SeccionSemIA ;
+    ex:supervisa res:Camila .
+
+#################################################################
+# Infraestructura
+#################################################################
+
+res:ML510 a ex:Salon ;
+    ex:nombre "ML-510" ;
+    ex:ubicadoEn res:EdificioML .
+
+res:EdificioML a ex:Edificio ;
+    ex:nombre "Mario Laserna" .

@@ -1,0 +1,115 @@
+@prefix ex:   <http://example.org/uni/schema#> .
+@prefix res:  <http://example.org/uni/resource/> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/uni> a owl:Ontology .
+
+#################################################################
+# Clases
+#################################################################
+
+ex:Persona a owl:Class .
+ex:Estudiante a owl:Class ;
+    rdfs:subClassOf ex:Persona .
+ex:EstudianteDoctorado a owl:Class ;
+    rdfs:subClassOf ex:Estudiante .
+ex:Profesor a owl:Class ;
+    rdfs:subClassOf ex:Persona .
+ex:Monitor a owl:Class ;
+    rdfs:subClassOf ex:Estudiante .
+
+ex:Curso a owl:Class .
+ex:CursoObligatorio a owl:Class ;
+    rdfs:subClassOf ex:Curso .
+ex:CursoElectivo a owl:Class ;
+    rdfs:subClassOf ex:Curso .
+ex:CursoConLaboratorio a owl:Class ;
+    rdfs:subClassOf ex:Curso .
+
+ex:Seccion a owl:Class .
+ex:SeccionLaboratorio a owl:Class ;
+    rdfs:subClassOf ex:Seccion .
+ex:SeccionDoctoral a owl:Class ;
+    rdfs:subClassOf ex:Seccion .
+
+ex:Departamento a owl:Class .
+ex:Programa a owl:Class .
+ex:Salon a owl:Class .
+ex:Edificio a owl:Class .
+
+#################################################################
+# Propiedades de objeto
+#################################################################
+
+ex:inscritoEn a owl:ObjectProperty ;
+    rdfs:domain ex:Estudiante ;
+    rdfs:range ex:Seccion .
+
+ex:tieneInscrito a owl:ObjectProperty ;
+    rdfs:domain ex:Seccion ;
+    rdfs:range ex:Estudiante .
+
+ex:dicta a owl:ObjectProperty ;
+    rdfs:domain ex:Profesor ;
+    rdfs:range ex:Seccion .
+
+ex:esDictadaPor a owl:ObjectProperty ;
+    rdfs:domain ex:Seccion ;
+    rdfs:range ex:Profesor .
+
+ex:perteneceACurso a owl:ObjectProperty ;
+    rdfs:domain ex:Seccion ;
+    rdfs:range ex:Curso .
+
+ex:tieneSeccion a owl:ObjectProperty ;
+    rdfs:domain ex:Curso ;
+    rdfs:range ex:Seccion .
+
+ex:apoya a owl:ObjectProperty ;
+    rdfs:domain ex:Estudiante ;
+    rdfs:range ex:Seccion .
+
+ex:esPrerequisitoDe a owl:ObjectProperty ;
+    rdfs:domain ex:Curso ;
+    rdfs:range ex:Curso .
+
+ex:esCompaneroDe a owl:ObjectProperty ;
+    rdfs:domain ex:Estudiante ;
+    rdfs:range ex:Estudiante .
+
+ex:supervisa a owl:ObjectProperty ;
+    rdfs:domain ex:Profesor ;
+    rdfs:range ex:EstudianteDoctorado .
+
+ex:esSupervisadoPor a owl:ObjectProperty ;
+    rdfs:domain ex:EstudianteDoctorado ;
+    rdfs:range ex:Profesor .
+
+ex:cursa a owl:ObjectProperty ;
+    rdfs:domain ex:Estudiante ;
+    rdfs:range ex:Curso .
+
+ex:departamentoPrincipal a owl:ObjectProperty ;
+    rdfs:domain ex:Profesor ;
+    rdfs:range ex:Departamento .
+
+ex:ubicadoEn a owl:ObjectProperty ;
+    rdfs:domain ex:Salon ;
+    rdfs:range ex:Edificio .
+
+#################################################################
+# Propiedades de datos
+#################################################################
+
+ex:codigo a owl:DatatypeProperty ;
+    rdfs:range xsd:string .
+
+ex:nombre a owl:DatatypeProperty ;
+    rdfs:range xsd:string .
+
+ex:creditos a owl:DatatypeProperty ;
+    rdfs:domain ex:Curso ;
+    rdfs:range xsd:integer .

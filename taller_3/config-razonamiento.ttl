@@ -1,0 +1,72 @@
+@prefix fuseki: <http://jena.apache.org/fuseki#> .
+@prefix ja:     <http://jena.hpl.hp.com/2005/11/Assembler#> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+#################################################################
+# Servicio 1: grafo base, sin inferencia
+#################################################################
+
+<#serviceBase> a fuseki:Service ;
+    fuseki:name "uni-base" ;
+    fuseki:endpoint [
+        fuseki:operation fuseki:query ;
+        fuseki:name "sparql"
+    ] ;
+    fuseki:dataset <#datasetBase> .
+
+<#datasetBase> a ja:RDFDataset ;
+    ja:defaultGraph <#modelBase> .
+
+<#modelBase> a ja:MemoryModel ;
+    ja:content [ ja:externalContent <file:universidad-owl.ttl> ] ;
+    ja:content [ ja:externalContent <file:universidad-datos.ttl> ] .
+
+#################################################################
+# Servicio 2: inferencia RDFS
+#################################################################
+
+<#serviceRDFS> a fuseki:Service ;
+    fuseki:name "uni-rdfs" ;
+    fuseki:endpoint [
+        fuseki:operation fuseki:query ;
+        fuseki:name "sparql"
+    ] ;
+    fuseki:dataset <#datasetRDFS> .
+
+<#datasetRDFS> a ja:RDFDataset ;
+    ja:defaultGraph <#modelRDFS> .
+
+<#modelRDFS> a ja:InfModel ;
+    ja:reasoner [
+        ja:reasonerURL <http://jena.hpl.hp.com/2003/RDFSExptRuleReasoner>
+    ] ;
+    ja:baseModel <#modelRDFSBase> .
+
+<#modelRDFSBase> a ja:MemoryModel ;
+    ja:content [ ja:externalContent <file:universidad-owl.ttl> ] ;
+    ja:content [ ja:externalContent <file:universidad-datos.ttl> ] .
+
+#################################################################
+# Servicio 3: razonador OWL basado en reglas de Jena
+#################################################################
+
+<#serviceOWL> a fuseki:Service ;
+    fuseki:name "uni-owl" ;
+    fuseki:endpoint [
+        fuseki:operation fuseki:query ;
+        fuseki:name "sparql"
+    ] ;
+    fuseki:dataset <#datasetOWL> .
+
+<#datasetOWL> a ja:RDFDataset ;
+    ja:defaultGraph <#modelOWL> .
+
+<#modelOWL> a ja:InfModel ;
+    ja:reasoner [
+        ja:reasonerURL <http://jena.hpl.hp.com/2003/OWLFBRuleReasoner>
+    ] ;
+    ja:baseModel <#modelOWLBase> .
+
+<#modelOWLBase> a ja:MemoryModel ;
+    ja:content [ ja:externalContent <file:universidad-owl.ttl> ] ;
+    ja:content [ ja:externalContent <file:universidad-datos.ttl> ] .
