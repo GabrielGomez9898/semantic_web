@@ -1,0 +1,204 @@
+@prefix ex:   <http://example.org/uni/schema#> .
+@prefix res:  <http://example.org/uni/resource/> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/uni> a owl:Ontology .
+
+#################################################################
+# Clases
+#################################################################
+
+ex:Persona a owl:Class .
+ex:Estudiante a owl:Class ;
+    rdfs:subClassOf ex:Persona .
+ex:EstudianteDoctorado a owl:Class ;
+    rdfs:subClassOf ex:Estudiante .
+ex:Profesor a owl:Class ;
+    rdfs:subClassOf ex:Persona .
+ex:Monitor a owl:Class ;
+    rdfs:subClassOf ex:Estudiante .
+
+ex:Curso a owl:Class .
+ex:CursoObligatorio a owl:Class ;
+    rdfs:subClassOf ex:Curso .
+ex:CursoElectivo a owl:Class ;
+    rdfs:subClassOf ex:Curso .
+ex:CursoConLaboratorio a owl:Class ;
+    rdfs:subClassOf ex:Curso .
+
+ex:Seccion a owl:Class ;
+    rdfs:subClassOf [
+        a owl:Restriction ;
+        owl:onProperty ex:perteneceACurso ;
+        owl:cardinality 1
+    ] .
+
+ex:SeccionLaboratorio a owl:Class ;
+    rdfs:subClassOf ex:Seccion .
+
+ex:SeccionDoctoral a owl:Class ;
+    rdfs:subClassOf ex:Seccion , [
+        a owl:Restriction ;
+        owl:onProperty ex:tieneInscrito ;
+        owl:allValuesFrom ex:EstudianteDoctorado
+    ] .
+    
+
+ex:Departamento a owl:Class .
+ex:Programa a owl:Class .
+ex:Salon a owl:Class .
+ex:Edificio a owl:Class .
+
+#################################################################
+# Propiedades de objeto
+#################################################################
+
+ex:inscritoEn a owl:ObjectProperty ;
+    rdfs:domain ex:Estudiante ;
+    rdfs:range ex:Seccion .
+
+ex:tieneInscrito a owl:ObjectProperty ;
+    rdfs:domain ex:Seccion ;
+    rdfs:range ex:Estudiante .
+
+ex:dicta a owl:ObjectProperty ;
+    rdfs:domain ex:Profesor ;
+    rdfs:range ex:Seccion .
+
+ex:esDictadaPor a owl:ObjectProperty ;
+    rdfs:domain ex:Seccion ;
+    rdfs:range ex:Profesor .
+
+ex:perteneceACurso a owl:ObjectProperty ;
+    rdfs:domain ex:Seccion ;
+    rdfs:range ex:Curso .
+
+ex:tieneSeccion a owl:ObjectProperty ;
+    rdfs:domain ex:Curso ;
+    rdfs:range ex:Seccion .
+
+ex:apoya a owl:ObjectProperty ;
+    rdfs:domain ex:Estudiante ;
+    rdfs:range ex:Seccion .
+
+ex:esPrerequisitoDe a owl:ObjectProperty ;
+    rdfs:domain ex:Curso ;
+    rdfs:range ex:Curso .
+
+ex:esCompaneroDe a owl:ObjectProperty ;
+    rdfs:domain ex:Estudiante ;
+    rdfs:range ex:Estudiante .
+
+ex:supervisa a owl:ObjectProperty ;
+    rdfs:domain ex:Profesor ;
+    rdfs:range ex:EstudianteDoctorado .
+
+ex:esSupervisadoPor a owl:ObjectProperty ;
+    rdfs:domain ex:EstudianteDoctorado ;
+    rdfs:range ex:Profesor .
+
+ex:cursa a owl:ObjectProperty ;
+    rdfs:domain ex:Estudiante ;
+    rdfs:range ex:Curso .
+
+ex:departamentoPrincipal a owl:ObjectProperty ;
+    rdfs:domain ex:Profesor ;
+    rdfs:range ex:Departamento .
+
+ex:ubicadoEn a owl:ObjectProperty ;
+    rdfs:domain ex:Salon ;
+    rdfs:range ex:Edificio .
+
+#################################################################
+# Propiedades de datos
+#################################################################
+
+ex:codigo a owl:DatatypeProperty ;
+    rdfs:range xsd:string .
+
+ex:nombre a owl:DatatypeProperty ;
+    rdfs:range xsd:string .
+
+ex:creditos a owl:DatatypeProperty ;
+    rdfs:domain ex:Curso ;
+    rdfs:range xsd:integer .
+
+
+##### Enriquecimiento del vocabulario #####
+## a. Entidades diferentes del dominio ##
+ex:Persona owl:disjointWith ex:Curso , ex:Seccion .
+ex:Curso owl:disjointWith ex:Seccion .
+ex:CursoObligatorio owl:disjointWith ex:CursoElectivo .
+
+## b. Profesor y sección ##
+ex:dicta owl:inverseOf ex:esDictadaPor .
+
+## c. Compañeros ##
+ex:esCompaneroDe a owl:SymmetricProperty .
+
+## d. Secciones y cursos ##
+# Se modifico en la descripción de Seccion.
+
+## e. Prerrequisitos ##
+ex:esPrerequisitoDe a owl:TransitiveProperty .
+
+## f. Monitores ##
+ex:Monitor owl:equivalentClass [
+    a owl:Class ;
+    owl:intersectionOf (
+        ex:Estudiante
+        [
+            a owl:Restriction ;
+            owl:onProperty ex:apoya ;
+            owl:someValuesFrom ex:Seccion
+        ]
+    )
+] .
+
+## g. Secciones doctorales ##
+# Se modifico en la descripción de SeccionDoctoral.
+
+## h. Inscripción y curso ##
+ex:cursa owl:propertyChainAxiom (ex:inscritoEn ex:perteneceACurso) .
+
+## 1.3 Documentación de las decisiones de modelamiento
+
+# a. Se utilizó la Disyunción de clases, y representa el requerimiento porque obliga a que una instancia
+# no pueda pertenecer a mas de una clase, es decir, si una instancia pertenece a la clase Persona NO puede pertenecer
+# tambien a la clase Seccion o Curso, tambien aplica para una instancia de CursoObligatorio no puede pertenecer a una clase
+# de CursoElectivo. Considero que con solo RDFS, no se puede cubrir este requerimiento, no hay nada que me obligue a que una
+# instancia no este totalmente obligada a ser parte de una sola clase.
+
+# b. Se utilizó owl:inverseOf, y representa el requerimiento porque me permite invertir el sujeto a objeto y el objeto a sujeto
+# y representar la relación adecuada con ex:esDictadaPor. Con solo RDFS, creo que si se podria representar, simplemente es agregar
+# otro triple que represente la otra relación.
+
+# c. Se utilizó owl:SymmetricProperty, porque me permite invertir mi sujeto y objeto y aun asi con la misma propiedad
+# ex:esCompaneroDe estoy representando la misma relacion. Con solo RDFS, creo que tambien se podria reprsentar, es agregar 
+# otro triple pero invirtiendo los recursos.
+
+# d. Se utilizó el axioma owl:Restriction, owl:onProperty y owl:cardinality, cumple mi requerimiento porque estoy estableciendo una restricción en la clase
+# Seccion en su propiedad ex:perteneceACurso y utilizando owl:cardinality se establece que debe existir solamente 1 triple. Con solo RDFS no se puede,
+# no se pueden agregar restricciones con RDFS, es por eso que OWL cumple un importante papel.
+
+# e. Se utilizó owl:TransitiveProperty, cumple con mi requerimiento, porque si X es amigo de Z, y Z es amigo de Y, entonces X es amigo de Y.
+# Con solo RDFS, creo que se podria hacer por medio de jerarquias, si una clase A tiene una propiedad, y la clase B es subclase de la 
+# clase A, entonces la clase B tendria la propiedad de su padre.
+
+# f. Se utilizó owl:equivalentClass, owl:intersectionOf, owl:Restriction y owl:someValuesFrom. 
+# owl:equivalentClass -> Cumple con mi requerimiento de que si se cumple de un lado se cumple del otro, es decir,
+# un monitor es un Estudiante que apoye al menos una seccion, pero del otro lado, todo estudiante que apoye al menos una seccion es un Monitor.
+# owl:intersectionOf -> Me ayuda a obligar que esa clase que es equivalente a Monitor debe pertenecer a Estudiante.
+# owl:Restriction -> Me establece la reestriccion en donde decimos que en la propiedad ex:apoya tiene al menos un triple donde lleve a una Seccion 
+# es por eso que utilizamos owl:someValuesFrom. Con solo RDFS no se puede.
+
+# g. Se utilizó owl:allValuesFrom, esto representa el requerimiento, porque dentro de la restriccion con owl:Restriction estamos estableciendo
+# que en la propiedad ex:tieneInscrito todos los valores (owl:allValuesFrom) deben ser de la clase ex:EstudianteDoctorado. Con solo RDFS esto no
+# es posible.
+
+# h. Se utilizó owl:propertyChainAxiom, porque esto permite derivar una propiedad a partir de otras dos.
+# ejemplo: X inscritoEn Y   , Y perteneceACurso Z, entonces se deriva: X cursa Z. Se esta derivando que el estudiante X 
+# cursa el curso Z.

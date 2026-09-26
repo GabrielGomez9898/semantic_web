@@ -1,6 +1,6 @@
 from rdflib import Graph
 
-archivo = "universidad-base.ttl"
+archivo = "universidad-owl.ttl"
 
 g = Graph()
 
