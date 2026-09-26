@@ -18,8 +18,8 @@
     ja:defaultGraph <#modelBase> .
 
 <#modelBase> a ja:MemoryModel ;
-    ja:content [ ja:externalContent <file:universidad-owl.ttl> ] ;
-    ja:content [ ja:externalContent <file:universidad-datos.ttl> ] .
+    ja:content [ ja:externalContent <file:/staging/universidad-datos.ttl> ] ;
+    ja:content [ ja:externalContent <file:/staging/universidad-owl.ttl> ] .
 
 #################################################################
 # Servicio 2: inferencia RDFS
@@ -43,8 +43,8 @@
     ja:baseModel <#modelRDFSBase> .
 
 <#modelRDFSBase> a ja:MemoryModel ;
-    ja:content [ ja:externalContent <file:universidad-owl.ttl> ] ;
-    ja:content [ ja:externalContent <file:universidad-datos.ttl> ] .
+    ja:content [ ja:externalContent <file:/staging/universidad-owl.ttl> ] ;
+    ja:content [ ja:externalContent <file:/staging/universidad-datos.ttl> ] .
 
 #################################################################
 # Servicio 3: razonador OWL basado en reglas de Jena
@@ -68,5 +68,5 @@
     ja:baseModel <#modelOWLBase> .
 
 <#modelOWLBase> a ja:MemoryModel ;
-    ja:content [ ja:externalContent <file:universidad-owl.ttl> ] ;
-    ja:content [ ja:externalContent <file:universidad-datos.ttl> ] .
+    ja:content [ ja:externalContent <file:/staging/universidad-owl.ttl> ] ;
+    ja:content [ ja:externalContent <file:/staging/universidad-datos.ttl> ] .
