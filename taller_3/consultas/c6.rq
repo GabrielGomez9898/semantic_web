@@ -3,20 +3,15 @@ PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 
-SELECT ?x
+
+SELECT ?estudiante
 WHERE {
-    ?x a ex:Persona .
-    ?x a ex:Curso .
+    ?estudiante a ex:Monitor .
 }
 
-#SELECT ?x
+#SELECT ?estudiante ?seccion
 #WHERE {
-#    ?x a ex:Persona .
-#    ?x a ex:Seccion .
-#}
-
-#SELECT ?x
-#WHERE {
-#    ?x a ex:Curso .
-#    ?x a ex:Seccion .
+#    ?estudiante a ex:Estudiante .
+#    ?estudiante ex:apoya ?seccion .
+#    ?seccion a ex:Seccion .
 #}
