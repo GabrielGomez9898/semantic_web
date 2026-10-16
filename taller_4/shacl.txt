@@ -1,0 +1,101 @@
+@prefix res: <http://uniandes.edu.co/ws2026/vocab/lit#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+
+:NombreArtista a sh:NodeShape ;
+    sh:targetClass :Artista ;
+    sh:property [
+        sh:path :nombre_artistico ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:string ] .
+
+:LanzaAlbum a sh:NodeShape ;
+    sh:targetClass :Artista ;
+    sh:and (
+        [
+            sh:property [
+                sh:path :lanza ;
+                sh:minCount 1 ;
+                sh:class :Album
+            ]
+        ]
+        [
+            sh:property [
+                sh:path :gana ;
+                sh:minCount 1 ;
+                sh:class :Premio
+            ]
+        ]
+    ) .
+
+:TituloAlbum a sh:NodeShape ;
+    sh:targetClass :Album ;
+    sh:and (
+        [
+            sh:property [
+                sh:path :titulo_album ;
+                sh:minCount 1 ;
+                sh:maxCount 1 ;
+                sh:datatype xsd:string
+            ]
+        ]
+        [
+            sh:property [
+                sh:path :incluye ;
+                sh:minCount 1 ;
+                sh:class :Cancion
+            ]
+        ]
+    ) .
+
+:CancionShape a sh:NodeShape ;
+    sh:targetClass :Cancion ;
+
+    sh:property [
+        sh:path :titulo_cancion ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:string
+    ] ;
+
+    sh:property [
+        sh:path :duracion ;
+        sh:minCount 1 ;
+        sh:datatype xsd:integer ;
+        sh:minInclusive 60
+    ] .
+
+res:GiraShape a sh:NodeShape ;
+    sh:targetClass res:Gira ;
+
+    sh:property [
+        sh:path res:nombre_gira ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:string
+    ] ;
+
+    sh:property [
+        sh:path res:presenta_artista ;
+        sh:minCount 1 ;
+        sh:class res:Artista
+    ] ;
+
+    sh:property [
+        sh:path res:presenta_album ;
+        sh:minCount 1 ;
+        sh:class res:Album
+    ] .
+
+res:PremioShape a sh:NodeShape ;
+    sh:targetClass res:Premio ;
+    sh:property [
+        sh:path res:nombre_premio ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:string
+    ] .

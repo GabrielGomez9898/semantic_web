@@ -1,0 +1,63 @@
+@prefix res: <http://uniandes.edu.co/ws2026/vocab/lit#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+###############
+### CLASES 
+###############
+
+res:Gira a rdfs:Class .
+res:Artista a rdfs:Class .
+res:Album a rdfs:Class .
+res:Premio a rdfs:Class .
+res:Cancion a rdfs:Class .
+
+###############
+### PROPIEDADES
+###############
+
+res:nombre_gira a rdf:Property ;
+    rdfs:domain res:Gira ;
+    rdfs:range xsd:string .
+
+res:presenta_artista a rdf:Property ;
+    rdfs:domain res:Gira ;
+    rdfs:range res:Artista .
+
+res:presenta_album a rdf:Property ;
+    rdfs:domain res:Gira ;
+    rdfs:range res:Album .
+
+res:nombre_artistico a rdf:Property ;
+    rdfs:domain res:Artista ;
+    rdfs:range xsd:string .
+
+res:lanza a rdf:Property ;
+    rdfs:domain res:Artista ;
+    rdfs:range res:Album .
+
+res:titulo_album a rdf:Property ;
+    rdfs:domain res:Album ;
+    rdfs:range xsd:string .
+
+res:incluye a rdf:Property ;
+    rdfs:domain res:Album ;
+    rdfs:range res:Cancion .
+
+res:gana a rdf:Property ;
+    rdfs:domain res:Artista ;
+    rdfs:range res:Premio .
+
+res:nombre_premio a rdf:Property ;
+    rdfs:domain res:Premio ;
+    rdfs:range xsd:string .
+
+res:titulo_cancion a rdf:Property ;
+    rdfs:domain res:Cancion ;
+    rdfs:range xsd:string .
+
+res:duracion a rdf:Property ;
+    rdfs:domain res:Cancion ;
+    rdfs:range xsd:integer .

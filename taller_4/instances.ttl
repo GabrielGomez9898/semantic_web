@@ -1,0 +1,42 @@
+@prefix res: <http://uniandes.edu.co/ws2026/vocab/lit#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+###############
+### INSTANCIAS
+###############
+
+res:shakira a res:Artista ;
+    res:nombre "Shakira" ;
+    res:tieneAlbum res:lasMujeresYaNoLloran ;
+    res:realizaGira res:lasMujeresWorldTour ;
+    res:haGanado res:grammyLatino .
+
+res:lasMujeresYaNoLloran a res:Album ;
+    res:titulo "Las mujeres ya no lloran" ;
+    res:fechaLanzamiento "2024-03-22"^^xsd:date ;
+    res:incluyeCancion res:monotonia .
+
+res:monotonia a res:Cancion ;
+    res:duracion "158"^^xsd:integer .
+
+res:grammyLatino a res:Premio ;
+    res:nombrePremio "Grammy Latino" .
+
+res:lasMujeresWorldTour a res:Gira ;
+    res:fechaInicio "2024-11-02"^^xsd:date ;
+    res:tieneArtista res:shakira .
+
+res:lasMujeresWorldTour a res:Gira ;
+    res:nombre_gira "Las Mujeres World Tour" ;
+    res:presenta_artista res:shakira ;
+    res:presenta_album res:lasMujeresYaNoLloran .
+
+res:grammyLatino a res:Premio ;
+    res:nombre_premio "Grammy Latino" .
+
+# Error intencional (descomentar para probar el error)
+#res:grammyLatino a res:Premio ;
+#    res:nombre_premio "Grammy Latino 2" .
