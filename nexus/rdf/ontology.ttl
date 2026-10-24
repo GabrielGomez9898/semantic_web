@@ -1,0 +1,93 @@
+@prefix nex: <https://w3id.org/nexus/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/nexus/ontology> a owl:Ontology ;
+    rdfs:label "Nexus scientific publications ontology"@en ;
+    rdfs:comment "Ontology for professors and scientific articles imported from Nexus CSV files. The namespace is provisional and should be replaced with a domain controlled by the project before public publication."@en .
+
+# Classes
+nex:Professor a owl:Class ;
+    rdfs:label "Professor"@en ;
+    rdfs:comment "Profesor Uniandes"@es .
+
+nex:JournalArticle a owl:Class ;
+    rdfs:label "Scientific article"@en ;
+    rdfs:comment "Articulo de investigacion."@es .
+
+# Relationship between professors and articles
+nex:hasArticle a owl:ObjectProperty ;
+    rdfs:label "has article"@en ;
+    rdfs:domain nex:Professor ;
+    rdfs:range nex:JournalArticle ;
+    owl:inverseOf nex:hasAuthor .
+
+nex:hasAuthor a owl:ObjectProperty ;
+    rdfs:label "has author"@en ;
+    rdfs:domain nex:JournalArticle ;
+    rdfs:range nex:Professor ;
+    owl:inverseOf nex:hasArticle .
+
+# Professor properties
+nex:professorId a owl:DatatypeProperty ;
+    rdfs:label "professor ID"@en ;
+    rdfs:domain nex:Professor ;
+    rdfs:range xsd:integer .
+
+nex:active a owl:DatatypeProperty ;
+    rdfs:label "active status"@en ;
+    rdfs:domain nex:Professor ;
+    rdfs:range xsd:integer .
+
+nex:username a owl:DatatypeProperty ;
+    rdfs:label "username"@en ;
+    rdfs:domain nex:Professor ;
+    rdfs:range xsd:string .
+
+nex:dependency a owl:DatatypeProperty ;
+    rdfs:label "department/dependency"@en ;
+    rdfs:domain nex:Professor ;
+    rdfs:range xsd:string .
+
+nex:name a owl:DatatypeProperty ;
+    rdfs:label "professor name"@en ;
+    rdfs:domain nex:Professor ;
+    rdfs:range xsd:string .
+
+# Article properties
+nex:articleId a owl:DatatypeProperty ;
+    rdfs:label "article ID"@en ;
+    rdfs:domain nex:JournalArticle ;
+    rdfs:range xsd:integer .
+
+nex:publicationYear a owl:DatatypeProperty ;
+    rdfs:label "publication year"@en ;
+    rdfs:domain nex:JournalArticle ;
+    rdfs:range xsd:integer .
+
+nex:url a owl:DatatypeProperty ;
+    rdfs:label "article URL"@en ;
+    rdfs:domain nex:JournalArticle ;
+    rdfs:range xsd:anyURI .
+
+nex:productType a owl:DatatypeProperty ;
+    rdfs:label "product type"@en ;
+    rdfs:domain nex:JournalArticle ;
+    rdfs:range xsd:string .
+
+nex:title a owl:DatatypeProperty ;
+    rdfs:label "article title"@en ;
+    rdfs:domain nex:JournalArticle ;
+    rdfs:range xsd:string .
+
+nex:classification a owl:DatatypeProperty ;
+    rdfs:label "classification"@en ;
+    rdfs:domain nex:JournalArticle ;
+    rdfs:range xsd:string .
+
+nex:description a owl:DatatypeProperty ;
+    rdfs:label "description"@en ;
+    rdfs:domain nex:JournalArticle ;
+    rdfs:range xsd:string .

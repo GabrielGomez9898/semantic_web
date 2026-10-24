@@ -1,0 +1,12 @@
+PREFIX nex: <https://w3id.org/nexus/ontology#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?professorName (COUNT(DISTINCT ?article) AS ?articleCount)
+WHERE {
+  ?professor a nex:Professor ;
+             nex:name ?professorName ;
+             nex:hasArticle ?article .
+  FILTER(CONTAINS(LCASE(STR(?professorName)), LCASE("Ruben")))
+}
+GROUP BY ?professorName
+ORDER BY DESC(?articleCount)

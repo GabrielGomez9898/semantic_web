@@ -1,0 +1,12 @@
+PREFIX nex: <https://w3id.org/nexus/ontology#>
+
+SELECT ?professorId ?name ?username ?dependency
+WHERE {
+  ?professor a nex:Professor ;
+             nex:professorId ?professorId ;
+             nex:name ?name .
+  OPTIONAL { ?professor nex:username ?username }
+  OPTIONAL { ?professor nex:dependency ?dependency }
+  FILTER(CONTAINS(LCASE(STR(?name)), LCASE("Ruben")))
+}
+ORDER BY ?name
