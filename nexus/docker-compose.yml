@@ -1,0 +1,11 @@
+services:
+  fuseki-nexus:
+    image: stain/jena-fuseki:4.8.0
+    container_name: fuseki-nexus
+    ports:
+      - "3031:3030"
+    environment:
+      ADMIN_PASSWORD: "nexus_admin_2026"
+    volumes:
+      - ./fuseki/data:/fuseki
+    restart: unless-stopped
