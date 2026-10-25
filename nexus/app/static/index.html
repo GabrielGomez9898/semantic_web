@@ -1,0 +1,421 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus | Consulta semántica</title>
+
+    <style>
+        :root {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                         sans-serif;
+            color: #202124;
+            background: #f6f7fb;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+        }
+
+        header {
+            background: #fff;
+            border-bottom: 1px solid #e5e7eb;
+            padding: 20px 24px;
+        }
+
+        .header-content {
+            max-width: 900px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo {
+            background: #263c85;
+            color: white;
+            width: 42px;
+            height: 42px;
+            display: grid;
+            place-items: center;
+            border-radius: 12px;
+            font-weight: 800;
+            font-size: 21px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 22px;
+        }
+
+        .subtitle {
+            color: #6b7280;
+            font-size: 13px;
+            margin-top: 4px;
+        }
+
+        main {
+            max-width: 820px;
+            margin: 48px auto;
+            padding: 0 20px 40px;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .intro h2 {
+            font-size: 30px;
+            margin: 0 0 12px;
+            letter-spacing: -0.7px;
+        }
+
+        .intro p {
+            color: #6b7280;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .panel {
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: 0 8px 30px rgba(20, 30, 60, 0.04);
+        }
+
+        label {
+            display: block;
+            font-weight: 650;
+            margin-bottom: 10px;
+        }
+
+        textarea {
+            width: 100%;
+            min-height: 115px;
+            padding: 15px;
+            border: 1px solid #d1d5db;
+            border-radius: 10px;
+            resize: vertical;
+            font: inherit;
+            line-height: 1.5;
+            outline: none;
+        }
+
+        textarea:focus {
+            border-color: #4057b2;
+            box-shadow: 0 0 0 3px rgba(64, 87, 178, 0.12);
+        }
+
+        .actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+            margin-top: 14px;
+        }
+
+        .hint {
+            color: #6b7280;
+            font-size: 12px;
+        }
+
+        button {
+            border: 0;
+            border-radius: 9px;
+            background: #263c85;
+            color: white;
+            padding: 12px 20px;
+            font: inherit;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #1e306c;
+        }
+
+        button:disabled {
+            opacity: 0.6;
+            cursor: wait;
+        }
+
+        #error {
+            color: #b42318;
+            background: #fef3f2;
+            padding: 12px;
+            border-radius: 8px;
+            margin-top: 16px;
+            white-space: pre-wrap;
+        }
+
+        .hidden {
+            display: none !important;
+        }
+
+        #results {
+            margin-top: 28px;
+        }
+
+        .section-title {
+            font-size: 17px;
+            margin: 0 0 12px;
+        }
+
+        .answer-card, .sparql-card {
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 18px;
+        }
+
+        .answer {
+            font-size: 16px;
+            line-height: 1.7;
+            white-space: pre-wrap;
+            overflow-wrap: anywhere;
+        }
+
+        .result-meta {
+            color: #6b7280;
+            font-size: 12px;
+            margin-top: 14px;
+        }
+
+        .code-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 12px;
+        }
+
+        .code-header h3 {
+            margin: 0;
+            font-size: 15px;
+        }
+
+        .copy-button {
+            background: #eef1f8;
+            color: #263c85;
+            padding: 8px 12px;
+            font-size: 12px;
+        }
+
+        .copy-button:hover {
+            background: #e0e6f5;
+        }
+
+        pre {
+            margin: 0;
+            background: #171d2b;
+            color: #e5e7eb;
+            padding: 18px;
+            border-radius: 9px;
+            overflow-x: auto;
+            white-space: pre-wrap;
+            overflow-wrap: anywhere;
+            font: 13px/1.7 ui-monospace, SFMono-Regular,
+                  Menlo, Consolas, monospace;
+        }
+
+        footer {
+            text-align: center;
+            color: #9ca3af;
+            font-size: 12px;
+            padding: 20px;
+        }
+
+        @media (max-width: 600px) {
+            main {
+                margin-top: 30px;
+            }
+
+            .intro h2 {
+                font-size: 25px;
+            }
+
+            .panel {
+                padding: 17px;
+            }
+
+            .actions {
+                align-items: stretch;
+                flex-direction: column;
+            }
+
+            button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">N</div>
+            <div>
+                <h1>Nexus</h1>
+                <div class="subtitle">Exploración semántica de conocimiento</div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>¿Qué quieres saber?</h2>
+            <p>
+                Haz una pregunta sobre los profesores y artículos registrados
+                en Nexus. Consulta la respuesta y la SPARQL generada.
+            </p>
+        </section>
+
+        <section class="panel">
+            <form id="question-form">
+                <label for="question">Tu pregunta</label>
+
+                <textarea
+                    id="question"
+                    placeholder="Ej.: ¿Cuántos profesores hay registrados en Nexus?"
+                    required
+                ></textarea>
+
+                <div class="actions">
+                    <span class="hint">
+                        Escribe tu pregunta en lenguaje natural.
+                    </span>
+
+                    <button id="submit-button" type="submit">
+                        Consultar Nexus →
+                    </button>
+                </div>
+            </form>
+
+            <div id="error" class="hidden" role="alert"></div>
+        </section>
+
+        <section id="results" class="hidden">
+            <h2 class="section-title">Respuesta</h2>
+
+            <div class="answer-card">
+                <div id="answer" class="answer"></div>
+                <div id="result-meta" class="result-meta"></div>
+            </div>
+
+            <div class="sparql-card">
+                <div class="code-header">
+                    <h3>Consulta SPARQL generada</h3>
+                    <button
+                        id="copy-button"
+                        class="copy-button"
+                        type="button"
+                    >
+                        Copiar SPARQL
+                    </button>
+                </div>
+
+                <pre><code id="sparql"></code></pre>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        Nexus · Consulta de conocimiento mediante SPARQL
+    </footer>
+
+    <script>
+        const form = document.getElementById("question-form");
+        const questionInput = document.getElementById("question");
+        const submitButton = document.getElementById("submit-button");
+        const results = document.getElementById("results");
+        const errorBox = document.getElementById("error");
+        const answerBox = document.getElementById("answer");
+        const sparqlBox = document.getElementById("sparql");
+        const resultMeta = document.getElementById("result-meta");
+        const copyButton = document.getElementById("copy-button");
+
+        let currentSparql = "";
+
+        form.addEventListener("submit", async (event) => {
+            event.preventDefault();
+
+            const question = questionInput.value.trim();
+
+            if (!question) {
+                return;
+            }
+
+            submitButton.disabled = true;
+            submitButton.textContent = "Consultando...";
+            errorBox.classList.add("hidden");
+            results.classList.add("hidden");
+
+            try {
+                const response = await fetch("/ask", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify({ question })
+                });
+
+                const data = await response.json();
+
+                if (!response.ok) {
+                    throw new Error(
+                        typeof data.detail === "string"
+                            ? data.detail
+                            : JSON.stringify(data.detail || data)
+                    );
+                }
+
+                answerBox.textContent = data.answer || "Sin respuesta.";
+                sparqlBox.textContent = data.sparql || "";
+                currentSparql = data.sparql || "";
+
+                resultMeta.textContent =
+                    `Filas devueltas por Fuseki: ${data.result_count}`;
+
+                results.classList.remove("hidden");
+                results.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start"
+                });
+
+            } catch (error) {
+                errorBox.textContent =
+                    "No fue posible completar la consulta: " + error.message;
+                errorBox.classList.remove("hidden");
+            } finally {
+                submitButton.disabled = false;
+                submitButton.textContent = "Consultar Nexus →";
+            }
+        });
+
+        copyButton.addEventListener("click", async () => {
+            if (!currentSparql) {
+                return;
+            }
+
+            try {
+                await navigator.clipboard.writeText(currentSparql);
+                copyButton.textContent = "¡Copiada!";
+                setTimeout(() => {
+                    copyButton.textContent = "Copiar SPARQL";
+                }, 1500);
+            } catch {
+                copyButton.textContent = "No se pudo copiar";
+            }
+        });
+    </script>
+</body>
+</html>

@@ -10,6 +10,9 @@ from fastapi import FastAPI, HTTPException, Query
 from openai import APIError, AsyncOpenAI
 from pydantic import BaseModel, Field
 
+from pathlib import Path
+from fastapi.responses import FileResponse
+
 
 # ============================================================
 # Configuration
@@ -92,6 +95,11 @@ app = FastAPI(
     version="0.2.0",
     lifespan=lifespan,
 )
+
+@app.get("/ui", include_in_schema=False)
+async def user_interface():
+    html_path = Path(__file__).parent / "static" / "index.html"
+    return FileResponse(html_path)
 
 
 # ============================================================
