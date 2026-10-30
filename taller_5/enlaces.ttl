@@ -1,0 +1,155 @@
+@prefix ex: <http://example.org/moma/evidence/> .
+@prefix moma: <http://example.org/moma/artist/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+
+moma:1 ex:evidencia "Puntuación: 14. Coincidencias: Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente; País/nacionalidad coincidente. Contradicciones: " ;
+    owl:sameAs wd:Q7341594 .
+
+moma:13 ex:evidencia "Puntuación: 11. Coincidencias: Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente. Contradicciones: " ;
+    owl:sameAs wd:Q134413342 .
+
+moma:15 ex:evidencia "Puntuación: 14. Coincidencias: Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente; País/nacionalidad coincidente. Contradicciones: " ;
+    owl:sameAs wd:Q3747067 .
+
+moma:16 ex:evidencia "Puntuación: 14. Coincidencias: Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente; País/nacionalidad coincidente. Contradicciones: " ;
+    owl:sameAs wd:Q77353440 .
+
+moma:19 ex:evidencia "Puntuación: 14. Coincidencias: Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente; País/nacionalidad coincidente. Contradicciones: " ;
+    owl:sameAs wd:Q568262 .
+
+moma:2 ex:evidencia "Puntuación: 10. Coincidencias: Nombre exacto; Nacimiento coincidente; Género coincidente; País/nacionalidad coincidente. Contradicciones: " ;
+    owl:sameAs wd:Q55996241 .
+
+moma:21 ex:evidencia "Puntuación: 14. Coincidencias: Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente; País/nacionalidad coincidente. Contradicciones: " ;
+    owl:sameAs wd:Q7382874 .
+
+moma:23 ex:evidencia "Puntuación: 14. Coincidencias: Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente; País/nacionalidad coincidente. Contradicciones: " ;
+    owl:sameAs wd:Q614071 .
+
+moma:27 ex:evidencia "Puntuación: 14. Coincidencias: Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente; País/nacionalidad coincidente. Contradicciones: " ;
+    owl:sameAs wd:Q312070 .
+
+moma:30 ex:evidencia "Puntuación: 14. Coincidencias: Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente; País/nacionalidad coincidente. Contradicciones: " ;
+    owl:sameAs wd:Q3956011 .
+
+moma:37 ex:evidencia "Puntuación: 14. Coincidencias: Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente; País/nacionalidad coincidente. Contradicciones: " ;
+    owl:sameAs wd:Q22002944 .
+
+moma:39 ex:evidencia "Puntuación: 14. Coincidencias: Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente; País/nacionalidad coincidente. Contradicciones: " ;
+    owl:sameAs wd:Q321301 .
+
+moma:4 ex:evidencia "Puntuación: 10. Coincidencias: Nombre exacto; Nacimiento coincidente; Género coincidente; País/nacionalidad coincidente. Contradicciones: " ;
+    owl:sameAs wd:Q1063584 .
+
+moma:41 ex:evidencia "Puntuación: 14. Coincidencias: Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente; País/nacionalidad coincidente. Contradicciones: " ;
+    owl:sameAs wd:Q231861 .
+
+moma:42 ex:evidencia "Puntuación: 13. Coincidencias: Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente. Contradicciones: " ;
+    owl:sameAs wd:Q47511956 .
+
+moma:47 ex:evidencia "Puntuación: 14. Coincidencias: Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente; País/nacionalidad coincidente. Contradicciones: " ;
+    owl:sameAs wd:Q78819 .
+
+moma:50 ex:evidencia "Puntuación: 14. Coincidencias: Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente; País/nacionalidad coincidente. Contradicciones: " ;
+    owl:sameAs wd:Q3377042 .
+
+moma:51 ex:evidencia "Puntuación: 11. Coincidencias: Nacimiento coincidente; Fallecimiento coincidente; Género coincidente; País/nacionalidad coincidente. Contradicciones: " ;
+    owl:sameAs wd:Q77325248 .
+
+moma:52 ex:evidencia "Puntuación: 14. Coincidencias: Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente; País/nacionalidad coincidente. Contradicciones: " ;
+    owl:sameAs wd:Q7357131 .
+
+moma:53 ex:evidencia "Puntuación: 14. Coincidencias: Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente; País/nacionalidad coincidente. Contradicciones: " ;
+    owl:sameAs wd:Q433471 .
+
+moma:58 ex:evidencia "Puntuación: 12. Coincidencias: Nombre parcialmente coincidente; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente; País/nacionalidad coincidente. Contradicciones: " ;
+    owl:sameAs wd:Q2857548 .
+
+moma:59 ex:evidencia "Puntuación: 10. Coincidencias: Nombre exacto; Nacimiento coincidente; Género coincidente; País/nacionalidad coincidente. Contradicciones: " ;
+    owl:sameAs wd:Q562139 .
+
+moma:60 ex:evidencia "Puntuación: 14. Coincidencias: Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente; País/nacionalidad coincidente. Contradicciones: " ;
+    owl:sameAs wd:Q60809 .
+
+moma:61 ex:evidencia "Puntuación: 10. Coincidencias: Nombre exacto; Nacimiento coincidente; Género coincidente; País/nacionalidad coincidente. Contradicciones: " ;
+    owl:sameAs wd:Q4725709 .
+
+moma:62 ex:evidencia "Puntuación: 14. Coincidencias: Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente; País/nacionalidad coincidente. Contradicciones: " ;
+    owl:sameAs wd:Q5134058 .
+
+moma:63 ex:evidencia "Puntuación: 11. Coincidencias: Nacimiento coincidente; Fallecimiento coincidente; Género coincidente; País/nacionalidad coincidente. Contradicciones: " ;
+    owl:sameAs wd:Q19823344 .
+
+moma:64 ex:evidencia "Puntuación: 10. Coincidencias: Nombre exacto; Nacimiento coincidente; Género coincidente; País/nacionalidad coincidente. Contradicciones: " ;
+    owl:sameAs wd:Q5258132 .
+
+moma:65 ex:evidencia "Puntuación: 11. Coincidencias: Nacimiento coincidente; Fallecimiento coincidente; Género coincidente; País/nacionalidad coincidente. Contradicciones: " ;
+    owl:sameAs wd:Q6390477 .
+
+moma:66 ex:evidencia "Puntuación: 10. Coincidencias: Nombre exacto; Nacimiento coincidente; Género coincidente; País/nacionalidad coincidente. Contradicciones: " ;
+    owl:sameAs wd:Q1392710 .
+
+moma:67 ex:evidencia "Puntuación: 10. Coincidencias: Nombre exacto; Nacimiento coincidente; Género coincidente; País/nacionalidad coincidente. Contradicciones: " ;
+    owl:sameAs wd:Q3481792 .
+
+moma:68 ex:evidencia "Puntuación: 14. Coincidencias: Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente; País/nacionalidad coincidente. Contradicciones: " ;
+    owl:sameAs wd:Q361106 .
+
+moma:69 ex:evidencia "Puntuación: 14. Coincidencias: Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente; País/nacionalidad coincidente. Contradicciones: " ;
+    owl:sameAs wd:Q4730450 .
+
+moma:7 ex:evidencia "Puntuación: 10. Coincidencias: Nombre exacto; Nacimiento coincidente; Género coincidente; País/nacionalidad coincidente. Contradicciones: " ;
+    owl:sameAs wd:Q4907949 .
+
+moma:71 ex:evidencia "Puntuación: 14. Coincidencias: Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente; País/nacionalidad coincidente. Contradicciones: " ;
+    owl:sameAs wd:Q7815833 .
+
+moma:74 ex:evidencia "Puntuación: 14. Coincidencias: Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente; País/nacionalidad coincidente. Contradicciones: " ;
+    owl:sameAs wd:Q3445734 .
+
+moma:79 ex:evidencia "Puntuación: 12. Coincidencias: Nombre parcialmente coincidente; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente; País/nacionalidad coincidente. Contradicciones: " ;
+    owl:sameAs wd:Q276030 .
+
+moma:80 ex:evidencia "Puntuación: 14. Coincidencias: Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente; País/nacionalidad coincidente. Contradicciones: " ;
+    owl:sameAs wd:Q3853982 .
+
+moma:82 ex:evidencia "Puntuación: 14. Coincidencias: Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente; País/nacionalidad coincidente. Contradicciones: " ;
+    owl:sameAs wd:Q7172472 .
+
+moma:83 ex:evidencia "Puntuación: 11. Coincidencias: Nacimiento coincidente; Fallecimiento coincidente; Género coincidente; País/nacionalidad coincidente. Contradicciones: " ;
+    owl:sameAs wd:Q2734214 .
+
+moma:84 ex:evidencia "Puntuación: 11. Coincidencias: Nacimiento coincidente; Fallecimiento coincidente; Género coincidente; País/nacionalidad coincidente. Contradicciones: " ;
+    owl:sameAs wd:Q5292140 .
+
+moma:85 ex:evidencia "Puntuación: 13. Coincidencias: Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente. Contradicciones: " ;
+    owl:sameAs wd:Q9321664 .
+
+moma:87 ex:evidencia "Puntuación: 14. Coincidencias: Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente; País/nacionalidad coincidente. Contradicciones: " ;
+    owl:sameAs wd:Q3265338 .
+
+moma:88 ex:evidencia "Puntuación: 14. Coincidencias: Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente; País/nacionalidad coincidente. Contradicciones: " ;
+    owl:sameAs wd:Q5606793 .
+
+moma:89 ex:evidencia "Puntuación: 14. Coincidencias: Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente; País/nacionalidad coincidente. Contradicciones: " ;
+    owl:sameAs wd:Q21288779 .
+
+moma:91 ex:evidencia "Puntuación: 13. Coincidencias: Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente. Contradicciones: " ;
+    owl:sameAs wd:Q3436822 .
+
+moma:92 ex:evidencia "Puntuación: 10. Coincidencias: Nombre exacto; Nacimiento coincidente; Género coincidente; País/nacionalidad coincidente. Contradicciones: " ;
+    owl:sameAs wd:Q6413885 .
+
+moma:95 ex:evidencia "Puntuación: 11. Coincidencias: Nacimiento coincidente; Fallecimiento coincidente; Género coincidente; País/nacionalidad coincidente. Contradicciones: " ;
+    owl:sameAs wd:Q1559152 .
+
+moma:96 ex:evidencia "Puntuación: 14. Coincidencias: Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente; País/nacionalidad coincidente. Contradicciones: " ;
+    owl:sameAs wd:Q86078 .
+
+moma:97 ex:evidencia "Puntuación: 14. Coincidencias: Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente; País/nacionalidad coincidente. Contradicciones: " ;
+    owl:sameAs wd:Q170071 .
+
+moma:99 ex:evidencia "Puntuación: 14. Coincidencias: Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente; País/nacionalidad coincidente. Contradicciones: " ;
+    owl:sameAs wd:Q63119722 .
+

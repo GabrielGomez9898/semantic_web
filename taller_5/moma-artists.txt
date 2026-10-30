@@ -1,0 +1,91 @@
+ConstituentID	DisplayName	ArtistBio	Nationality	Gender	BeginDate	EndDate
+1	Robert Arneson	American, 1930–1992	American	male	1930	1992
+2	Doroteo Arnaiz	Spanish, born 1936	Spanish	male	1936	0
+3	Bill Arnold	American, born 1941	American	male	1941	0
+4	Charles Arnoldi	American, born 1946	American	male	1946	0
+5	Per Arnoldi	Danish, born 1941	Danish	male	1941	0
+6	Danilo Aroldi	Italian, born 1925	Italian	male	1925	0
+7	Bill Aron	American, born 1941	American	male	1941	0
+9	David Aronson	American, born Lithuania 1923	American	male	1923	0
+10	Irene Aronson	American, born Germany 1918	American	female	1918	0
+11	Jean (Hans) Arp	French, born Germany (Alsace). 1886–1966	French	male	1886	1966
+12	Jüri Arrak	Estonian, born 1936	Estonian	male	1936	0
+13	José Arellano Fischer	Mexican, 1911–1995	Mexican	male	1911	1995
+15	Folke Arstrom	Swedish, 1907–1997	Swedish	male	1907	1997
+16	Cristobal Arteche	Spanish, 1900–1964	Spanish	male	1900	1964
+18	Artko				0	0
+19	Richard Artschwager	American, 1923–2013	American	male	1923	2013
+21	Ruth Asawa	American, 1926–2013	American	female	1926	2013
+22	Isidora Aschheim	Israeli	Israeli	female	0	0
+23	Charles Robert Ashbee	British, 1863–1942	British	male	1863	1942
+24	Donald Ashcraft	American, born 1927	American	male	1927	0
+25	E. M. Ashe	American, 1867–1941	American	male	1867	1941
+26	Göran Åslin	Swedish, born 1940	Swedish		1940	0
+27	Erik Gunnar Asplund	Swedish, 1885–1940	Swedish	male	1885	1940
+28	Geneviève Asse	French, born 1923	French	female	1923	0
+30	Sergio Asti	Italian, 1926–2021	Italian	male	1926	2021
+31	Dana Atchley	American, 1941–2000	American	female	1941	2000
+32	Atelier Eggers	French	French		0	0
+33	A.A.P.	American	American		0	0
+34	Alvar Aalto	Finnish, 1898–1976	Finnish	male	1898	1976
+35	Aino Aalto	Finnish, 1894–1949	Finnish	female	1894	1949
+36	Eero Aarnio	Finnish, born 1932	Finnish	male	1932	0
+37	Jules Aarons	American, 1921–2008	American	male	1921	2008
+38	Magdalena Abakanowicz	Polish, 1930–2017	Polish	female	1930	2017
+39	James Abbe	American, 1883–1973	American	male	1883	1973
+40	Jussuf Abbo	Palestinian, 1888–1953	Palestinian	male	1888	1953
+41	Berenice Abbott	American, 1898–1991	American	female	1898	1991
+42	Nobuya Abe	Japanese, 1913–1971	Japanese	male	1913	1971
+43	Abe Shiro (pen Name: Suichiku)	Japanese, born 1900	Japanese	male	1900	0
+44	Robert Abel	American, born 1937	American	male	1937	0
+46	Sigmund Abeles	American, born 1934	American	male	1934	0
+47	Raimund Abraham	American, born Austria. 1933–2010	American	male	1933	2010
+49	Ivor Abrahams	British, born 1935	British	male	1935	0
+50	Gerald Abramovitz	British, born South Africa. 1928–2011	British	male	1928	2011
+51	William Ross Abrams	American, 1920–2007	American	male	1920	2007
+52	Rodolfo Abularach	Guatemalan, 1933–2020	Guatemalan	male	1933	2020
+53	Vito Acconci	American, 1940–2017	American	male	1940	2017
+54	Milton Ackoff	American, born 1915	American	male	1915	0
+55	Norman Ackroyd	British	British	male	0	0
+56	Luis Alberto Acuña	Colombian, 1904–1994	Colombian	male	1904	1994
+57	Henri Georges Adam	French, 1904–1967	French	male	1904	1967
+58	Antoine Samuel Adam-Salomon	French, 1818–1881	French	male	1818	1881
+59	Valerio Adami	Italian, born 1935	Italian	male	1935	0
+60	Ansel Adams	American, 1902–1984	American	male	1902	1984
+61	Alice Adams	American, born 1930	American	female	1930	0
+62	Clinton Adams	American, 1918–2002	American	male	1918	2002
+63	Dacres Adams	British, 1864–1951	British	male	1864	1951
+64	Dennis Adams	American, born 1948	American	male	1948	0
+65	Kenneth M. Adams	American, 1897–1966	American	male	1897	1966
+66	Robert Adams	American, born 1937	American	male	1937	0
+67	Shelby Lee Adams	American, born 1950	American	male	1950	0
+68	Charles Addams	American, 1912–1988	American	male	1912	1988
+69	Allan Adler	American, 1916–2002	American	male	1916	2002
+70	Jankel Adler	Polish, 1895–1949	Polish	male	1895	1949
+71	Virginia Admiral	American, 1915–2000	American	female	1915	2000
+72	Pic Adrian	Romanian, born 1910	Romanian	male	1910	0
+74	Roy Adzak	British, 1927–1987	British	male	1927	1987
+76	Nicholas Africano	American, born 1948	American	male	1948	0
+77	Afro (Afro Basaldella)	Italian, 1912–1976	Italian	male	1912	1976
+78	Aftograf	Russian	Russian		0	0
+79	Agam (Yaacov Agam)	Israeli, 1928–2026	Israeli	male	1928	2026
+80	Mehemed Fehmy Agha	American, born Russia. 1896–1978	American	male	1896	1978
+81	Kathleen Agnoli	American, born 1945	American	female	1945	0
+82	Peter Agostini	American, 1913–1993	American	male	1913	1993
+83	Olympe Aguado de las Marismas	French, 1827–1894	French	male	1827	1894
+84	Dongkuk S. Ahn	American, 1937–2013	American	male	1937	2013
+85	Aarne Aho	Finnish, 1904–1978	Finnish	male	1904	1978
+86	Otl Aicher (also known as Otto Aicher)	German, 1922–1991	German	male	1922	1991
+87	Lucien Aigner	American, born Hungary. 1901–1999	American	male	1901	1999
+88	Gregory Ain	American, 1908–1988	American	male	1908	1988
+89	Edgar Ainsworth	British, 1906–1975	British	male	1906	1975
+91	Roberto Aizenberg	Argentine, 1928–1996	Argentine	male	1928	1996
+92	Kinji Akagawa	American, born Japan 1940	American	male	1940	0
+93	Ryoji Akiyama	Japanese, born 1942	Japanese	male	1942	0
+94	Munira Al-Kazi	Kuwaiti, born 1939	Kuwaiti	female	1939	0
+95	Alastair (Hans H. Voight)	German, 1887–1969	German	male	1887	1969
+96	Anni Albers	American, born Germany. 1899–1994	American	female	1899	1994
+97	Josef Albers	American, born Germany. 1888–1976	American	male	1888	1976
+98	Beatrice Albert	American	American	female	0	0
+99	Joan Albert	American, 1943–2012	American	female	1943	2012
+100	Ivan LeLorraine Albright	American, 1897–1983	American	male	1897	1983

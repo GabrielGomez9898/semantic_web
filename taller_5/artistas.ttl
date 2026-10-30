@@ -1,0 +1,718 @@
+@prefix artist: <http://example.org/moma/ontology#> .
+@prefix moma: <http://example.org/moma/> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/moma/artist/1> a moma:Artist ;
+    artist:artistBio "American, 1930–1992" ;
+    artist:beginDate 1930 ;
+    artist:endDate 1992 ;
+    artist:gender "male" ;
+    artist:nationality "American" ;
+    schema:name "Robert Arneson" .
+
+<http://example.org/moma/artist/10> a moma:Artist ;
+    artist:artistBio "American, born Germany 1918" ;
+    artist:beginDate 1918 ;
+    artist:endDate 0 ;
+    artist:gender "female" ;
+    artist:nationality "American" ;
+    schema:name "Irene Aronson" .
+
+<http://example.org/moma/artist/100> a moma:Artist ;
+    artist:artistBio "American, 1897–1983" ;
+    artist:beginDate 1897 ;
+    artist:endDate 1983 ;
+    artist:gender "male" ;
+    artist:nationality "American" ;
+    schema:name "Ivan LeLorraine Albright" .
+
+<http://example.org/moma/artist/11> a moma:Artist ;
+    artist:artistBio "French, born Germany (Alsace). 1886–1966" ;
+    artist:beginDate 1886 ;
+    artist:endDate 1966 ;
+    artist:gender "male" ;
+    artist:nationality "French" ;
+    schema:name "Jean (Hans) Arp" .
+
+<http://example.org/moma/artist/12> a moma:Artist ;
+    artist:artistBio "Estonian, born 1936" ;
+    artist:beginDate 1936 ;
+    artist:endDate 0 ;
+    artist:gender "male" ;
+    artist:nationality "Estonian" ;
+    schema:name "Jüri Arrak" .
+
+<http://example.org/moma/artist/13> a moma:Artist ;
+    artist:artistBio "Mexican, 1911–1995" ;
+    artist:beginDate 1911 ;
+    artist:endDate 1995 ;
+    artist:gender "male" ;
+    artist:nationality "Mexican" ;
+    schema:name "José Arellano Fischer" .
+
+<http://example.org/moma/artist/15> a moma:Artist ;
+    artist:artistBio "Swedish, 1907–1997" ;
+    artist:beginDate 1907 ;
+    artist:endDate 1997 ;
+    artist:gender "male" ;
+    artist:nationality "Swedish" ;
+    schema:name "Folke Arstrom" .
+
+<http://example.org/moma/artist/16> a moma:Artist ;
+    artist:artistBio "Spanish, 1900–1964" ;
+    artist:beginDate 1900 ;
+    artist:endDate 1964 ;
+    artist:gender "male" ;
+    artist:nationality "Spanish" ;
+    schema:name "Cristobal Arteche" .
+
+<http://example.org/moma/artist/18> a moma:Artist ;
+    artist:beginDate 0 ;
+    artist:endDate 0 ;
+    schema:name "Artko" .
+
+<http://example.org/moma/artist/19> a moma:Artist ;
+    artist:artistBio "American, 1923–2013" ;
+    artist:beginDate 1923 ;
+    artist:endDate 2013 ;
+    artist:gender "male" ;
+    artist:nationality "American" ;
+    schema:name "Richard Artschwager" .
+
+<http://example.org/moma/artist/2> a moma:Artist ;
+    artist:artistBio "Spanish, born 1936" ;
+    artist:beginDate 1936 ;
+    artist:endDate 0 ;
+    artist:gender "male" ;
+    artist:nationality "Spanish" ;
+    schema:name "Doroteo Arnaiz" .
+
+<http://example.org/moma/artist/21> a moma:Artist ;
+    artist:artistBio "American, 1926–2013" ;
+    artist:beginDate 1926 ;
+    artist:endDate 2013 ;
+    artist:gender "female" ;
+    artist:nationality "American" ;
+    schema:name "Ruth Asawa" .
+
+<http://example.org/moma/artist/22> a moma:Artist ;
+    artist:artistBio "Israeli" ;
+    artist:beginDate 0 ;
+    artist:endDate 0 ;
+    artist:gender "female" ;
+    artist:nationality "Israeli" ;
+    schema:name "Isidora Aschheim" .
+
+<http://example.org/moma/artist/23> a moma:Artist ;
+    artist:artistBio "British, 1863–1942" ;
+    artist:beginDate 1863 ;
+    artist:endDate 1942 ;
+    artist:gender "male" ;
+    artist:nationality "British" ;
+    schema:name "Charles Robert Ashbee" .
+
+<http://example.org/moma/artist/24> a moma:Artist ;
+    artist:artistBio "American, born 1927" ;
+    artist:beginDate 1927 ;
+    artist:endDate 0 ;
+    artist:gender "male" ;
+    artist:nationality "American" ;
+    schema:name "Donald Ashcraft" .
+
+<http://example.org/moma/artist/25> a moma:Artist ;
+    artist:artistBio "American, 1867–1941" ;
+    artist:beginDate 1867 ;
+    artist:endDate 1941 ;
+    artist:gender "male" ;
+    artist:nationality "American" ;
+    schema:name "E. M. Ashe" .
+
+<http://example.org/moma/artist/26> a moma:Artist ;
+    artist:artistBio "Swedish, born 1940" ;
+    artist:beginDate 1940 ;
+    artist:endDate 0 ;
+    artist:nationality "Swedish" ;
+    schema:name "Göran Åslin" .
+
+<http://example.org/moma/artist/27> a moma:Artist ;
+    artist:artistBio "Swedish, 1885–1940" ;
+    artist:beginDate 1885 ;
+    artist:endDate 1940 ;
+    artist:gender "male" ;
+    artist:nationality "Swedish" ;
+    schema:name "Erik Gunnar Asplund" .
+
+<http://example.org/moma/artist/28> a moma:Artist ;
+    artist:artistBio "French, born 1923" ;
+    artist:beginDate 1923 ;
+    artist:endDate 0 ;
+    artist:gender "female" ;
+    artist:nationality "French" ;
+    schema:name "Geneviève Asse" .
+
+<http://example.org/moma/artist/3> a moma:Artist ;
+    artist:artistBio "American, born 1941" ;
+    artist:beginDate 1941 ;
+    artist:endDate 0 ;
+    artist:gender "male" ;
+    artist:nationality "American" ;
+    schema:name "Bill Arnold" .
+
+<http://example.org/moma/artist/30> a moma:Artist ;
+    artist:artistBio "Italian, 1926–2021" ;
+    artist:beginDate 1926 ;
+    artist:endDate 2021 ;
+    artist:gender "male" ;
+    artist:nationality "Italian" ;
+    schema:name "Sergio Asti" .
+
+<http://example.org/moma/artist/31> a moma:Artist ;
+    artist:artistBio "American, 1941–2000" ;
+    artist:beginDate 1941 ;
+    artist:endDate 2000 ;
+    artist:gender "female" ;
+    artist:nationality "American" ;
+    schema:name "Dana Atchley" .
+
+<http://example.org/moma/artist/32> a moma:Artist ;
+    artist:artistBio "French" ;
+    artist:beginDate 0 ;
+    artist:endDate 0 ;
+    artist:nationality "French" ;
+    schema:name "Atelier Eggers" .
+
+<http://example.org/moma/artist/33> a moma:Artist ;
+    artist:artistBio "American" ;
+    artist:beginDate 0 ;
+    artist:endDate 0 ;
+    artist:nationality "American" ;
+    schema:name "A.A.P." .
+
+<http://example.org/moma/artist/34> a moma:Artist ;
+    artist:artistBio "Finnish, 1898–1976" ;
+    artist:beginDate 1898 ;
+    artist:endDate 1976 ;
+    artist:gender "male" ;
+    artist:nationality "Finnish" ;
+    schema:name "Alvar Aalto" .
+
+<http://example.org/moma/artist/35> a moma:Artist ;
+    artist:artistBio "Finnish, 1894–1949" ;
+    artist:beginDate 1894 ;
+    artist:endDate 1949 ;
+    artist:gender "female" ;
+    artist:nationality "Finnish" ;
+    schema:name "Aino Aalto" .
+
+<http://example.org/moma/artist/36> a moma:Artist ;
+    artist:artistBio "Finnish, born 1932" ;
+    artist:beginDate 1932 ;
+    artist:endDate 0 ;
+    artist:gender "male" ;
+    artist:nationality "Finnish" ;
+    schema:name "Eero Aarnio" .
+
+<http://example.org/moma/artist/37> a moma:Artist ;
+    artist:artistBio "American, 1921–2008" ;
+    artist:beginDate 1921 ;
+    artist:endDate 2008 ;
+    artist:gender "male" ;
+    artist:nationality "American" ;
+    schema:name "Jules Aarons" .
+
+<http://example.org/moma/artist/38> a moma:Artist ;
+    artist:artistBio "Polish, 1930–2017" ;
+    artist:beginDate 1930 ;
+    artist:endDate 2017 ;
+    artist:gender "female" ;
+    artist:nationality "Polish" ;
+    schema:name "Magdalena Abakanowicz" .
+
+<http://example.org/moma/artist/39> a moma:Artist ;
+    artist:artistBio "American, 1883–1973" ;
+    artist:beginDate 1883 ;
+    artist:endDate 1973 ;
+    artist:gender "male" ;
+    artist:nationality "American" ;
+    schema:name "James Abbe" .
+
+<http://example.org/moma/artist/4> a moma:Artist ;
+    artist:artistBio "American, born 1946" ;
+    artist:beginDate 1946 ;
+    artist:endDate 0 ;
+    artist:gender "male" ;
+    artist:nationality "American" ;
+    schema:name "Charles Arnoldi" .
+
+<http://example.org/moma/artist/40> a moma:Artist ;
+    artist:artistBio "Palestinian, 1888–1953" ;
+    artist:beginDate 1888 ;
+    artist:endDate 1953 ;
+    artist:gender "male" ;
+    artist:nationality "Palestinian" ;
+    schema:name "Jussuf Abbo" .
+
+<http://example.org/moma/artist/41> a moma:Artist ;
+    artist:artistBio "American, 1898–1991" ;
+    artist:beginDate 1898 ;
+    artist:endDate 1991 ;
+    artist:gender "female" ;
+    artist:nationality "American" ;
+    schema:name "Berenice Abbott" .
+
+<http://example.org/moma/artist/42> a moma:Artist ;
+    artist:artistBio "Japanese, 1913–1971" ;
+    artist:beginDate 1913 ;
+    artist:endDate 1971 ;
+    artist:gender "male" ;
+    artist:nationality "Japanese" ;
+    schema:name "Nobuya Abe" .
+
+<http://example.org/moma/artist/43> a moma:Artist ;
+    artist:artistBio "Japanese, born 1900" ;
+    artist:beginDate 1900 ;
+    artist:endDate 0 ;
+    artist:gender "male" ;
+    artist:nationality "Japanese" ;
+    schema:name "Abe Shiro (pen Name: Suichiku)" .
+
+<http://example.org/moma/artist/44> a moma:Artist ;
+    artist:artistBio "American, born 1937" ;
+    artist:beginDate 1937 ;
+    artist:endDate 0 ;
+    artist:gender "male" ;
+    artist:nationality "American" ;
+    schema:name "Robert Abel" .
+
+<http://example.org/moma/artist/46> a moma:Artist ;
+    artist:artistBio "American, born 1934" ;
+    artist:beginDate 1934 ;
+    artist:endDate 0 ;
+    artist:gender "male" ;
+    artist:nationality "American" ;
+    schema:name "Sigmund Abeles" .
+
+<http://example.org/moma/artist/47> a moma:Artist ;
+    artist:artistBio "American, born Austria. 1933–2010" ;
+    artist:beginDate 1933 ;
+    artist:endDate 2010 ;
+    artist:gender "male" ;
+    artist:nationality "American" ;
+    schema:name "Raimund Abraham" .
+
+<http://example.org/moma/artist/49> a moma:Artist ;
+    artist:artistBio "British, born 1935" ;
+    artist:beginDate 1935 ;
+    artist:endDate 0 ;
+    artist:gender "male" ;
+    artist:nationality "British" ;
+    schema:name "Ivor Abrahams" .
+
+<http://example.org/moma/artist/5> a moma:Artist ;
+    artist:artistBio "Danish, born 1941" ;
+    artist:beginDate 1941 ;
+    artist:endDate 0 ;
+    artist:gender "male" ;
+    artist:nationality "Danish" ;
+    schema:name "Per Arnoldi" .
+
+<http://example.org/moma/artist/50> a moma:Artist ;
+    artist:artistBio "British, born South Africa. 1928–2011" ;
+    artist:beginDate 1928 ;
+    artist:endDate 2011 ;
+    artist:gender "male" ;
+    artist:nationality "British" ;
+    schema:name "Gerald Abramovitz" .
+
+<http://example.org/moma/artist/51> a moma:Artist ;
+    artist:artistBio "American, 1920–2007" ;
+    artist:beginDate 1920 ;
+    artist:endDate 2007 ;
+    artist:gender "male" ;
+    artist:nationality "American" ;
+    schema:name "William Ross Abrams" .
+
+<http://example.org/moma/artist/52> a moma:Artist ;
+    artist:artistBio "Guatemalan, 1933–2020" ;
+    artist:beginDate 1933 ;
+    artist:endDate 2020 ;
+    artist:gender "male" ;
+    artist:nationality "Guatemalan" ;
+    schema:name "Rodolfo Abularach" .
+
+<http://example.org/moma/artist/53> a moma:Artist ;
+    artist:artistBio "American, 1940–2017" ;
+    artist:beginDate 1940 ;
+    artist:endDate 2017 ;
+    artist:gender "male" ;
+    artist:nationality "American" ;
+    schema:name "Vito Acconci" .
+
+<http://example.org/moma/artist/54> a moma:Artist ;
+    artist:artistBio "American, born 1915" ;
+    artist:beginDate 1915 ;
+    artist:endDate 0 ;
+    artist:gender "male" ;
+    artist:nationality "American" ;
+    schema:name "Milton Ackoff" .
+
+<http://example.org/moma/artist/55> a moma:Artist ;
+    artist:artistBio "British" ;
+    artist:beginDate 0 ;
+    artist:endDate 0 ;
+    artist:gender "male" ;
+    artist:nationality "British" ;
+    schema:name "Norman Ackroyd" .
+
+<http://example.org/moma/artist/56> a moma:Artist ;
+    artist:artistBio "Colombian, 1904–1994" ;
+    artist:beginDate 1904 ;
+    artist:endDate 1994 ;
+    artist:gender "male" ;
+    artist:nationality "Colombian" ;
+    schema:name "Luis Alberto Acuña" .
+
+<http://example.org/moma/artist/57> a moma:Artist ;
+    artist:artistBio "French, 1904–1967" ;
+    artist:beginDate 1904 ;
+    artist:endDate 1967 ;
+    artist:gender "male" ;
+    artist:nationality "French" ;
+    schema:name "Henri Georges Adam" .
+
+<http://example.org/moma/artist/58> a moma:Artist ;
+    artist:artistBio "French, 1818–1881" ;
+    artist:beginDate 1818 ;
+    artist:endDate 1881 ;
+    artist:gender "male" ;
+    artist:nationality "French" ;
+    schema:name "Antoine Samuel Adam-Salomon" .
+
+<http://example.org/moma/artist/59> a moma:Artist ;
+    artist:artistBio "Italian, born 1935" ;
+    artist:beginDate 1935 ;
+    artist:endDate 0 ;
+    artist:gender "male" ;
+    artist:nationality "Italian" ;
+    schema:name "Valerio Adami" .
+
+<http://example.org/moma/artist/6> a moma:Artist ;
+    artist:artistBio "Italian, born 1925" ;
+    artist:beginDate 1925 ;
+    artist:endDate 0 ;
+    artist:gender "male" ;
+    artist:nationality "Italian" ;
+    schema:name "Danilo Aroldi" .
+
+<http://example.org/moma/artist/60> a moma:Artist ;
+    artist:artistBio "American, 1902–1984" ;
+    artist:beginDate 1902 ;
+    artist:endDate 1984 ;
+    artist:gender "male" ;
+    artist:nationality "American" ;
+    schema:name "Ansel Adams" .
+
+<http://example.org/moma/artist/61> a moma:Artist ;
+    artist:artistBio "American, born 1930" ;
+    artist:beginDate 1930 ;
+    artist:endDate 0 ;
+    artist:gender "female" ;
+    artist:nationality "American" ;
+    schema:name "Alice Adams" .
+
+<http://example.org/moma/artist/62> a moma:Artist ;
+    artist:artistBio "American, 1918–2002" ;
+    artist:beginDate 1918 ;
+    artist:endDate 2002 ;
+    artist:gender "male" ;
+    artist:nationality "American" ;
+    schema:name "Clinton Adams" .
+
+<http://example.org/moma/artist/63> a moma:Artist ;
+    artist:artistBio "British, 1864–1951" ;
+    artist:beginDate 1864 ;
+    artist:endDate 1951 ;
+    artist:gender "male" ;
+    artist:nationality "British" ;
+    schema:name "Dacres Adams" .
+
+<http://example.org/moma/artist/64> a moma:Artist ;
+    artist:artistBio "American, born 1948" ;
+    artist:beginDate 1948 ;
+    artist:endDate 0 ;
+    artist:gender "male" ;
+    artist:nationality "American" ;
+    schema:name "Dennis Adams" .
+
+<http://example.org/moma/artist/65> a moma:Artist ;
+    artist:artistBio "American, 1897–1966" ;
+    artist:beginDate 1897 ;
+    artist:endDate 1966 ;
+    artist:gender "male" ;
+    artist:nationality "American" ;
+    schema:name "Kenneth M. Adams" .
+
+<http://example.org/moma/artist/66> a moma:Artist ;
+    artist:artistBio "American, born 1937" ;
+    artist:beginDate 1937 ;
+    artist:endDate 0 ;
+    artist:gender "male" ;
+    artist:nationality "American" ;
+    schema:name "Robert Adams" .
+
+<http://example.org/moma/artist/67> a moma:Artist ;
+    artist:artistBio "American, born 1950" ;
+    artist:beginDate 1950 ;
+    artist:endDate 0 ;
+    artist:gender "male" ;
+    artist:nationality "American" ;
+    schema:name "Shelby Lee Adams" .
+
+<http://example.org/moma/artist/68> a moma:Artist ;
+    artist:artistBio "American, 1912–1988" ;
+    artist:beginDate 1912 ;
+    artist:endDate 1988 ;
+    artist:gender "male" ;
+    artist:nationality "American" ;
+    schema:name "Charles Addams" .
+
+<http://example.org/moma/artist/69> a moma:Artist ;
+    artist:artistBio "American, 1916–2002" ;
+    artist:beginDate 1916 ;
+    artist:endDate 2002 ;
+    artist:gender "male" ;
+    artist:nationality "American" ;
+    schema:name "Allan Adler" .
+
+<http://example.org/moma/artist/7> a moma:Artist ;
+    artist:artistBio "American, born 1941" ;
+    artist:beginDate 1941 ;
+    artist:endDate 0 ;
+    artist:gender "male" ;
+    artist:nationality "American" ;
+    schema:name "Bill Aron" .
+
+<http://example.org/moma/artist/70> a moma:Artist ;
+    artist:artistBio "Polish, 1895–1949" ;
+    artist:beginDate 1895 ;
+    artist:endDate 1949 ;
+    artist:gender "male" ;
+    artist:nationality "Polish" ;
+    schema:name "Jankel Adler" .
+
+<http://example.org/moma/artist/71> a moma:Artist ;
+    artist:artistBio "American, 1915–2000" ;
+    artist:beginDate 1915 ;
+    artist:endDate 2000 ;
+    artist:gender "female" ;
+    artist:nationality "American" ;
+    schema:name "Virginia Admiral" .
+
+<http://example.org/moma/artist/72> a moma:Artist ;
+    artist:artistBio "Romanian, born 1910" ;
+    artist:beginDate 1910 ;
+    artist:endDate 0 ;
+    artist:gender "male" ;
+    artist:nationality "Romanian" ;
+    schema:name "Pic Adrian" .
+
+<http://example.org/moma/artist/74> a moma:Artist ;
+    artist:artistBio "British, 1927–1987" ;
+    artist:beginDate 1927 ;
+    artist:endDate 1987 ;
+    artist:gender "male" ;
+    artist:nationality "British" ;
+    schema:name "Roy Adzak" .
+
+<http://example.org/moma/artist/76> a moma:Artist ;
+    artist:artistBio "American, born 1948" ;
+    artist:beginDate 1948 ;
+    artist:endDate 0 ;
+    artist:gender "male" ;
+    artist:nationality "American" ;
+    schema:name "Nicholas Africano" .
+
+<http://example.org/moma/artist/77> a moma:Artist ;
+    artist:artistBio "Italian, 1912–1976" ;
+    artist:beginDate 1912 ;
+    artist:endDate 1976 ;
+    artist:gender "male" ;
+    artist:nationality "Italian" ;
+    schema:name "Afro (Afro Basaldella)" .
+
+<http://example.org/moma/artist/78> a moma:Artist ;
+    artist:artistBio "Russian" ;
+    artist:beginDate 0 ;
+    artist:endDate 0 ;
+    artist:nationality "Russian" ;
+    schema:name "Aftograf" .
+
+<http://example.org/moma/artist/79> a moma:Artist ;
+    artist:artistBio "Israeli, 1928–2026" ;
+    artist:beginDate 1928 ;
+    artist:endDate 2026 ;
+    artist:gender "male" ;
+    artist:nationality "Israeli" ;
+    schema:name "Agam (Yaacov Agam)" .
+
+<http://example.org/moma/artist/80> a moma:Artist ;
+    artist:artistBio "American, born Russia. 1896–1978" ;
+    artist:beginDate 1896 ;
+    artist:endDate 1978 ;
+    artist:gender "male" ;
+    artist:nationality "American" ;
+    schema:name "Mehemed Fehmy Agha" .
+
+<http://example.org/moma/artist/81> a moma:Artist ;
+    artist:artistBio "American, born 1945" ;
+    artist:beginDate 1945 ;
+    artist:endDate 0 ;
+    artist:gender "female" ;
+    artist:nationality "American" ;
+    schema:name "Kathleen Agnoli" .
+
+<http://example.org/moma/artist/82> a moma:Artist ;
+    artist:artistBio "American, 1913–1993" ;
+    artist:beginDate 1913 ;
+    artist:endDate 1993 ;
+    artist:gender "male" ;
+    artist:nationality "American" ;
+    schema:name "Peter Agostini" .
+
+<http://example.org/moma/artist/83> a moma:Artist ;
+    artist:artistBio "French, 1827–1894" ;
+    artist:beginDate 1827 ;
+    artist:endDate 1894 ;
+    artist:gender "male" ;
+    artist:nationality "French" ;
+    schema:name "Olympe Aguado de las Marismas" .
+
+<http://example.org/moma/artist/84> a moma:Artist ;
+    artist:artistBio "American, 1937–2013" ;
+    artist:beginDate 1937 ;
+    artist:endDate 2013 ;
+    artist:gender "male" ;
+    artist:nationality "American" ;
+    schema:name "Dongkuk S. Ahn" .
+
+<http://example.org/moma/artist/85> a moma:Artist ;
+    artist:artistBio "Finnish, 1904–1978" ;
+    artist:beginDate 1904 ;
+    artist:endDate 1978 ;
+    artist:gender "male" ;
+    artist:nationality "Finnish" ;
+    schema:name "Aarne Aho" .
+
+<http://example.org/moma/artist/86> a moma:Artist ;
+    artist:artistBio "German, 1922–1991" ;
+    artist:beginDate 1922 ;
+    artist:endDate 1991 ;
+    artist:gender "male" ;
+    artist:nationality "German" ;
+    schema:name "Otl Aicher (also known as Otto Aicher)" .
+
+<http://example.org/moma/artist/87> a moma:Artist ;
+    artist:artistBio "American, born Hungary. 1901–1999" ;
+    artist:beginDate 1901 ;
+    artist:endDate 1999 ;
+    artist:gender "male" ;
+    artist:nationality "American" ;
+    schema:name "Lucien Aigner" .
+
+<http://example.org/moma/artist/88> a moma:Artist ;
+    artist:artistBio "American, 1908–1988" ;
+    artist:beginDate 1908 ;
+    artist:endDate 1988 ;
+    artist:gender "male" ;
+    artist:nationality "American" ;
+    schema:name "Gregory Ain" .
+
+<http://example.org/moma/artist/89> a moma:Artist ;
+    artist:artistBio "British, 1906–1975" ;
+    artist:beginDate 1906 ;
+    artist:endDate 1975 ;
+    artist:gender "male" ;
+    artist:nationality "British" ;
+    schema:name "Edgar Ainsworth" .
+
+<http://example.org/moma/artist/9> a moma:Artist ;
+    artist:artistBio "American, born Lithuania 1923" ;
+    artist:beginDate 1923 ;
+    artist:endDate 0 ;
+    artist:gender "male" ;
+    artist:nationality "American" ;
+    schema:name "David Aronson" .
+
+<http://example.org/moma/artist/91> a moma:Artist ;
+    artist:artistBio "Argentine, 1928–1996" ;
+    artist:beginDate 1928 ;
+    artist:endDate 1996 ;
+    artist:gender "male" ;
+    artist:nationality "Argentine" ;
+    schema:name "Roberto Aizenberg" .
+
+<http://example.org/moma/artist/92> a moma:Artist ;
+    artist:artistBio "American, born Japan 1940" ;
+    artist:beginDate 1940 ;
+    artist:endDate 0 ;
+    artist:gender "male" ;
+    artist:nationality "American" ;
+    schema:name "Kinji Akagawa" .
+
+<http://example.org/moma/artist/93> a moma:Artist ;
+    artist:artistBio "Japanese, born 1942" ;
+    artist:beginDate 1942 ;
+    artist:endDate 0 ;
+    artist:gender "male" ;
+    artist:nationality "Japanese" ;
+    schema:name "Ryoji Akiyama" .
+
+<http://example.org/moma/artist/94> a moma:Artist ;
+    artist:artistBio "Kuwaiti, born 1939" ;
+    artist:beginDate 1939 ;
+    artist:endDate 0 ;
+    artist:gender "female" ;
+    artist:nationality "Kuwaiti" ;
+    schema:name "Munira Al-Kazi" .
+
+<http://example.org/moma/artist/95> a moma:Artist ;
+    artist:artistBio "German, 1887–1969" ;
+    artist:beginDate 1887 ;
+    artist:endDate 1969 ;
+    artist:gender "male" ;
+    artist:nationality "German" ;
+    schema:name "Alastair (Hans H. Voight)" .
+
+<http://example.org/moma/artist/96> a moma:Artist ;
+    artist:artistBio "American, born Germany. 1899–1994" ;
+    artist:beginDate 1899 ;
+    artist:endDate 1994 ;
+    artist:gender "female" ;
+    artist:nationality "American" ;
+    schema:name "Anni Albers" .
+
+<http://example.org/moma/artist/97> a moma:Artist ;
+    artist:artistBio "American, born Germany. 1888–1976" ;
+    artist:beginDate 1888 ;
+    artist:endDate 1976 ;
+    artist:gender "male" ;
+    artist:nationality "American" ;
+    schema:name "Josef Albers" .
+
+<http://example.org/moma/artist/98> a moma:Artist ;
+    artist:artistBio "American" ;
+    artist:beginDate 0 ;
+    artist:endDate 0 ;
+    artist:gender "female" ;
+    artist:nationality "American" ;
+    schema:name "Beatrice Albert" .
+
+<http://example.org/moma/artist/99> a moma:Artist ;
+    artist:artistBio "American, 1943–2012" ;
+    artist:beginDate 1943 ;
+    artist:endDate 2012 ;
+    artist:gender "female" ;
+    artist:nationality "American" ;
+    schema:name "Joan Albert" .
+

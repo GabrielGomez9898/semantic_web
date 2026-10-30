@@ -1,0 +1,191 @@
+﻿ConstituentID,nombre_moma,qid,nombre_wikidata,nacimiento,fallecimiento,pais,genero,puntuacion,senales_utilizadas,contradicciones,decision,tipo_enlace
+1,Robert Arneson,Q7341594,Robert Arneson,1930-09-04T00:00:00Z,1992-11-02T00:00:00Z,Estados Unidos,masculino,14,Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente; País/nacionalidad coincidente,,Aceptar,owl:sameAs
+2,Doroteo Arnaiz,Q55996241,Doroteo Arnáiz,1936-01-01T00:00:00Z,,España,masculino,10,Nombre exacto; Nacimiento coincidente; Género coincidente; País/nacionalidad coincidente,,Aceptar,owl:sameAs
+3,Bill Arnold,Q77287962,Q77287962,1941-01-01T00:00:00Z,,Estados Unidos,masculino,7,Nacimiento coincidente; Género coincidente; País/nacionalidad coincidente,,Pendiente de revisión,
+3,Bill Arnold,Q63303031,Bill Arnold,,,Estados Unidos,masculino,6,Nombre exacto; Género coincidente; País/nacionalidad coincidente,,Rechazar,
+3,Bill Arnold,Q4907946,Bill Arnold,,,,masculino,5,Nombre exacto; Género coincidente,,Rechazar,
+3,Bill Arnold,Q42943193,William A. Arnold,,,Estados Unidos,masculino,3,Género coincidente; País/nacionalidad coincidente,,Rechazar,
+3,Bill Arnold,Q11854243,Bill Arnold,1992-05-13T00:00:00Z,,Estados Unidos,masculino,1,Nombre exacto; Género coincidente; País/nacionalidad coincidente,Nacimiento diferente,Rechazar,
+4,Charles Arnoldi,Q1063584,Charles Arnoldi,1946-04-10T00:00:00Z,,Estados Unidos,masculino,10,Nombre exacto; Nacimiento coincidente; Género coincidente; País/nacionalidad coincidente,,Aceptar,owl:sameAs
+4,Charles Arnoldi,Q55208542,Charles Arnoldi,1779-01-01T00:00:00Z,1817-01-01T00:00:00Z,Bajo Canadá,masculino,-5,Nombre exacto; Género coincidente,Nacimiento diferente; Fallecimiento diferente,Rechazar,
+5,Per Arnoldi,Q3373273,Per Arnoldi,1941-05-25T00:00:00Z,,Reino de Dinamarca,masculino,9,Nombre exacto; Nacimiento coincidente; Género coincidente,,Pendiente de revisión,
+6,Danilo Aroldi,Q55217954,Danilo Aroldi,1925-01-01T00:00:00Z,1989-01-01T00:00:00Z,Italia,masculino,5,Nombre exacto; Nacimiento coincidente; Género coincidente; País/nacionalidad coincidente,Fallecimiento diferente,Pendiente de revisión,
+6,Danilo Aroldi,Q55217954,Danilo Aroldi,1925-01-01T00:00:00Z,1989-01-01T00:00:00Z,Reino de Italia,masculino,4,Nombre exacto; Nacimiento coincidente; Género coincidente,Fallecimiento diferente,Rechazar,
+7,Bill Aron,Q4907949,Bill Aron,1941-01-01T00:00:00Z,,Estados Unidos,masculino,10,Nombre exacto; Nacimiento coincidente; Género coincidente; País/nacionalidad coincidente,,Aceptar,owl:sameAs
+9,David Aronson,Q5230870,David Aronson,1923-10-28T00:00:00Z,2015-07-02T00:00:00Z,Estados Unidos,masculino,5,Nombre exacto; Nacimiento coincidente; Género coincidente; País/nacionalidad coincidente,Fallecimiento diferente,Pendiente de revisión,
+9,David Aronson,Q112526278,David R. Aronson,1945-01-01T00:00:00Z,,,masculino,-3,Género coincidente,Nacimiento diferente,Rechazar,
+9,David Aronson,Q113805004,David Aronson,1894-08-01T00:00:00Z,1988-10-20T00:00:00Z,,masculino,-5,Nombre exacto; Género coincidente,Nacimiento diferente; Fallecimiento diferente,Rechazar,
+10,Irene Aronson,Q19748568,Irene Aronson,1918-03-08T00:00:00Z,1992-01-01T00:00:00Z,Estados Unidos,femenino,5,Nombre exacto; Nacimiento coincidente; Género coincidente; País/nacionalidad coincidente,Fallecimiento diferente,Pendiente de revisión,
+10,Irene Aronson,Q19748568,Irene Aronson,1918-03-08T00:00:00Z,1992-01-01T00:00:00Z,Alemania,femenino,4,Nombre exacto; Nacimiento coincidente; Género coincidente,Fallecimiento diferente,Rechazar,
+12,Jüri Arrak,Q927697,Jüri Arrak,1936-10-24T00:00:00Z,2022-10-16T00:00:00Z,Estonia,masculino,5,Nombre exacto; Nacimiento coincidente; Género coincidente; País/nacionalidad coincidente,Fallecimiento diferente,Pendiente de revisión,
+13,José Arellano Fischer,Q134413342,José Arellano Fischer,1911-01-01T00:00:00Z,1995-01-01T00:00:00Z,,,11,Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente,,Aceptar,owl:sameAs
+15,Folke Arstrom,Q3747067,Folke Arström,1907-10-15T00:00:00Z,1997-10-15T00:00:00Z,Suecia,masculino,14,Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente; País/nacionalidad coincidente,,Aceptar,owl:sameAs
+16,Cristobal Arteche,Q77353440,Cristobal Arteche,1900-01-01T00:00:00Z,1964-01-01T00:00:00Z,España,masculino,14,Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente; País/nacionalidad coincidente,,Aceptar,owl:sameAs
+19,Richard Artschwager,Q568262,Richard Artschwager,1923-12-26T00:00:00Z,2013-02-09T00:00:00Z,Estados Unidos,masculino,14,Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente; País/nacionalidad coincidente,,Aceptar,owl:sameAs
+21,Ruth Asawa,Q7382874,Ruth Asawa,1926-01-24T00:00:00Z,2013-08-06T00:00:00Z,Estados Unidos,femenino,14,Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente; País/nacionalidad coincidente,,Aceptar,owl:sameAs
+22,Isidora Aschheim,Q12403756,Isidor Aschheim,1891-10-14T00:00:00Z,1968-05-19T00:00:00Z,Israel,masculino,-13,País/nacionalidad coincidente,Nacimiento diferente; Fallecimiento diferente; Género diferente,Pendiente de revisión,
+23,Charles Robert Ashbee,Q614071,Charles Robert Ashbee,1863-05-17T00:00:00Z,1942-05-23T00:00:00Z,Reino Unido,masculino,14,Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente; País/nacionalidad coincidente,,Aceptar,owl:sameAs
+24,Donald Ashcraft,Q55217956,Q55217956,1927-01-01T00:00:00Z,,Estados Unidos,masculino,7,Nacimiento coincidente; Género coincidente; País/nacionalidad coincidente,,Pendiente de revisión,
+25,E. M. Ashe,Q19668052,Edmund M. Ashe,1870-06-19T00:00:00Z,1941-01-01T00:00:00Z,Estados Unidos,masculino,2,Fallecimiento coincidente; Género coincidente; País/nacionalidad coincidente,Nacimiento diferente,Pendiente de revisión,
+26,Göran Åslin,Q77353556,Göran Åslin,1940-01-01T00:00:00Z,,Suecia,masculino,8,Nombre exacto; Nacimiento coincidente; País/nacionalidad coincidente,,Pendiente de revisión,
+26,Göran Åslin,Q126453747,Göran Åslin,1937-10-24T00:00:00Z,2019-05-10T00:00:00Z,Suecia,masculino,-6,Nombre exacto; País/nacionalidad coincidente,Nacimiento diferente; Fallecimiento diferente,Rechazar,
+27,Erik Gunnar Asplund,Q312070,Erik Gunnar Asplund,1885-09-22T00:00:00Z,1940-10-20T00:00:00Z,Suecia,masculino,14,Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente; País/nacionalidad coincidente,,Aceptar,owl:sameAs
+28,Geneviève Asse,Q1978192,Geneviève Asse,1923-01-24T00:00:00Z,2021-08-11T00:00:00Z,Francia,femenino,5,Nombre exacto; Nacimiento coincidente; Género coincidente; País/nacionalidad coincidente,Fallecimiento diferente,Pendiente de revisión,
+28,Geneviève Asse,Q137156872,Q137156872,,2007-06-19T00:00:00Z,Francia,femenino,-2,Género coincidente; País/nacionalidad coincidente,Fallecimiento diferente,Rechazar,
+28,Geneviève Asse,Q3100595,Geneviève Asselin,1953-01-01T00:00:00Z,,Canadá,femenino,-3,Género coincidente,Nacimiento diferente,Rechazar,
+28,Geneviève Asse,Q96242022,Geneviève Asselin,1737-01-01T00:00:00Z,1816-04-04T00:00:00Z,,femenino,-8,Género coincidente,Nacimiento diferente; Fallecimiento diferente,Rechazar,
+30,Sergio Asti,Q3956011,Sergio Asti,1926-05-25T00:00:00Z,2021-07-27T00:00:00Z,Italia,masculino,14,Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente; País/nacionalidad coincidente,,Aceptar,owl:sameAs
+31,Dana Atchley,Q55217881,Dana Atchley,1941-01-01T00:00:00Z,2000-12-13T00:00:00Z,Estados Unidos,masculino,8,Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; País/nacionalidad coincidente,Género diferente,Pendiente de revisión,
+33,A.A.P.,Q59671732,Anthony Koppers,,,,,0,,,Pendiente de revisión,
+33,A.A.P.,Q140365161,Antoon van Baal,,,,,0,,,Pendiente de revisión,
+33,A.A.P.,Q26712180,A. A. P. Leonardía,,,,,0,,,Pendiente de revisión,
+33,A.A.P.,Q99463170,Albert Jung,,,,masculino,0,,,Pendiente de revisión,
+33,A.A.P.,Q41272851,Louis Swagerman,1951-09-13T00:00:00Z,,Reino de los Países Bajos,masculino,-5,,Nacimiento diferente,Rechazar,
+34,Alvar Aalto,Q82840,Alvar Aalto,1898-02-03T00:00:00Z,1976-05-11T00:00:00Z,Finlandia,masculino,13,Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente,,Pendiente de revisión,
+34,Alvar Aalto,Q82840,Alvar Aalto,1898-02-03T00:00:00Z,1976-05-11T00:00:00Z,Gran Ducado de Finlandia,masculino,13,Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente,,Pendiente de revisión,
+35,Aino Aalto,Q273511,Aino Aalto,1894-01-25T00:00:00Z,1949-01-13T00:00:00Z,Finlandia,femenino,13,Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente,,Pendiente de revisión,
+35,Aino Aalto,Q273511,Aino Aalto,1894-01-25T00:00:00Z,1949-01-13T00:00:00Z,Gran Ducado de Finlandia,femenino,13,Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente,,Pendiente de revisión,
+35,Aino Aalto,Q11850158,Aino Aalto,1917-06-11T00:00:00Z,1999-09-29T00:00:00Z,Finlandia,femenino,-5,Nombre exacto; Género coincidente,Nacimiento diferente; Fallecimiento diferente,Rechazar,
+35,Aino Aalto,Q125379775,Aino Pietiläinen,1896-05-11T00:00:00Z,1984-09-13T00:00:00Z,Finlandia,femenino,-8,Género coincidente,Nacimiento diferente; Fallecimiento diferente,Rechazar,
+35,Aino Aalto,Q405633,Aimo Aaltonen,1906-12-10T00:00:00Z,1987-09-21T00:00:00Z,Finlandia,masculino,-14,,Nacimiento diferente; Fallecimiento diferente; Género diferente,Rechazar,
+35,Aino Aalto,Q405633,Aimo Aaltonen,1906-12-10T00:00:00Z,1987-09-21T00:00:00Z,Gran Ducado de Finlandia,masculino,-14,,Nacimiento diferente; Fallecimiento diferente; Género diferente,Rechazar,
+36,Eero Aarnio,Q707025,Eero Aarnio,1932-07-21T00:00:00Z,,Finlandia,masculino,9,Nombre exacto; Nacimiento coincidente; Género coincidente,,Pendiente de revisión,
+37,Jules Aarons,Q22002944,Jules Aarons,1921-10-03T00:00:00Z,2008-11-21T00:00:00Z,Estados Unidos,masculino,14,Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente; País/nacionalidad coincidente,,Aceptar,owl:sameAs
+38,Magdalena Abakanowicz,Q158080,Magdalena Abakanowicz,1930-06-20T00:00:00Z,2017-04-20T00:00:00Z,Polonia,femenino,13,Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente,,Pendiente de revisión,
+38,Magdalena Abakanowicz,Q158080,Magdalena Abakanowicz,1930-06-20T00:00:00Z,2017-04-20T00:00:00Z,Segunda República polaca,femenino,13,Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente,,Pendiente de revisión,
+38,Magdalena Abakanowicz,Q158080,Magdalena Abakanowicz,1930-06-20T00:00:00Z,2017-04-20T00:00:00Z,República Popular de Polonia,femenino,13,Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente,,Pendiente de revisión,
+39,James Abbe,Q321301,James Abbe,1883-07-17T00:00:00Z,1973-11-11T00:00:00Z,Estados Unidos,masculino,14,Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente; País/nacionalidad coincidente,,Aceptar,owl:sameAs
+39,James Abbe,Q120478830,James Abbey,,,,,0,,,Rechazar,
+39,James Abbe,Q106921825,James Abbe,1822-06-01T00:00:00Z,1889-01-01T00:00:00Z,Estados Unidos,masculino,-4,Nombre exacto; Género coincidente; País/nacionalidad coincidente,Nacimiento diferente; Fallecimiento diferente,Rechazar,
+39,James Abbe,Q21618258,James Abbe Jr.,1912-01-01T00:00:00Z,1999-01-01T00:00:00Z,Estados Unidos,masculino,-7,Género coincidente; País/nacionalidad coincidente,Nacimiento diferente; Fallecimiento diferente,Rechazar,
+40,Jussuf Abbo,Q23068108,Jussuf Abbo,1888-10-14T00:00:00Z,1953-08-29T00:00:00Z,Egipto,masculino,13,Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente,,Pendiente de revisión,
+40,Jussuf Abbo,Q23068108,Jussuf Abbo,1888-10-14T00:00:00Z,1953-08-29T00:00:00Z,Reino Unido,masculino,13,Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente,,Pendiente de revisión,
+40,Jussuf Abbo,Q23068108,Jussuf Abbo,1888-10-14T00:00:00Z,1953-08-29T00:00:00Z,Palestina,masculino,13,Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente,,Pendiente de revisión,
+41,Berenice Abbott,Q231861,Berenice Abbott,1898-07-17T00:00:00Z,1991-12-09T00:00:00Z,Estados Unidos,femenino,14,Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente; País/nacionalidad coincidente,,Aceptar,owl:sameAs
+42,Nobuya Abe,Q47511956,Nobuya Abe,1913-02-04T00:00:00Z,1971-05-07T00:00:00Z,,masculino,13,Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente,,Aceptar,owl:sameAs
+42,Nobuya Abe,Q61478826,Nobuya Abe,,,,,3,Nombre exacto,,Rechazar,
+44,Robert Abel,Q7341326,Robert Abel,1937-03-10T00:00:00Z,2001-09-23T00:00:00Z,Estados Unidos,masculino,5,Nombre exacto; Nacimiento coincidente; Género coincidente; País/nacionalidad coincidente,Fallecimiento diferente,Pendiente de revisión,
+44,Robert Abel,Q92395641,Robert Abel,,,,masculino,5,Nombre exacto; Género coincidente,,Pendiente de revisión,
+44,Robert Abel,Q133086401,Q133086401,,,,masculino,2,Género coincidente,,Rechazar,
+44,Robert Abel,Q113803626,Robert Abelava,,,,masculino,2,Género coincidente,,Rechazar,
+44,Robert Abel,Q130855491,Robert Abela,,,,,0,,,Rechazar,
+44,Robert Abel,Q37860840,Robert Abela,1977-12-07T00:00:00Z,,Malta,masculino,-3,Género coincidente,Nacimiento diferente,Rechazar,
+44,Robert Abel,Q18632003,Robbie Abel,1989-07-04T00:00:00Z,,Nueva Zelanda,masculino,-3,Género coincidente,Nacimiento diferente,Rechazar,
+44,Robert Abel,Q3523712,Bobby Abel,1857-11-30T00:00:00Z,1936-12-10T00:00:00Z,Reino Unido,masculino,-8,Género coincidente,Nacimiento diferente; Fallecimiento diferente,Rechazar,
+44,Robert Abel,Q3523712,Bobby Abel,1857-11-30T00:00:00Z,1936-12-10T00:00:00Z,Reino Unido de Gran Bretaña e Irlanda,masculino,-8,Género coincidente,Nacimiento diferente; Fallecimiento diferente,Rechazar,
+44,Robert Abel,Q104207291,Robert Abeles,1878-04-02T00:00:00Z,1940-01-01T00:00:00Z,,masculino,-8,Género coincidente,Nacimiento diferente; Fallecimiento diferente,Rechazar,
+46,Sigmund Abeles,Q135934259,Q135934259,1934-11-06T00:00:00Z,,Estados Unidos,masculino,7,Nacimiento coincidente; Género coincidente; País/nacionalidad coincidente,,Pendiente de revisión,
+46,Sigmund Abeles,Q26252906,Sigmund Abeles,1934-01-01T00:00:00Z,2025-12-21T00:00:00Z,Estados Unidos,masculino,5,Nombre exacto; Nacimiento coincidente; Género coincidente; País/nacionalidad coincidente,Fallecimiento diferente,Rechazar,
+46,Sigmund Abeles,Q116191262,Sigmund Abeles,1840-01-01T00:00:00Z,1883-06-27T00:00:00Z,,masculino,-5,Nombre exacto; Género coincidente,Nacimiento diferente; Fallecimiento diferente,Rechazar,
+47,Raimund Abraham,Q78819,Raimund Abraham,1933-07-23T00:00:00Z,2010-03-04T00:00:00Z,Estados Unidos,masculino,14,Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente; País/nacionalidad coincidente,,Aceptar,owl:sameAs
+47,Raimund Abraham,Q78819,Raimund Abraham,1933-07-23T00:00:00Z,2010-03-04T00:00:00Z,Austria,masculino,13,Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente,,Rechazar,
+49,Ivor Abrahams,Q11714362,Ivor Abrahams,1935-01-10T00:00:00Z,2015-01-06T00:00:00Z,Reino Unido,masculino,5,Nombre exacto; Nacimiento coincidente; Género coincidente; País/nacionalidad coincidente,Fallecimiento diferente,Pendiente de revisión,
+50,Gerald Abramovitz,Q3377042,Gerald Abramovitz,1928-11-05T00:00:00Z,2011-06-16T00:00:00Z,Reino Unido,masculino,14,Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente; País/nacionalidad coincidente,,Aceptar,owl:sameAs
+50,Gerald Abramovitz,Q3377042,Gerald Abramovitz,1928-11-05T00:00:00Z,2011-06-16T00:00:00Z,Sudáfrica,masculino,13,Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente,,Rechazar,
+51,William Ross Abrams,Q77325248,Q77325248,1920-01-01T00:00:00Z,2007-01-01T00:00:00Z,Estados Unidos,masculino,11,Nacimiento coincidente; Fallecimiento coincidente; Género coincidente; País/nacionalidad coincidente,,Aceptar,owl:sameAs
+52,Rodolfo Abularach,Q7357131,Rodolfo Abularach,1933-01-07T00:00:00Z,2020-08-30T00:00:00Z,Guatemala,masculino,14,Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente; País/nacionalidad coincidente,,Aceptar,owl:sameAs
+53,Vito Acconci,Q433471,Vito Acconci,1940-01-24T00:00:00Z,2017-04-27T00:00:00Z,Estados Unidos,masculino,14,Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente; País/nacionalidad coincidente,,Aceptar,owl:sameAs
+54,Milton Ackoff,Q77353821,Q77353821,1915-01-01T00:00:00Z,,Estados Unidos,masculino,7,Nacimiento coincidente; Género coincidente; País/nacionalidad coincidente,,Pendiente de revisión,
+55,Norman Ackroyd,Q7051892,Norman Ackroyd,1938-03-26T00:00:00Z,2024-09-16T00:00:00Z,Reino Unido,masculino,-4,Nombre exacto; Género coincidente; País/nacionalidad coincidente,Nacimiento diferente; Fallecimiento diferente,Pendiente de revisión,
+56,Luis Alberto Acuña,Q5982660,Luis Alberto Acuña Tapias,1904-05-12T00:00:00Z,1993-03-24T00:00:00Z,Colombia,masculino,3,Nombre parcialmente coincidente; Nacimiento coincidente; Género coincidente; País/nacionalidad coincidente,Fallecimiento diferente,Pendiente de revisión,
+56,Luis Alberto Acuña,Q2894728,Luis Acuña,1989-01-20T00:00:00Z,,Argentina,masculino,-3,Género coincidente,Nacimiento diferente,Rechazar,
+56,Luis Alberto Acuña,Q6700256,Luis Alberto Acuña Gatillon,1927-01-01T00:00:00Z,2005-01-01T00:00:00Z,Chile,masculino,-7,Nombre parcialmente coincidente; Género coincidente,Nacimiento diferente; Fallecimiento diferente,Rechazar,
+57,Henri Georges Adam,Q662900,Henri-Georges Adam,1904-01-14T00:00:00Z,1967-08-27T00:00:00Z,Francia,masculino,14,Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente; País/nacionalidad coincidente,,Pendiente de revisión,
+57,Henri Georges Adam,Q662900,Henri-Georges Adam,1904-01-18T00:00:00Z,1967-08-27T00:00:00Z,Francia,masculino,14,Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente; País/nacionalidad coincidente,,Pendiente de revisión,
+58,Antoine Samuel Adam-Salomon,Q2857548,Antony-Samuel Adam-Salomon,1818-01-09T00:00:00Z,1881-04-28T00:00:00Z,Francia,masculino,12,Nombre parcialmente coincidente; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente; País/nacionalidad coincidente,,Aceptar,owl:sameAs
+59,Valerio Adami,Q562139,Valerio Adami,1935-03-17T00:00:00Z,,Italia,masculino,10,Nombre exacto; Nacimiento coincidente; Género coincidente; País/nacionalidad coincidente,,Aceptar,owl:sameAs
+59,Valerio Adami,Q562139,Valerio Adami,1935-03-17T00:00:00Z,,Francia,masculino,9,Nombre exacto; Nacimiento coincidente; Género coincidente,,Rechazar,
+60,Ansel Adams,Q60809,Ansel Adams,1902-02-20T00:00:00Z,1984-04-22T00:00:00Z,Estados Unidos,masculino,14,Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente; País/nacionalidad coincidente,,Aceptar,owl:sameAs
+61,Alice Adams,Q4725709,Alice Adams,1930-11-16T00:00:00Z,,Estados Unidos,femenino,10,Nombre exacto; Nacimiento coincidente; Género coincidente; País/nacionalidad coincidente,,Aceptar,owl:sameAs
+61,Alice Adams,Q75729378,Alice Adams,,,,femenino,5,Nombre exacto; Género coincidente,,Rechazar,
+61,Alice Adams,Q95738688,Alice Adamson,,,,femenino,2,Género coincidente,,Rechazar,
+61,Alice Adams,Q75718691,Alice Adams,,1900-01-01T00:00:00Z,,femenino,0,Nombre exacto; Género coincidente,Fallecimiento diferente,Rechazar,
+61,Alice Adams,Q75461728,Alice Beverly Adams,1939-03-14T00:00:00Z,,,femenino,-3,Género coincidente,Nacimiento diferente,Rechazar,
+61,Alice Adams,Q75832621,Alice Pimblett,,1906-09-16T00:00:00Z,,femenino,-3,Género coincidente,Fallecimiento diferente,Rechazar,
+61,Alice Adams,Q127420817,Libby Pierce,1946-01-01T00:00:00Z,,,femenino,-3,Género coincidente,Nacimiento diferente,Rechazar,
+61,Alice Adams,Q2646833,Alice Adams,1926-08-14T00:00:00Z,1999-05-27T00:00:00Z,Estados Unidos,femenino,-4,Nombre exacto; Género coincidente; País/nacionalidad coincidente,Nacimiento diferente; Fallecimiento diferente,Rechazar,
+61,Alice Adams,Q99901816,Alice Collins,1682-04-03T00:00:00Z,1735-02-19T00:00:00Z,,femenino,-8,Género coincidente,Nacimiento diferente; Fallecimiento diferente,Rechazar,
+61,Alice Adams,Q75470744,Alice Violet Quintal,1880-02-01T00:00:00Z,1951-01-29T00:00:00Z,,femenino,-8,Género coincidente,Nacimiento diferente; Fallecimiento diferente,Rechazar,
+62,Clinton Adams,Q5134058,Clinton Adams,1918-12-11T00:00:00Z,2002-05-13T00:00:00Z,Estados Unidos,masculino,14,Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente; País/nacionalidad coincidente,,Aceptar,owl:sameAs
+63,Dacres Adams,Q19823344,William Dacres Adams,1864-01-01T00:00:00Z,1951-01-01T00:00:00Z,Reino Unido,masculino,11,Nacimiento coincidente; Fallecimiento coincidente; Género coincidente; País/nacionalidad coincidente,,Aceptar,owl:sameAs
+63,Dacres Adams,Q19823344,William Dacres Adams,1864-01-01T00:00:00Z,1951-01-01T00:00:00Z,Reino Unido de Gran Bretaña e Irlanda,masculino,10,Nacimiento coincidente; Fallecimiento coincidente; Género coincidente,,Rechazar,
+64,Dennis Adams,Q5258132,Dennis Adams,1948-01-01T00:00:00Z,,Estados Unidos,masculino,10,Nombre exacto; Nacimiento coincidente; Género coincidente; País/nacionalidad coincidente,,Aceptar,owl:sameAs
+64,Dennis Adams,Q116294364,Dennis Adams,,,Reino Unido,masculino,5,Nombre exacto; Género coincidente,,Rechazar,
+64,Dennis Adams,Q59806000,Dennis Adams,,,,,3,Nombre exacto,,Rechazar,
+64,Dennis Adams,Q137787572,Dennis Adamson,,,Canadá,masculino,2,Género coincidente,,Rechazar,
+64,Dennis Adams,Q112559950,Dennis Adams,1947-01-01T00:00:00Z,,,masculino,0,Nombre exacto; Género coincidente,Nacimiento diferente,Rechazar,
+64,Dennis Adams,Q110062246,Dennis Adams,1914-07-19T00:00:00Z,2001-02-09T00:00:00Z,Australia,masculino,-5,Nombre exacto; Género coincidente,Nacimiento diferente; Fallecimiento diferente,Rechazar,
+64,Dennis Adams,Q16006894,Dennis Adams,1934-12-26T00:00:00Z,1971-01-14T00:00:00Z,Sudáfrica,masculino,-5,Nombre exacto; Género coincidente,Nacimiento diferente; Fallecimiento diferente,Rechazar,
+65,Kenneth M. Adams,Q6390477,Kenneth Miller Adams,1897-08-06T00:00:00Z,1966-01-01T00:00:00Z,Estados Unidos,masculino,11,Nacimiento coincidente; Fallecimiento coincidente; Género coincidente; País/nacionalidad coincidente,,Aceptar,owl:sameAs
+65,Kenneth M. Adams,Q84178971,Q84178971,,,Estados Unidos,masculino,3,Género coincidente; País/nacionalidad coincidente,,Rechazar,
+66,Robert Adams,Q1392710,Robert Adams,1937-05-08T00:00:00Z,,Estados Unidos,masculino,10,Nombre exacto; Nacimiento coincidente; Género coincidente; País/nacionalidad coincidente,,Aceptar,owl:sameAs
+66,Robert Adams,Q127253974,Robert Adams,,,Estados Unidos,masculino,6,Nombre exacto; Género coincidente; País/nacionalidad coincidente,,Rechazar,
+66,Robert Adams,Q110297141,Robert Adams,,,Colonia de Victoria,masculino,5,Nombre exacto; Género coincidente,,Rechazar,
+66,Robert Adams,Q125245106,Robert Adams,,,Reino Unido,masculino,5,Nombre exacto; Género coincidente,,Rechazar,
+66,Robert Adams,Q111041444,Robert Adams,,1917-05-19T00:00:00Z,,masculino,0,Nombre exacto; Género coincidente,Fallecimiento diferente,Rechazar,
+66,Robert Adams,Q7341356,Robert Adams,1933-08-31T00:00:00Z,1990-01-04T00:00:00Z,Estados Unidos,masculino,-4,Nombre exacto; Género coincidente; País/nacionalidad coincidente,Nacimiento diferente; Fallecimiento diferente,Rechazar,
+66,Robert Adams,Q135099,Robert Adams,1917-10-05T00:00:00Z,1984-04-05T00:00:00Z,Reino Unido,masculino,-5,Nombre exacto; Género coincidente,Nacimiento diferente; Fallecimiento diferente,Rechazar,
+66,Robert Adams,Q135099,Robert Adams,1917-10-05T00:00:00Z,1984-04-05T00:00:00Z,Reino Unido de Gran Bretaña e Irlanda,masculino,-5,Nombre exacto; Género coincidente,Nacimiento diferente; Fallecimiento diferente,Rechazar,
+66,Robert Adams,Q112351959,Robert Adams,1944-01-01T00:00:00Z,2014-01-01T00:00:00Z,,masculino,-5,Nombre exacto; Género coincidente,Nacimiento diferente; Fallecimiento diferente,Rechazar,
+66,Robert Adams,Q509636,Robert Adamson,1821-04-26T00:00:00Z,1848-01-14T00:00:00Z,Reino Unido,masculino,-8,Género coincidente,Nacimiento diferente; Fallecimiento diferente,Rechazar,
+67,Shelby Lee Adams,Q3481792,Shelby Lee Adams,1950-01-01T00:00:00Z,,Estados Unidos,masculino,10,Nombre exacto; Nacimiento coincidente; Género coincidente; País/nacionalidad coincidente,,Aceptar,owl:sameAs
+68,Charles Addams,Q361106,Charles Addams,1912-01-07T00:00:00Z,1988-09-29T00:00:00Z,Estados Unidos,masculino,14,Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente; País/nacionalidad coincidente,,Aceptar,owl:sameAs
+69,Allan Adler,Q4730450,Allan Adler,1916-01-01T00:00:00Z,2002-01-01T00:00:00Z,Estados Unidos,masculino,14,Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente; País/nacionalidad coincidente,,Aceptar,owl:sameAs
+70,Jankel Adler,Q213726,Jankel Adler,1895-07-26T00:00:00Z,1949-04-25T00:00:00Z,Polonia,masculino,13,Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente,,Pendiente de revisión,
+70,Jankel Adler,Q213726,Jankel Adler,1895-07-26T00:00:00Z,1949-04-25T00:00:00Z,Alemania,masculino,13,Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente,,Pendiente de revisión,
+70,Jankel Adler,Q2660878,Jacob Pavlovich Adler,1855-02-12T00:00:00Z,1926-03-31T00:00:00Z,,masculino,-8,Género coincidente,Nacimiento diferente; Fallecimiento diferente,Rechazar,
+70,Jankel Adler,Q2660878,Jacob Pavlovich Adler,1855-02-12T00:00:00Z,1926-04-01T00:00:00Z,,masculino,-8,Género coincidente,Nacimiento diferente; Fallecimiento diferente,Rechazar,
+71,Virginia Admiral,Q7815833,Virginia Admiral,1915-02-04T00:00:00Z,2000-07-27T00:00:00Z,Estados Unidos,femenino,14,Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente; País/nacionalidad coincidente,,Aceptar,owl:sameAs
+72,Pic Adrian,Q16010052,Pic G. Adrian,1910-09-03T00:00:00Z,2008-06-28T00:00:00Z,España,masculino,1,Nacimiento coincidente; Género coincidente,Fallecimiento diferente,Pendiente de revisión,
+74,Roy Adzak,Q3445734,Roy Adzak,1927-02-14T00:00:00Z,1987-01-30T00:00:00Z,Reino Unido,masculino,14,Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente; País/nacionalidad coincidente,,Aceptar,owl:sameAs
+76,Nicholas Africano,Q21809634,Q21809634,1948-11-12T00:00:00Z,,Estados Unidos,masculino,7,Nacimiento coincidente; Género coincidente; País/nacionalidad coincidente,,Pendiente de revisión,
+78,Aftograf,Q79493756,Aftograf,,,Rusia,masculino,3,Nombre exacto,,Pendiente de revisión,
+79,Agam (Yaacov Agam),Q276030,Yaacov Agam,1928-05-11T00:00:00Z,2026-06-21T00:00:00Z,Israel,masculino,12,Nombre parcialmente coincidente; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente; País/nacionalidad coincidente,,Aceptar,owl:sameAs
+79,Agam (Yaacov Agam),Q276030,Yaacov Agam,1928-05-11T00:00:00Z,2026-06-21T00:00:00Z,Francia,masculino,11,Nombre parcialmente coincidente; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente,,Rechazar,
+80,Mehemed Fehmy Agha,Q3853982,Mehemed Fehmy Agha,1896-01-01T00:00:00Z,1978-01-01T00:00:00Z,Estados Unidos,masculino,14,Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente; País/nacionalidad coincidente,,Aceptar,owl:sameAs
+80,Mehemed Fehmy Agha,Q3853982,Mehemed Fehmy Agha,1896-01-01T00:00:00Z,1978-01-01T00:00:00Z,Imperio otomano,masculino,13,Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente,,Rechazar,
+80,Mehemed Fehmy Agha,Q3853982,Mehemed Fehmy Agha,1896-01-01T00:00:00Z,1978-01-01T00:00:00Z,Imperio ruso,masculino,13,Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente,,Rechazar,
+81,Kathleen Agnoli,Q77288194,Q77288194,1945-01-01T00:00:00Z,,Estados Unidos,femenino,7,Nacimiento coincidente; Género coincidente; País/nacionalidad coincidente,,Pendiente de revisión,
+82,Peter Agostini,Q7172472,Peter Agostini,1913-02-13T00:00:00Z,1993-03-27T00:00:00Z,Estados Unidos,masculino,14,Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente; País/nacionalidad coincidente,,Aceptar,owl:sameAs
+83,Olympe Aguado de las Marismas,Q2734214,Olimpio Alejandro Aguado,1827-02-03T00:00:00Z,1894-10-25T00:00:00Z,Francia,masculino,11,Nacimiento coincidente; Fallecimiento coincidente; Género coincidente; País/nacionalidad coincidente,,Aceptar,owl:sameAs
+84,Dongkuk S. Ahn,Q5292140,Don Ahn,1937-01-09T00:00:00Z,2013-01-01T00:00:00Z,Estados Unidos,masculino,11,Nacimiento coincidente; Fallecimiento coincidente; Género coincidente; País/nacionalidad coincidente,,Aceptar,owl:sameAs
+85,Aarne Aho,Q9321664,Aarne Aho,1904-06-10T00:00:00Z,1978-09-12T00:00:00Z,Finlandia,masculino,13,Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente,,Aceptar,owl:sameAs
+85,Aarne Aho,Q114273397,Aarne Aho,1898-07-24T00:00:00Z,1973-04-10T00:00:00Z,Finlandia,masculino,-5,Nombre exacto; Género coincidente,Nacimiento diferente; Fallecimiento diferente,Rechazar,
+85,Aarne Aho,Q9321667,Aarne Ahola,1910-06-21T00:00:00Z,1994-05-21T00:00:00Z,Finlandia,masculino,-8,Género coincidente,Nacimiento diferente; Fallecimiento diferente,Rechazar,
+87,Lucien Aigner,Q3265338,Lucien Aigner,1901-09-14T00:00:00Z,1999-03-29T00:00:00Z,Estados Unidos,masculino,14,Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente; País/nacionalidad coincidente,,Aceptar,owl:sameAs
+87,Lucien Aigner,Q3265338,Lucien Aigner,1901-09-14T00:00:00Z,1999-03-29T00:00:00Z,Imperio austrohúngaro,masculino,13,Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente,,Rechazar,
+87,Lucien Aigner,Q3265338,Lucien Aigner,1901-09-14T00:00:00Z,1999-03-29T00:00:00Z,Reino de Hungría,masculino,13,Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente,,Rechazar,
+88,Gregory Ain,Q5606793,Gregory Ain,1908-03-28T00:00:00Z,1988-01-09T00:00:00Z,Estados Unidos,masculino,14,Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente; País/nacionalidad coincidente,,Aceptar,owl:sameAs
+89,Edgar Ainsworth,Q21288779,Edgar Ainsworth,1906-01-01T00:00:00Z,1975-01-01T00:00:00Z,Reino Unido,masculino,14,Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente; País/nacionalidad coincidente,,Aceptar,owl:sameAs
+89,Edgar Ainsworth,Q21288779,Edgar Ainsworth,1906-01-01T00:00:00Z,1975-01-01T00:00:00Z,Reino Unido de Gran Bretaña e Irlanda,masculino,13,Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente,,Rechazar,
+89,Edgar Ainsworth,Q21544436,Edgar Ainsworth,,,,masculino,5,Nombre exacto; Género coincidente,,Rechazar,
+89,Edgar Ainsworth,Q21288779,Edgar Ainsworth,1905-01-01T00:00:00Z,1975-01-01T00:00:00Z,Reino Unido,masculino,5,Nombre exacto; Fallecimiento coincidente; Género coincidente; País/nacionalidad coincidente,Nacimiento diferente,Rechazar,
+89,Edgar Ainsworth,Q106729530,Edgar Ainsworth,1905-01-01T00:00:00Z,1975-01-01T00:00:00Z,,masculino,4,Nombre exacto; Fallecimiento coincidente; Género coincidente,Nacimiento diferente,Rechazar,
+89,Edgar Ainsworth,Q21288779,Edgar Ainsworth,1905-01-01T00:00:00Z,1975-01-01T00:00:00Z,Reino Unido de Gran Bretaña e Irlanda,masculino,4,Nombre exacto; Fallecimiento coincidente; Género coincidente,Nacimiento diferente,Rechazar,
+89,Edgar Ainsworth,Q5337086,Edgar Ainsworth,1910-01-01T00:00:00Z,1952-01-01T00:00:00Z,Reino Unido,masculino,-4,Nombre exacto; Género coincidente; País/nacionalidad coincidente,Nacimiento diferente; Fallecimiento diferente,Rechazar,
+89,Edgar Ainsworth,Q5337086,Edgar Ainsworth,1910-01-01T00:00:00Z,1952-01-01T00:00:00Z,Reino Unido de Gran Bretaña e Irlanda,masculino,-5,Nombre exacto; Género coincidente,Nacimiento diferente; Fallecimiento diferente,Rechazar,
+91,Roberto Aizenberg,Q3436822,Roberto Aizenberg,1928-08-22T00:00:00Z,1996-02-16T00:00:00Z,Argentina,masculino,13,Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente,,Aceptar,owl:sameAs
+91,Roberto Aizenberg,Q3436822,Roberto Aizenberg,1928-08-22T00:00:00Z,1998-02-16T00:00:00Z,Argentina,masculino,4,Nombre exacto; Nacimiento coincidente; Género coincidente,Fallecimiento diferente,Rechazar,
+92,Kinji Akagawa,Q6413885,Kinji Akagawa,1940-01-01T00:00:00Z,,Estados Unidos,masculino,10,Nombre exacto; Nacimiento coincidente; Género coincidente; País/nacionalidad coincidente,,Aceptar,owl:sameAs
+93,Ryoji Akiyama,Q7385596,Ryōji Akiyama,1942-01-01T00:00:00Z,,Japón,masculino,9,Nombre exacto; Nacimiento coincidente; Género coincidente,,Pendiente de revisión,
+94,Munira Al-Kazi,Q77348520,Munira Al-Kazi,1939-01-01T00:00:00Z,2023-03-20T00:00:00Z,Kuwait,femenino,5,Nombre exacto; Nacimiento coincidente; Género coincidente; País/nacionalidad coincidente,Fallecimiento diferente,Pendiente de revisión,
+95,Alastair (Hans H. Voight),Q1559152,Alastair,1887-10-20T00:00:00Z,1969-10-30T00:00:00Z,Alemania,masculino,11,Nacimiento coincidente; Fallecimiento coincidente; Género coincidente; País/nacionalidad coincidente,,Aceptar,owl:sameAs
+96,Anni Albers,Q86078,Anni Albers,1899-06-12T00:00:00Z,1994-05-09T00:00:00Z,Estados Unidos,femenino,14,Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente; País/nacionalidad coincidente,,Aceptar,owl:sameAs
+96,Anni Albers,Q86078,Anni Albers,1899-06-12T00:00:00Z,1994-05-09T00:00:00Z,Alemania,femenino,13,Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente,,Rechazar,
+97,Josef Albers,Q170071,Josef Albers,1888-03-19T00:00:00Z,1976-03-25T00:00:00Z,Estados Unidos,masculino,14,Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente; País/nacionalidad coincidente,,Aceptar,owl:sameAs
+97,Josef Albers,Q170071,Josef Albers,1888-03-19T00:00:00Z,1976-03-25T00:00:00Z,Alemania,masculino,13,Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente,,Rechazar,
+98,Beatrice Albert,Q79460858,Q79460858,,,Estados Unidos,femenino,3,Género coincidente; País/nacionalidad coincidente,,Pendiente de revisión,
+98,Beatrice Albert,Q108434181,Beatrice Albertini,,,,femenino,2,Género coincidente,,Rechazar,
+98,Beatrice Albert,Q98392415,Beatrice Albertini,,,,,0,,,Rechazar,
+98,Beatrice Albert,Q75922230,Beatrice Alberta Simpson,1882-01-01T00:00:00Z,,,femenino,-3,Género coincidente,Nacimiento diferente,Rechazar,
+98,Beatrice Albert,Q140314442,Q140314442,1961-11-03T00:00:00Z,,Francia,femenino,-3,Género coincidente,Nacimiento diferente,Rechazar,
+99,Joan Albert,Q63119722,Joan Albert,1943-01-01T00:00:00Z,2012-01-01T00:00:00Z,Estados Unidos,femenino,14,Nombre exacto; Nacimiento coincidente; Fallecimiento coincidente; Género coincidente; País/nacionalidad coincidente,,Aceptar,owl:sameAs
+99,Joan Albert,Q38545039,Joan Albert Barberà,,,,femenino,2,Género coincidente,,Rechazar,
+99,Joan Albert,Q114406510,Joan Albert Arnaiz,,,,masculino,-4,,Género diferente,Rechazar,
+99,Joan Albert,Q102404450,Joan Albert López Vallverdú,,,,masculino,-4,,Género diferente,Rechazar,
+99,Joan Albert,Q47274420,Joan-Albert Sanchez-Cabeza,,,,masculino,-4,,Género diferente,Rechazar,
+99,Joan Albert,Q63986640,Joan Albert Mach,,,,masculino,-4,,Género diferente,Rechazar,
+99,Joan Albert,Q1690709,Joan Albert Amargós,1950-08-02T00:00:00Z,,España,masculino,-9,,Nacimiento diferente; Género diferente,Rechazar,
+99,Joan Albert,Q11927567,Joan-Albert Adell i Gisbert,1955-01-01T00:00:00Z,,España,masculino,-9,,Nacimiento diferente; Género diferente,Rechazar,
+99,Joan Albert,Q109939459,Joan Albert van Steijn,1855-11-26T00:00:00Z,1926-05-02T00:00:00Z,Reino de los Países Bajos,masculino,-14,,Nacimiento diferente; Fallecimiento diferente; Género diferente,Rechazar,
+99,Joan Albert,Q110110088,"Joan Albert Gabriël Sloet, Heer van Warmelo en Geldersweerd",1677-01-01T00:00:00Z,1754-04-30T00:00:00Z,,masculino,-14,,Nacimiento diferente; Fallecimiento diferente; Género diferente,Rechazar,
